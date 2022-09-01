@@ -9,19 +9,6 @@ const RemoveEmptyScriptsPlugin = require('webpack-remove-empty-scripts');
 module.exports = {
   entry: {
     global: ['./src/global.js', '/src/global.css'],
-    home: ['./src/home.js', './src/home.css'],
-    cities: './src/cities.css',
-    stores: './src/stores.css',
-    'stores-info': './src/stores-info.js',
-    support: ['./src/support.js', './src/support.css'],
-    about: './src/about.css',
-    blog: './src/blog.css',
-    'blog-posts': ['./src/blog-posts.js', './src/blog-posts.css'],
-    'blog-categories': './src/blog-categories.css',
-    careers: './src/careers.css',
-    'job-postings': './src/job-postings.css',
-    'posts-listing': './src/posts-listing.css',
-    legal: './src/legal.css',
   },
   output: {
     filename: '[name].js',
