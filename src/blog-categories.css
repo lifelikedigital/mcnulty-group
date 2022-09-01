@@ -1,0 +1,23 @@
+/* Posts Listing */
+/* Section Element */
+.posts-listing {
+  padding-bottom: calc(136px - (80px - 40px));
+}
+
+@media (max-width: 991px) {
+  .posts-listing {
+    padding-bottom: calc(120px - (80px - 40px));
+  }
+}
+
+@media (max-width: 767px) {
+  .posts-listing {
+    padding-bottom: calc(104px - (80px - 32px));
+  }
+}
+
+@media (max-width: 479px) {
+  .posts-listing {
+    padding-bottom: calc(88px - (64px - 32px));
+  }
+}

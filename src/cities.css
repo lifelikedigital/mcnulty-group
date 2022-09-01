@@ -1,0 +1,12 @@
+/* Stores and CMS Cities Template */
+.store-locations.wrapper {
+  padding-left: calc(5% - 24px);
+  padding-right: calc(5% - 24px);
+}
+
+@media (max-width: 479px) {
+  .store-locations.wrapper {
+    padding-left: calc(6.4% - 24px);
+    padding-right: calc(6.4% - 24px);
+  }
+}

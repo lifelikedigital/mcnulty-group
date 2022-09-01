@@ -1,0 +1,207 @@
+/* Utility */
+/* Accessibility */
+.sr-only:not(:focus):not(:active) {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap; /* added line */
+}
+
+/* Disabled Elements */
+.is--disabled {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+/* Form Elements */
+input,
+select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+.form__select {
+  background-position: calc(100% - 24px) 50%;
+}
+
+.form__select:valid {
+  color: #000;
+}
+
+.form__select:invalid {
+  color: #b3b3b3;
+}
+
+.form__label--req:after {
+  content: '*';
+}
+
+/* Buttons Loading State */
+.is--submit,
+.is--job-application {
+  position: relative;
+}
+
+.main-button__text {
+  transition: opacity 0.2s;
+}
+
+.main-button--waiting .main-button__text {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.main-button--success .main-button__text {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.main-button--waiting::after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  border: 2px solid transparent;
+  border-top-color: white;
+  border-radius: 50%;
+  animation: button-loading-spinner 1s ease infinite;
+}
+
+.main-button--success::after {
+  opacity: 1;
+  height: 24px;
+  width: 12px;
+  transform-origin: left top;
+  transform: scaleX(-1) rotate(135deg);
+  border-right: 2px solid white;
+  border-top: 2px solid white;
+  content: '';
+  top: 50%;
+  left: 48.22%;
+  position: absolute;
+  animation: checkmark 800ms ease;
+}
+
+@keyframes button-loading-spinner {
+  from {
+    transform: rotate(0turn);
+  }
+
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes checkmark {
+  0% {
+    height: 0;
+    width: 0;
+    opacity: 1;
+  }
+
+  20% {
+    height: 0;
+    width: 12px;
+    opacity: 1;
+  }
+
+  40% {
+    height: 24px;
+    width: 12px;
+    opacity: 1;
+  }
+
+  100% {
+    height: 24px;
+    width: 12px;
+    opacity: 1;
+  }
+}
+
+/* Active Cookies Consent */
+.is--active {
+  display: flex;
+}
+
+/* Footer */
+.thirds-section__container.thirds-section__container--footer:nth-child(2) {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+@media (max-width: 991px) {
+  .thirds-section__container.thirds-section__container--footer:nth-child(2) {
+    border-left: 1px solid black;
+    border-right: none;
+  }
+
+  .thirds-section__container.thirds-section__container--footer:nth-child(3) {
+    width: 100%;
+    border-top: 1px solid black;
+  }
+}
+
+.list__item--footer-horizontal:nth-last-child(1),
+.list__item--footer-vertical:nth-last-child(1) {
+  margin: 0;
+}
+
+.footer__container:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .footer__container > p:first-child {
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 645px) {
+  .footer__container > ul:first-child {
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 479px) {
+  .thirds-section__container.thirds-section__container--footer:nth-child(2) {
+    border-left: none;
+    border-top: 1px solid black;
+  }
+}
+
+.footer__social-icon-bounding {
+  vertical-align: middle;
+}
+
+.footer__social-icon {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Preventing Newsletter Opt-In form success/error state default behaviour */
+#newsletter-optin-form {
+  display: block !important;
+}
+
+.footer__form-container .success--inactive {
+  display: none !important;
+}
+
+.footer__form-container .error--inactive {
+  display: none !important;
+}

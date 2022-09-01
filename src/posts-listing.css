@@ -1,0 +1,50 @@
+/* Posts Listing Elements */
+.half-section.posts-listing__container {
+  padding: calc(64px - 40px) calc(5% - 24px) calc(80px - 40px);
+}
+
+@media (max-width: 991px) {
+  .half-section.posts-listing__container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+@media (max-width: 767px) {
+  .half-section.posts-listing__container {
+    padding-top: calc(64px - 32px);
+    padding-bottom: calc(80px - 32px);
+  }
+}
+
+@media (max-width: 479px) {
+  .half-section.posts-listing__container {
+    padding: calc(48px - 32px) 6.4% calc(64px - 32px);
+  }
+}
+
+/* Post Elements */
+.half-section__container.posts-listing__post {
+  margin: 40px 24px;
+  width: calc(50% - 48px);
+}
+
+@media (max-width: 991px) {
+  .half-section__container.posts-listing__post {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .half-section__container.posts-listing__post {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+}
+
+/* All Except Job Postings */
+.link-container--post:hover .posts-listing__post-title {
+  color: #333333;
+}

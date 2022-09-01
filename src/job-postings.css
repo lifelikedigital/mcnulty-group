@@ -1,0 +1,27 @@
+/* Posting Body */
+.job-posting__description > .description__section:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+/* Job Postings Form */
+/* Preventing form success/error state default behaviour */
+form.application__form {
+  display: block !important;
+}
+
+.application__form-container .success--inactive {
+  display: none !important;
+}
+
+.application__form-container .error--inactive {
+  display: none !important;
+}
+
+.form__upload-field-text.is--success-state {
+  word-break: break-all;
+}
+
+.rich-text-body--job-posting > ul:nth-last-child(1),
+.rich-text-body--job-posting > ul > li:nth-last-child(1) {
+  margin-bottom: 0;
+}
