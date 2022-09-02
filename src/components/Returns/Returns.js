@@ -2,6 +2,7 @@ import Chart from 'chart.js/auto';
 
 const ctx = $('#mcnulty-returns');
 const brandBlueDark = '#B9C9D4';
+const black100 = '#000';
 
 const Returns = () => {
   const myChart = new Chart(ctx, {
@@ -25,6 +26,7 @@ const Returns = () => {
             'rgba(255, 206, 86, 1)',
           ],
           borderWidth: 1,
+          color: black100,
         },
       ],
     },
