@@ -58,7 +58,7 @@ const Returns = () => {
           },
           ticks: {
             callback: function (value) {
-              return `$${value}K`;
+              return value <= 0 ? '' : `$${value}K`;
             },
             padding: 14,
           },
