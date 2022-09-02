@@ -1,5 +1,5 @@
 import Chart from 'chart.js/auto';
-import ChartDataLabels from 'chartjs-plugin-datalabels';
+// import ChartDataLabels from 'chartjs-plugin-datalabels';
 
 const ctx = $('#mcnulty-returns');
 const brandBlueDark = '#B9C9D4';
@@ -12,22 +12,22 @@ Chart.defaults.font.style = 'normal';
 Chart.defaults.font.weight = '300';
 Chart.defaults.color = black100;
 
-Chart.register(ChartDataLabels);
-Chart.defaults.set('plugins.datalabels', {
-  font: {
-    family: "'Circular', sans-serif",
-    size: '13',
-    style: 'normal',
-    weight: '300',
-  },
-  anchor: 'end',
-  align: 'top',
-  clamp: true,
-  offset: 3,
-  formatter: function (value) {
-    return `$${value}K`;
-  },
-});
+// Chart.register(ChartDataLabels);
+// Chart.defaults.set('plugins.datalabels', {
+//   font: {
+//     family: "'Circular', sans-serif",
+//     size: '13',
+//     style: 'normal',
+//     weight: '300',
+//   },
+//   anchor: 'end',
+//   align: 'top',
+//   clamp: true,
+//   offset: 3,
+//   formatter: function (value) {
+//     return `$${value}K`;
+//   },
+// });
 
 const Returns = () => {
   const myChart = new Chart(ctx, {
@@ -79,11 +79,11 @@ const Returns = () => {
       responsive: true,
       maxBarThickness: 58,
       barPercentage: 1,
-      layout: {
-        padding: {
-          top: 50,
-        },
-      },
+      // layout: {
+      //   padding: {
+      //     top: 50,
+      //   },
+      // },
       // layout: {
       //   padding: {
       //     left: 213,
