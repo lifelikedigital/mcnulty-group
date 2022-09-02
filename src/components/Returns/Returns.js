@@ -14,9 +14,9 @@ Chart.defaults.color = black100;
 
 Chart.register(ChartDataLabels);
 Chart.defaults.set('plugins.datalabels', {
-  backgroundColor: brandBlueDark,
   anchor: 'end',
   align: 'top',
+  clamp: true,
 });
 
 const Returns = () => {
