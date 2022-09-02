@@ -68,6 +68,9 @@ const Returns = () => {
             borderColor: black100,
             display: false,
           },
+          ticks: {
+            count: 18,
+          },
         },
       },
       maintainAspectRatio: false,
