@@ -30,7 +30,7 @@ Chart.defaults.set('plugins.datalabels', {
       return;
     } else {
       for (i = 0; i < value; i++) {
-        return `$${value}K`;
+        return `$${i}K`;
       }
     }
   },
