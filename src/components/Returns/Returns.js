@@ -7,7 +7,7 @@ const black100 = '#000';
 Chart.defaults.font.size = 64;
 Chart.defaults.font.family = "'Circular', sans-serif";
 Chart.defaults.font.style = 'normal';
-Chart.defaults.font.weight = '300';
+Chart.defaults.font.weight = '400';
 
 const Returns = () => {
   const myChart = new Chart(ctx, {
