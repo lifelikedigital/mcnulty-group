@@ -27,6 +27,14 @@ const Returns = () => {
       scales: {
         y: {
           beginAtZero: true,
+          grid: {
+            borderColor: '#ff0000',
+          },
+        },
+        x: {
+          grid: {
+            borderColor: '#ff0000',
+          },
         },
       },
       maintainAspectRatio: false,
@@ -37,17 +45,6 @@ const Returns = () => {
       //     right: 213,
       //   },
       // },
-      scales: {
-        y: {
-          grid: {
-            borderColor: '#ff0000',
-          }
-        },
-        x: {
-          grid: {
-            borderColor: '#ff0000',
-          }
-        }
     },
   });
 };
