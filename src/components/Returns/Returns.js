@@ -35,7 +35,6 @@ const Returns = () => {
     data: {
       datasets: [
         {
-          label: 'IS IT YOU?',
           data: [
             ,
             190,
@@ -62,11 +61,11 @@ const Returns = () => {
             borderColor: black100,
             color: black20,
           },
-          ticks: {
-            callback: function (value) {
-              return `$${value}K`;
-            },
-          },
+          // ticks: {
+          //   callback: function (value) {
+          //     return `$${value}K`;
+          //   },
+          // },
         },
         x: {
           grid: {
