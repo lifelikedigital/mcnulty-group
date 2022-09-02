@@ -16,7 +16,7 @@ Chart.register(ChartDataLabels);
 Chart.defaults.set('plugins.datalabels', {
   backgroundColor: brandBlueDark,
   anchor: 'end',
-  align: 'start',
+  align: 'top',
 });
 
 const Returns = () => {
