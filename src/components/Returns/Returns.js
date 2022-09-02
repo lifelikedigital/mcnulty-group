@@ -21,6 +21,7 @@ const Returns = () => {
           label: 'Dividend Income Amount',
           data: [190, 207.1, 227.9, 255.9, 270.5, 299.3, 336.1, 357.9, 390.5],
           backgroundColor: [brandBlueDark],
+          categoryPercentage: 0.5,
         },
       ],
       labels: [2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
@@ -43,7 +44,6 @@ const Returns = () => {
       },
       maintainAspectRatio: false,
       maxBarThickness: 58,
-      categoryPercentage: 0.5,
       // layout: {
       //   padding: {
       //     left: 213,
