@@ -1,13 +1,13 @@
+import Chart from './components/Chart/Chart';
+import Questions from './components/Questions/Questions';
 import SocialShare from './components/SocialShare/SocialShare';
-import FrequentlyAskedQuestions from './components/FrequentlyAskedQuestions/FrequentlyAskedQuestions';
-import CopyrightYear from './components/Footer/CopyrightYear';
-
-// Imported into the main site settings head
+import Copyright from './components/Copyright/Copyright';
 
 const GlobalComponents = () => {
+  Chart();
+  Questions();
   SocialShare();
-  FrequentlyAskedQuestions();
-  CopyrightYear();
+  Copyright();
 };
 
 const init = () => {
