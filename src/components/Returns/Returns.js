@@ -79,7 +79,7 @@ const Returns = () => {
           display: false,
         },
         tooltip: {
-          enabled: true,
+          enabled: false,
         },
       },
     },
