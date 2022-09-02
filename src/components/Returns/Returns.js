@@ -67,7 +67,6 @@ const Returns = () => {
               return `$${value}K`;
             },
           },
-          backdropPadding: 50,
         },
         x: {
           grid: {
@@ -80,6 +79,11 @@ const Returns = () => {
       responsive: true,
       maxBarThickness: 58,
       barPercentage: 1,
+      layout: {
+        padding: {
+          top: 50,
+        }
+      }
       // layout: {
       //   padding: {
       //     left: 213,
