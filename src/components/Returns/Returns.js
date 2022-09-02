@@ -20,7 +20,7 @@ Chart.defaults.set('plugins.datalabels', {
     style: 'normal',
     weight: '300',
   },
-  anchor: 'start',
+  anchor: 'end',
   align: 'top',
   clamp: true,
   offset: 3,
