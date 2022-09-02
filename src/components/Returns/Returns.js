@@ -1,9 +1,13 @@
 import Chart from 'chart.js/auto';
+import ChartDataLabels from 'chartjs-plugin-datalabels';
+import { removeDotSegments } from 'uri-js';
 
 const ctx = $('#mcnulty-returns');
 const brandBlueDark = '#B9C9D4';
 const black100 = '#000';
 const black20 = '#CCC';
+
+Chart.plugins.register(ChartDataLabels);
 
 Chart.defaults.font.size = 13;
 Chart.defaults.font.family = "'Circular', sans-serif";
@@ -37,6 +41,9 @@ const Returns = () => {
         },
       ],
       labels: [, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, ,],
+      datalabels: {
+        color: brandBlueDark,
+      },
     },
     options: {
       scales: {
