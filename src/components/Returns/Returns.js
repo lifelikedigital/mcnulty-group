@@ -50,11 +50,10 @@ const Returns = () => {
       //     right: 213,
       //   },
       // },
-      // plugins: {
-      //   legend: {
-      //     position: 'bottom',
-      //     align: 'start',
-      //   },
+      plugins: {
+        legend: {
+          display: false,
+        },
       // },
     },
   });
