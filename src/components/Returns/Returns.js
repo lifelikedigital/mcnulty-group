@@ -24,9 +24,9 @@ Chart.defaults.set('plugins.datalabels', {
   align: 'top',
   clamp: true,
   offset: 3,
-  formatter: function (value) {
-    return `$${value}K`;
-  },
+  // formatter: function (value) {
+  //   return `$${value}K`;
+  // },
 });
 
 const Returns = () => {
