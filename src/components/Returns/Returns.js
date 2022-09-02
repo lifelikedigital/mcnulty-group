@@ -31,12 +31,12 @@ const Returns = () => {
       },
       maintainAspectRatio: false,
       maxBarThickness: 58,
-      layout: {
-        padding: {
-          left: 213,
-          right: 213,
-        },
-      },
+      // layout: {
+      //   padding: {
+      //     left: 213,
+      //     right: 213,
+      //   },
+      // },
     },
   });
 };
