@@ -39,6 +39,7 @@ const Returns = () => {
             borderColor: black100,
             display: false,
           },
+          categoryPercentage: 0.5,
         },
       },
       maintainAspectRatio: false,
