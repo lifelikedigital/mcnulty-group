@@ -57,7 +57,7 @@ const Returns = () => {
     options: {
       scales: {
         y: {
-          beginAtZero: true,
+          beginAtZero: false,
           grid: {
             borderColor: black100,
             color: black20,
