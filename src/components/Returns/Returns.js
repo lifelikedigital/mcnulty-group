@@ -66,9 +66,9 @@ const Returns = () => {
             callback: function (value) {
               return `$${value}K`;
             },
-            backdropPadding: {
-              left: 25,
-            }, // here
+            // backdropPadding: {
+            //   left: 25,
+            // }, // here
           },
         },
         x: {
