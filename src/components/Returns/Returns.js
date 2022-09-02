@@ -1,4 +1,5 @@
 import Chart from 'chart.js/auto';
+import { start } from 'repl';
 
 const ctx = $('#mcnulty-returns');
 const brandBlueDark = '#B9C9D4';
@@ -29,13 +30,13 @@ const Returns = () => {
         y: {
           beginAtZero: true,
           grid: {
-            borderColor: '#ff0000',
-            color: '#ff0000',
+            borderColor: '#ff0000', // black100
+            color: '#ff0000', // black20
           },
         },
         x: {
           grid: {
-            borderColor: '#ff0000',
+            borderColor: '#ff0000', // black100
             display: false,
           },
         },
@@ -48,6 +49,12 @@ const Returns = () => {
       //     right: 213,
       //   },
       // },
+      plugins: {
+        legend: {
+          position: bottom,
+          align: start,
+        },
+      },
     },
   });
 };
