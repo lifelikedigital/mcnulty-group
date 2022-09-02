@@ -10,6 +10,7 @@ Chart.defaults.font.family = "'Circular', sans-serif";
 Chart.defaults.font.style = 'normal';
 Chart.defaults.font.weight = '300';
 Chart.defaults.color = black100;
+Chart.defaults.global.legend.display = false;
 
 const Returns = () => {
   const myChart = new Chart(ctx, {
