@@ -30,7 +30,7 @@ Chart.defaults.set('plugins.datalabels', {
 });
 
 const mediumScreens = '(max-width: 1048px)';
-const smallScreens = '(max-width: 309px)';
+const smallScreens = '(max-width: 390px)';
 
 // if (window.matchMedia(mediumScreens).matches) {
 
