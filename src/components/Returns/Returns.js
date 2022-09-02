@@ -54,7 +54,7 @@ const Returns = () => {
         legend: {
           display: false,
         },
-      // },
+      },
     },
   });
 };
