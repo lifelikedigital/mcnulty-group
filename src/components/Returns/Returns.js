@@ -29,184 +29,61 @@ Chart.defaults.set('plugins.datalabels', {
   },
 });
 
-const mediumScreens = '(max-width: 1048px)';
-const smallScreens = '(max-width: 390px)';
-
-// if (window.matchMedia(mediumScreens).matches) {
-
-// } else if (window.matchMedia(smallScreens).matches) {
-
-// } else {
-
-// }
-
 const Returns = () => {
-  if (window.matchMedia(mediumScreens).matches) {
-    const myChart = new Chart(ctx, {
-      type: 'bar',
-      data: {
-        datasets: [
-          {
-            // prettier-ignore
-            data: [,190,207.1,227.9,255.9,270.5,299.3,336.1,357.9,390.5,,,],
-            backgroundColor: [brandBlueDark],
+  const myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      datasets: [
+        {
+          // prettier-ignore
+          data: [,,190,207.1,227.9,255.9,270.5,299.3,336.1,357.9,390.5,,,,],
+          backgroundColor: [brandBlueDark],
+        },
+      ],
+      // prettier-ignore
+      labels: [,,2013,2014,2015,2016,2017,2018,2019,2020,2021,,,,],
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true,
+          grid: {
+            borderColor: black100,
+            color: black20,
           },
-        ],
-        // prettier-ignore
-        labels: [,2013,2014,2015,2016,2017,2018,2019,2020,2021,,,],
-      },
-      options: {
-        scales: {
-          y: {
-            beginAtZero: true,
-            grid: {
-              borderColor: black100,
-              color: black20,
-            },
-            ticks: {
-              callback: function (value) {
-                return `$${value}K`;
-              },
-            },
-          },
-          x: {
-            grid: {
-              borderColor: black100,
-              display: false,
+          ticks: {
+            callback: function (value) {
+              return `$${value}K`;
             },
           },
         },
-        maintainAspectRatio: false,
-        responsive: true,
-        maxBarThickness: 58,
-        barPercentage: 1,
-        devicePixelRatio: 3,
-        layout: {
-          padding: {
-            top: 20,
-          },
-        },
-        plugins: {
-          legend: {
+        x: {
+          grid: {
+            borderColor: black100,
             display: false,
           },
-          tooltip: {
-            enabled: false,
-          },
         },
       },
-    });
-  } else if (window.matchMedia(smallScreens).matches) {
-    const myChart = new Chart(ctx, {
-      type: 'bar',
-      data: {
-        datasets: [
-          {
-            // prettier-ignore
-            data: [190,207.1,227.9,255.9,270.5,299.3,336.1,357.9,390.5],
-            backgroundColor: [brandBlueDark],
-          },
-        ],
-        // prettier-ignore
-        labels: [2013,2014,2015,2016,2017,2018,2019,2020,2021],
-      },
-      options: {
-        scales: {
-          y: {
-            beginAtZero: true,
-            grid: {
-              borderColor: black100,
-              color: black20,
-            },
-            ticks: {
-              callback: function (value) {
-                return `$${value}K`;
-              },
-            },
-          },
-          x: {
-            grid: {
-              borderColor: black100,
-              display: false,
-            },
-          },
-        },
-        maintainAspectRatio: false,
-        responsive: true,
-        maxBarThickness: 58,
-        barPercentage: 1,
-        devicePixelRatio: 3,
-        layout: {
-          padding: {
-            top: 20,
-          },
-        },
-        plugins: {
-          legend: {
-            display: false,
-          },
-          tooltip: {
-            enabled: false,
-          },
+      maintainAspectRatio: false,
+      responsive: true,
+      maxBarThickness: 58,
+      barPercentage: 1,
+      devicePixelRatio: 3,
+      layout: {
+        padding: {
+          top: 20,
         },
       },
-    });
-  } else {
-    const myChart = new Chart(ctx, {
-      type: 'bar',
-      data: {
-        datasets: [
-          {
-            // prettier-ignore
-            data: [,,190,207.1,227.9,255.9,270.5,299.3,336.1,357.9,390.5,,,,],
-            backgroundColor: [brandBlueDark],
-          },
-        ],
-        // prettier-ignore
-        labels: [,,2013,2014,2015,2016,2017,2018,2019,2020,2021,,,,],
-      },
-      options: {
-        scales: {
-          y: {
-            beginAtZero: true,
-            grid: {
-              borderColor: black100,
-              color: black20,
-            },
-            ticks: {
-              callback: function (value) {
-                return `$${value}K`;
-              },
-            },
-          },
-          x: {
-            grid: {
-              borderColor: black100,
-              display: false,
-            },
-          },
+      plugins: {
+        legend: {
+          display: false,
         },
-        maintainAspectRatio: false,
-        responsive: true,
-        maxBarThickness: 58,
-        barPercentage: 1,
-        devicePixelRatio: 3,
-        layout: {
-          padding: {
-            top: 20,
-          },
-        },
-        plugins: {
-          legend: {
-            display: false,
-          },
-          tooltip: {
-            enabled: false,
-          },
+        tooltip: {
+          enabled: false,
         },
       },
-    });
-  }
+    },
+  });
 };
 
 export default Returns;
