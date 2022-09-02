@@ -25,14 +25,7 @@ Chart.defaults.set('plugins.datalabels', {
   clamp: true,
   offset: 7,
   formatter: function (value) {
-    // return value === undefined ? '' : `$${value}K`;
-    if (!value) {
-      return;
-    } else {
-      for (i = 0; i < value; i++) {
-        return `$${i}K`;
-      }
-    }
+    return value === undefined ? '' : `$${value}K`;
   },
 });
 
