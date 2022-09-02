@@ -29,12 +29,12 @@ const Returns = () => {
           beginAtZero: true,
           grid: {
             borderColor: '#ff0000',
-            display: false,
           },
         },
         x: {
           grid: {
             borderColor: '#ff0000',
+            display: false,
           },
         },
       },
