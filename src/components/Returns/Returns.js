@@ -82,8 +82,8 @@ const Returns = () => {
       layout: {
         padding: {
           top: 50,
-        }
-      }
+        },
+      },
       // layout: {
       //   padding: {
       //     left: 213,
