@@ -27,6 +27,9 @@ Chart.defaults.set('plugins.datalabels', {
   // formatter: function (value) {
   //   return `$${value}K`;
   // },
+  formatter: function (value, context) {
+    return `$${context.dataset.labels[context.dataIndex]}K`;
+  },
 });
 
 const Returns = () => {
