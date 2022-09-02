@@ -1,5 +1,6 @@
 import Chart from 'chart.js/auto';
 import ChartDataLabels from 'chartjs-plugin-datalabels';
+import ChartDeferred from 'chartjs-plugin-deferred';
 
 const ctx = $('#mcnulty-returns');
 const brandBlueDark = '#B9C9D4';
@@ -29,6 +30,8 @@ Chart.defaults.set('plugins.datalabels', {
     return value === undefined ? '' : `$${value}K`;
   },
 });
+
+Chart.register(ChartDeferred);
 
 const Returns = () => {
   const myChart = new Chart(ctx, {
@@ -85,6 +88,7 @@ const Returns = () => {
           top: 20,
           right: 15,
         },
+        animation: {},
       },
       plugins: {
         legend: {
@@ -92,6 +96,9 @@ const Returns = () => {
         },
         tooltip: {
           enabled: false,
+        },
+        deferred: {
+          yOffset: '50%',
         },
       },
     },
