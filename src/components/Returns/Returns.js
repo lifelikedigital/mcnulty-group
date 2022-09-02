@@ -37,6 +37,13 @@ const Returns = () => {
       //     right: 213,
       //   },
       // },
+      scales: {
+        y: {
+          borderColor: '#ff0000',
+        },
+        x: {
+          borderColor: '#ff0000',
+        }
     },
   });
 };
