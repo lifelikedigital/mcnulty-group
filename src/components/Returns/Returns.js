@@ -97,6 +97,9 @@ const Returns = () => {
         tooltip: {
           enabled: false,
         },
+        title: {
+          position: 'bottom',
+        },
       },
     },
   });
