@@ -51,8 +51,8 @@ const Returns = () => {
       // },
       plugins: {
         legend: {
-          position: bottom,
-          align: start,
+          position: 'bottom',
+          align: 'start',
         },
       },
     },
