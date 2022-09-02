@@ -30,7 +30,7 @@ const Returns = () => {
         y: {
           beginAtZero: true,
           grid: {
-            borderColor: 'black100', // #ff0000
+            borderColor: black100, // #ff0000
             color: '#ff0000', // black20
           },
         },
