@@ -14,6 +14,12 @@ Chart.defaults.color = black100;
 
 Chart.register(ChartDataLabels);
 Chart.defaults.set('plugins.datalabels', {
+  font: {
+    family: "'Circular', sans-serif",
+    size: '13',
+    style: 'normal',
+    weight: '300',
+  },
   anchor: 'end',
   align: 'top',
   clamp: true,
@@ -21,6 +27,7 @@ Chart.defaults.set('plugins.datalabels', {
   formatter: function (value) {
     return `$${value}K`;
   },
+  clip: true,
 });
 
 const Returns = () => {
