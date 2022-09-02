@@ -49,6 +49,13 @@ const Returns = () => {
             ,
           ],
           backgroundColor: [brandBlueDark],
+          datalabels: [
+            {
+              labels: {
+                title: null,
+              },
+            },
+          ],
         },
       ],
       labels: [, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, ,],
@@ -61,11 +68,11 @@ const Returns = () => {
             borderColor: black100,
             color: black20,
           },
-          // ticks: {
-          //   callback: function (value) {
-          //     return `$${value}K`;
-          //   },
-          // },
+          ticks: {
+            callback: function (value) {
+              return `$${value}K`;
+            },
+          },
         },
         x: {
           grid: {
