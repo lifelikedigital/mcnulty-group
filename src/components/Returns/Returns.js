@@ -1,5 +1,4 @@
 import Chart from 'chart.js/auto';
-import { start } from 'repl';
 
 const ctx = $('#mcnulty-returns');
 const brandBlueDark = '#B9C9D4';
