@@ -77,7 +77,6 @@ const Returns = () => {
       },
       maintainAspectRatio: false,
       maxBarThickness: 58,
-      categoryPercentage: 0.5,
       // layout: {
       //   padding: {
       //     left: 213,
