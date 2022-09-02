@@ -39,10 +39,14 @@ const Returns = () => {
       // },
       scales: {
         y: {
-          borderColor: '#ff0000',
+          grid: {
+            borderColor: '#ff0000',
+          }
         },
         x: {
-          borderColor: '#ff0000',
+          grid: {
+            borderColor: '#ff0000',
+          }
         }
     },
   });
