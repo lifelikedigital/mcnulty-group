@@ -66,7 +66,7 @@ const Returns = () => {
             borderColor: black100,
             display: false,
           },
-          grace: '25%',
+          // grace: '25%',
         },
       },
       maintainAspectRatio: false,
