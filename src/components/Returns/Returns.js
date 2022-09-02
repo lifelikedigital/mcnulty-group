@@ -29,6 +29,7 @@ const Returns = () => {
           beginAtZero: true,
         },
       },
+      maintainAspectRatio: false,
     },
   });
 };
