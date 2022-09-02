@@ -3,6 +3,7 @@ import ChartDataLabels from 'chartjs-plugin-datalabels';
 
 const ctx = $('#mcnulty-returns');
 const brandBlueDark = '#B9C9D4';
+const brandBlueMedium = '#DBE4E9';
 const black100 = '#000';
 const black20 = '#CCC';
 
@@ -40,6 +41,7 @@ const Returns = () => {
           // prettier-ignore
           data: [190,207.1,227.9,255.9,270.5,299.3,336.1,357.9,390.5],
           backgroundColor: [brandBlueDark],
+          hoverBackgroundColor: [brandBlueMedium],
         },
       ],
       // prettier-ignore
