@@ -73,6 +73,9 @@ const Returns = () => {
         legend: {
           display: false,
         },
+        tooltip: {
+          enabled: false,
+        },
       },
     },
   });
