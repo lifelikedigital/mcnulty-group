@@ -4,10 +4,11 @@ const ctx = $('#mcnulty-returns');
 const brandBlueDark = '#B9C9D4';
 const black100 = '#000';
 
-Chart.defaults.font.size = 64;
+Chart.defaults.font.size = 13;
 Chart.defaults.font.family = "'Circular', sans-serif";
 Chart.defaults.font.style = 'normal';
-Chart.defaults.font.weight = '500';
+Chart.defaults.font.weight = '300';
+Chart.defaults.color = black100;
 
 const Returns = () => {
   const myChart = new Chart(ctx, {
