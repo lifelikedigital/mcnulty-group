@@ -16,7 +16,7 @@ Chart.register(ChartDataLabels);
 Chart.defaults.set('plugins.datalabels', {
   font: {
     family: "'Circular', sans-serif",
-    size: '13',
+    size: '32', // 13
     style: 'normal',
     weight: '300',
   },
