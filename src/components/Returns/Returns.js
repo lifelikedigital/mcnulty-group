@@ -98,7 +98,7 @@ const Returns = () => {
           enabled: false,
         },
         deferred: {
-          yOffset: '50%',
+          yOffset: '75%',
         },
       },
     },
