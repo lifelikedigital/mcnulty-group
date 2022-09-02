@@ -43,18 +43,19 @@ const Returns = () => {
       },
       maintainAspectRatio: false,
       maxBarThickness: 58,
+      categoryPercentage: 0.57,
       // layout: {
       //   padding: {
       //     left: 213,
       //     right: 213,
       //   },
       // },
-      plugins: {
-        legend: {
-          position: 'bottom',
-          align: 'start',
-        },
-      },
+      // plugins: {
+      //   legend: {
+      //     position: 'bottom',
+      //     align: 'start',
+      //   },
+      // },
     },
   });
 };
