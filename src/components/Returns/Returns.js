@@ -46,6 +46,11 @@ const Returns = () => {
             borderColor: black100,
             color: black20,
           },
+          ticks: {
+            callback: function (value) {
+              return `$${value}K`;
+            },
+          },
         },
         x: {
           grid: {
