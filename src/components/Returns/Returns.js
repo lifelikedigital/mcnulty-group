@@ -79,11 +79,11 @@ const Returns = () => {
       responsive: true,
       maxBarThickness: 58,
       barPercentage: 1,
-      // layout: {
-      //   padding: {
-      //     top: 50,
-      //   },
-      // },
+      layout: {
+        padding: {
+          top: 20,
+        },
+      },
       // layout: {
       //   padding: {
       //     left: 213,
