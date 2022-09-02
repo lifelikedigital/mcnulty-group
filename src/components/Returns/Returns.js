@@ -30,6 +30,11 @@ const Returns = () => {
         },
       },
       maintainAspectRatio: false,
+      elements: {
+        bar: {
+          maxBarThickness: 58,
+        },
+      },
     },
   });
 };
