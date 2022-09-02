@@ -17,6 +17,7 @@ const Returns = () => {
     data: {
       datasets: [
         {
+          label: '',
           data: [190, 207.1, 227.9, 255.9, 270.5, 299.3, 336.1, 357.9, 390.5],
           backgroundColor: [brandBlueDark],
         },
