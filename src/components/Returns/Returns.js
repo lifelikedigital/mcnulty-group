@@ -16,14 +16,14 @@ Chart.register(ChartDataLabels);
 Chart.defaults.set('plugins.datalabels', {
   font: {
     family: "'Circular', sans-serif",
-    size: '32', // 13
+    size: '13',
     style: 'normal',
     weight: '300',
   },
   anchor: 'end',
-  // align: 'top',
-  // clamp: true,
-  // offset: 3,
+  align: 'top',
+  clamp: true,
+  offset: 3,
   formatter: function (value) {
     return value === undefined ? '' : `$${value}K`;
   },
