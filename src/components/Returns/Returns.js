@@ -25,7 +25,7 @@ Chart.defaults.set('plugins.datalabels', {
   // clamp: true,
   // offset: 3,
   formatter: function (value) {
-    console.log(value); //`$${value}K`;
+    console.log(value + 'K'); //`$${value}K`;
   },
 });
 
