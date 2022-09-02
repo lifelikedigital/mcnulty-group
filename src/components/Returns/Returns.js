@@ -8,15 +8,14 @@ const Returns = () => {
   const myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-      labels: [2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
       datasets: [
         {
-          label: 'Capital Appreciation',
+          label: 'Dividend Income Amount',
           data: [190, 207.1, 227.9, 255.9, 270.5, 299.3, 336.1, 357.9, 390.5],
           backgroundColor: [brandBlueDark],
-          color: '#ff0000',
         },
       ],
+      labels: [2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
     },
     options: {
       scales: {
