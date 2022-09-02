@@ -27,7 +27,6 @@ Chart.defaults.set('plugins.datalabels', {
   formatter: function (value) {
     return `$${value}K`;
   },
-  clip: true,
 });
 
 const Returns = () => {
