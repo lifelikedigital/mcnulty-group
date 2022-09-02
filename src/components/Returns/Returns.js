@@ -1,6 +1,5 @@
 import Chart from 'chart.js/auto';
 import ChartDataLabels from 'chartjs-plugin-datalabels';
-import { removeDotSegments } from 'uri-js';
 
 const ctx = $('#mcnulty-returns');
 const brandBlueDark = '#B9C9D4';
