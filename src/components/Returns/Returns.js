@@ -22,7 +22,7 @@ Chart.defaults.set('plugins.datalabels', {
   },
   anchor: 'end',
   align: 'top',
-  clamp: true,
+  // clamp: true,
   offset: 3,
   formatter: function (value) {
     return `$${value}K`;
@@ -96,9 +96,6 @@ const Returns = () => {
         },
         tooltip: {
           enabled: false,
-        },
-        title: {
-          position: 'bottom',
         },
       },
     },
