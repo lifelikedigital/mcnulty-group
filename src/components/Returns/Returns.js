@@ -54,6 +54,7 @@ const Returns = () => {
           grid: {
             borderColor: black100,
             color: black20,
+            drawTicks: false,
           },
           ticks: {
             callback: function (value) {
@@ -66,7 +67,6 @@ const Returns = () => {
             borderColor: black100,
             display: false,
           },
-          // grace: '25%',
         },
       },
       maintainAspectRatio: false,
