@@ -81,7 +81,7 @@ const Returns = () => {
       layout: {
         padding: {
           top: 20,
-          right: 10,
+          right: 15,
         },
       },
       plugins: {
