@@ -23,7 +23,7 @@ Chart.defaults.set('plugins.datalabels', {
   anchor: 'end',
   align: 'top',
   clamp: true,
-  offset: 3,
+  offset: 7,
   formatter: function (value) {
     return value === undefined ? '' : `$${value}K`;
   },
