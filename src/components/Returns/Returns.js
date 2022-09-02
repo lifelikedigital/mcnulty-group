@@ -60,6 +60,7 @@ const Returns = () => {
             callback: function (value) {
               return `$${value}K`;
             },
+            padding: 14,
           },
         },
         x: {
