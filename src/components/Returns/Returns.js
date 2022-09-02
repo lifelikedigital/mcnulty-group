@@ -13,21 +13,21 @@ Chart.defaults.font.weight = '300';
 Chart.defaults.color = black100;
 
 Chart.register(ChartDataLabels);
-// Chart.defaults.set('plugins.datalabels', {
-//   font: {
-//     family: "'Circular', sans-serif",
-//     size: '13',
-//     style: 'normal',
-//     weight: '300',
-//   },
-//   anchor: 'end',
-//   align: 'top',
-//   clamp: true,
-//   offset: 3,
-//   formatter: function (value) {
-//     return `$${value}K`;
-//   },
-// });
+Chart.defaults.set('plugins.datalabels', {
+  font: {
+    family: "'Circular', sans-serif",
+    size: '13',
+    style: 'normal',
+    weight: '300',
+  },
+  anchor: 'end',
+  align: 'top',
+  clamp: true,
+  offset: 3,
+  formatter: function (value) {
+    return `$${value}K`;
+  },
+});
 
 const Returns = () => {
   const myChart = new Chart(ctx, {
@@ -50,21 +50,6 @@ const Returns = () => {
             ,
           ],
           backgroundColor: [brandBlueDark],
-          datalabels: {
-            font: {
-              family: "'Circular', sans-serif",
-              size: '13',
-              style: 'normal',
-              weight: '300',
-            },
-            anchor: 'end',
-            align: 'top',
-            clamp: true,
-            offset: 3,
-            formatter: function (value) {
-              return `$${value}K`;
-            },
-          },
         },
       ],
       labels: [, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, ,],
@@ -81,6 +66,9 @@ const Returns = () => {
             callback: function (value) {
               return `$${value}K`;
             },
+            backdropPadding: {
+              left: 25,
+            }, // here
           },
         },
         x: {
