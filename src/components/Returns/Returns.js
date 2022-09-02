@@ -79,6 +79,7 @@ const Returns = () => {
       responsive: true,
       maxBarThickness: 58,
       barPercentage: 1,
+      devicePixelRatio: 2,
       layout: {
         padding: {
           top: 20,
