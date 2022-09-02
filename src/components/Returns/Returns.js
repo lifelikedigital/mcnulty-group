@@ -21,7 +21,7 @@ Chart.defaults.set('plugins.datalabels', {
     weight: '300',
   },
   anchor: 'end',
-  align: 'top',
+  // align: 'top',
   // clamp: true,
   offset: 3,
   formatter: function (value) {
