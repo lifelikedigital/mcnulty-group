@@ -25,7 +25,7 @@ Chart.defaults.set('plugins.datalabels', {
   // clamp: true,
   // offset: 3,
   formatter: function (value) {
-    console.log(value === undefined ? 'SKIP ME' : 'PRINT ME'); //`$${value}K`;
+    return value === undefined ? '' : `$${value}K`;
   },
 });
 
