@@ -3,6 +3,7 @@ import Chart from 'chart.js/auto';
 const ctx = $('#mcnulty-returns');
 const brandBlueDark = '#B9C9D4';
 const black100 = '#000';
+const black20 = '#CCC';
 
 Chart.defaults.font.size = 13;
 Chart.defaults.font.family = "'Circular', sans-serif";
@@ -29,6 +30,7 @@ const Returns = () => {
           beginAtZero: true,
           grid: {
             borderColor: '#ff0000',
+            color: '#ff0000',
           },
         },
         x: {
