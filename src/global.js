@@ -1,10 +1,10 @@
-import Chart from './components/Chart/Chart';
+import Chart from './components/Returns/Returns';
 import Questions from './components/Questions/Questions';
 import SocialShare from './components/SocialShare/SocialShare';
 import Copyright from './components/Copyright/Copyright';
 
 const GlobalComponents = () => {
-  Chart();
+  Returns();
   Questions();
   SocialShare();
   Copyright();
