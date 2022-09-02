@@ -1,4 +1,5 @@
 import Chart from 'chart.js/auto';
+import ChartDataLabels from 'chartjs-plugin-datalabels';
 
 const ctx = $('#mcnulty-returns');
 const brandBlueDark = '#B9C9D4';
@@ -10,6 +11,11 @@ Chart.defaults.font.family = "'Circular', sans-serif";
 Chart.defaults.font.style = 'normal';
 Chart.defaults.font.weight = '300';
 Chart.defaults.color = black100;
+
+Chart.register(ChartDataLabels);
+Chart.defaults.set('plugins.datalabels', {
+  backgroundColor: brandBlueDark,
+});
 
 const Returns = () => {
   const myChart = new Chart(ctx, {
@@ -73,7 +79,7 @@ const Returns = () => {
           display: false,
         },
         tooltip: {
-          enabled: false,
+          enabled: true,
         },
       },
     },
