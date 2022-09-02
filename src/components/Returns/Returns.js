@@ -17,8 +17,10 @@ Chart.defaults.set('plugins.datalabels', {
   anchor: 'end',
   align: 'top',
   clamp: true,
-  offset: 10, // 3
-  clip: true,
+  offset: 3,
+  formatter: function (value) {
+    return `$${value}K`;
+  },
 });
 
 const Returns = () => {
