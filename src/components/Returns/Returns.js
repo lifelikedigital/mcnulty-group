@@ -17,7 +17,8 @@ Chart.defaults.set('plugins.datalabels', {
   anchor: 'end',
   align: 'top',
   clamp: true,
-  offset: 3,
+  offset: 10, // 3
+  clip: true,
 });
 
 const Returns = () => {
