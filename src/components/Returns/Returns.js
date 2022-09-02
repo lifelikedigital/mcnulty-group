@@ -56,7 +56,7 @@ const Returns = () => {
       },
       maintainAspectRatio: false,
       responsive: true,
-      // maxBarThickness: 58,
+      maxBarThickness: 58,
       barPercentage: 1,
       // layout: {
       //   padding: {
