@@ -16,6 +16,8 @@ Chart.defaults.font.style = 'normal';
 Chart.defaults.font.weight = '300';
 Chart.defaults.color = black100;
 
+Chart.defaults.options[((from = brandBlueLight), (to = brandBlueDark))];
+
 Chart.register(ChartDataLabels);
 Chart.defaults.set('plugins.datalabels', {
   font: {
@@ -93,7 +95,6 @@ const Returns = () => {
         animation: {
           easing: '',
         },
-        animations: [(from = brandBlueLight), (to = brandBlueDark)],
       },
       plugins: {
         legend: {
