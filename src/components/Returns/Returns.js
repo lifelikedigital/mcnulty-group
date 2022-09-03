@@ -82,8 +82,9 @@ const Returns = () => {
       },
       animations: {
         color: {
-          to: brandBlueDark,
+          duration: 3000,
           from: brandBlueLight,
+          to: brandBlueDark,
         },
       },
       maintainAspectRatio: false,
