@@ -80,7 +80,7 @@ const Returns = () => {
           },
         },
       },
-      animation: {
+      animations: {
         from: brandBlueLight,
         to: brandBlueDark,
       },
