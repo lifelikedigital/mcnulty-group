@@ -80,6 +80,10 @@ const Returns = () => {
           },
         },
       },
+      animation: {
+        from: brandBlueLight,
+        to: brandBlueDark,
+      },
       maintainAspectRatio: false,
       responsive: true,
       maxBarThickness: 58,
