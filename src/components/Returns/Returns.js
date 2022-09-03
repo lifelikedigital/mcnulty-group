@@ -5,6 +5,8 @@ import ChartDeferred from 'chartjs-plugin-deferred';
 const ctx = $('#mcnulty-returns');
 const brandBlueDark = '#B9C9D4';
 const brandBlueDarker = '#A9B8C1';
+const brandBlueLight = '#F3F6F8';
+const brandBlueMedium = '#DBE4E9';
 const black100 = '#000';
 const black20 = '#CCC';
 
@@ -88,7 +90,10 @@ const Returns = () => {
           top: 20,
           right: 15,
         },
-        animation: {},
+        animation: {
+          easing: '',
+        },
+        animations: [(from = brandBlueLight), (to = brandBlueDark)],
       },
       plugins: {
         legend: {
@@ -98,7 +103,7 @@ const Returns = () => {
           enabled: false,
         },
         deferred: {
-          yOffset: '60%',
+          yOffset: '70%',
         },
       },
     },
