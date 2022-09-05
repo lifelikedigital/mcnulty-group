@@ -6,7 +6,7 @@ const $shareMenu = $('.share-links'); // what needs to be shown
 const shareThisPage = () => {
   $shareMenuLaunch.on('click', (e) => {
     e.preventDefault();
-    console.log(shareMenuLaunch);
+    console.log($shareMenuLaunch);
   });
 };
 
