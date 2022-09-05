@@ -15,7 +15,7 @@ const shareThisPage = () => {
   $shareMenuLaunch.on('click', (e) => {
     e.preventDefault();
     $shareMenu.toggleClass(activeShareMenu);
-    $shareMenuLaunch.toggleClass(activeShareMenu);
+    $shareMenuLaunch.toggleClass(activeSharePage);
     $getStarted.toggleClass(activeGetStarted);
   });
 };
