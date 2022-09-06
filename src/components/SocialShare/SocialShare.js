@@ -63,6 +63,11 @@ const copyLink = () => {
   $copyShareBtn.on('click', (e) => {
     e.preventDefault();
     navigator.clipboard.writeText($currentPage);
+    const copyOriginal = $copyShareBtn.text();
+    $copyShareBtn.text('Copied!');
+    setTimeout(function () {
+      $copyShareBtn.text(copyOriginal);
+    }, 2000);
   });
 };
 
