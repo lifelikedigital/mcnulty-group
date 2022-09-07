@@ -1,18 +1,19 @@
 // Global
-const $body = $('body');
+// const $body = $('body');
 const $window = $(window);
-// const $metaDesc = $('meta[name=description]');
+const $metaTitle = $('meta[property=og:title]');
+const $metaDesc = $('meta[property=og:description]');
 
-// URL
+// URL + Metadata
 const $currentPage = $(location).attr('href'); // for copying and emails
 const $currentPageEncoded = encodeURIComponent($currentPage); // for share links
 
 // Metadata
-const $currentPageTitle = $('h1').html();
-const $currentPageTitleEncoded = encodeURIComponent($currentPageTitle);
+// const $currentPageTitle = $('h1').html();
+// const $currentPageTitleEncoded = encodeURIComponent($currentPageTitle);
 // const $currentPageSummary = $metaDesc.attr('content');
-const $currentPageSummary = $('#summary').html();
-const $currentPageSummaryEncoded = encodeURIComponent($currentPageSummary);
+// const $currentPageSummary = $('#summary').html();
+// const $currentPageSummaryEncoded = encodeURIComponent($currentPageSummary);
 
 // Emails
 // const emailSubject = ` ${$currentPageTitle}`;
@@ -24,11 +25,11 @@ const $facebookShareBtn = $('#facebook-share');
 const $linkedInShareBtn = $('#linkedin-share');
 // const $emailShareBtn = $('.blog-post__share-link--email');
 const $copyShareBtn = $('#copy-link');
-const copyShareBtn = document.querySelector('#copy-link');
+// const copyShareBtn = document.querySelector('#copy-link');
 
 // Share links
 const facebookShareLink = `https://www.facebook.com/sharer/sharer.php?u=${$currentPageEncoded}`;
-const linkedInShareLink = `https://www.linkedin.com/shareArticle?mini=true&url=${$currentPageEncoded}&title=${$currentPageTitleEncoded}&source=https%3A%2F%2Fcanvascannabis.ca%2F&summary=${$currentPageSummaryEncoded}`;
+const linkedInShareLink = `https://www.linkedin.com/shareArticle?mini=true&url=${$currentPageEncoded}&title=${$metaTitle}&source=https%3A%2F%2Fcanvascannabis.ca%2F&summary=${$metaDesc}`;
 // const emailShareLink = `mailto:?subject=${emailSubject}&body=${emailBody}`; // gmail on ios is tricky with mailto in general + clean up body variable and subject
 
 // Pop-up window related
