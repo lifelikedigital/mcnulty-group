@@ -91,6 +91,7 @@ const linkedInShare = () => {
       'popup',
       `menubar=no, toolbar=no, resizable=yes, scrollbars=yes, width=480, height=608, top=${windowTop}, left=${windowLeft}`
     );
+    console.log($metaTitle, $metaDesc, linkedInShareLink);
   });
 };
 
