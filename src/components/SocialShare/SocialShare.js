@@ -4,8 +4,8 @@ const $window = $(window);
 const $metaTitle = $("meta[property='og:title']").attr('content');
 const $metaDesc = $("meta[property='og:description']").attr('content');
 
-// const $metaTitleEncoded = $("meta[property='og:title']").attr('content');
-// const $metaDescEncoded = $("meta[property='og:description']").attr('content');
+const $metaTitleEncoded = encodeURIComponent($metaTitle);
+const $metaDescEncoded = encodeURIComponent($metaDesc);
 
 // URL + Metadata
 const $currentPage = $(location).attr('href'); // for copying and emails
@@ -32,7 +32,7 @@ const $copyShareBtn = $('#copy-link');
 
 // Share links
 const facebookShareLink = `https://www.facebook.com/sharer/sharer.php?u=${$currentPageEncoded}`;
-const linkedInShareLink = `https://www.linkedin.com/shareArticle?mini=true&url=${$currentPageEncoded}&title=${$metaTitle}&source=${$currentPageEncoded}&summary=${$metaDesc}`;
+const linkedInShareLink = `https://www.linkedin.com/shareArticle?mini=true&url=${$currentPageEncoded}&title=${$metaTitleEncoded}&source=${$currentPageEncoded}&summary=${$metaDescEncoded}`;
 // const emailShareLink = `mailto:?subject=${emailSubject}&body=${emailBody}`; // gmail on ios is tricky with mailto in general + clean up body variable and subject
 
 // Pop-up window related
@@ -94,8 +94,8 @@ const linkedInShare = () => {
       'popup',
       `menubar=no, toolbar=no, resizable=yes, scrollbars=yes, width=480, height=608, top=${windowTop}, left=${windowLeft}`
     );
-    console.log($metaTitle);
-    console.log($metaDesc);
+    console.log($metaTitleEncoded);
+    console.log($metaDescEncoded);
     console.log(linkedInShareLink);
   });
 };
