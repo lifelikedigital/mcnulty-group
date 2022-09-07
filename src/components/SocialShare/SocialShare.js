@@ -1,8 +1,8 @@
 // Global
 // const $body = $('body');
 const $window = $(window);
-const $metaTitle = $("meta[property='og:title']");
-const $metaDesc = $("meta[property='og:description']");
+const $metaTitle = $("meta[property='og:title']").attr('content');
+const $metaDesc = $("meta[property='og:description']").attr('content');
 
 // URL + Metadata
 const $currentPage = $(location).attr('href'); // for copying and emails
