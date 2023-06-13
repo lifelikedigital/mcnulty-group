@@ -140,6 +140,9 @@ const Returns = () => {
       },
       scales: {
         y: {
+          grid: {
+            drawBorder: false,
+          },
           beginAtZero: true,
           ticks: {
             callback: function (value, index, values) {
@@ -168,6 +171,7 @@ const Returns = () => {
         x: {
           grid: {
             display: false,
+            drawBorder: false,
           },
         },
       },
