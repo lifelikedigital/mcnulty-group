@@ -143,8 +143,7 @@ const Returns = () => {
             drawBorder: true,
             borderWidth: 1,
             borderColor: uiBlackRegular,
-            // color: uiBlackRegular,
-            color: '#f9f9',
+            color: uiBlackRegular,
           },
           beginAtZero: true,
           ticks: {
@@ -157,7 +156,7 @@ const Returns = () => {
             autoSkip: false,
             autoSkipPadding: 0,
             maxTicksLimit: 10,
-            padding: 0,
+            padding: 14,
           },
           afterBuildTicks: function (scale) {
             scale.ticks = [
