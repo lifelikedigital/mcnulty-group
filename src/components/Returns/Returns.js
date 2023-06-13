@@ -86,7 +86,7 @@ const Returns = () => {
             // autoSkip: false,
             // autoSkipPadding: 0,
             // maxTicksLimit: 10,
-            padding: 14, // look into what this controls
+            // padding: 14,
           },
           // afterBuildTicks: function (scale) {
           //   scale.ticks = [
