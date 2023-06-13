@@ -1,5 +1,4 @@
 import Chart from 'chart.js/auto';
-import ChartDataLabels from 'chartjs-plugin-datalabels';
 import ChartDeferred from 'chartjs-plugin-deferred';
 
 const ctx = $('#mcnulty-returns');
@@ -19,23 +18,6 @@ Chart.defaults.font.family = chartDataFonts['font-family'];
 Chart.defaults.font.style = chartDataFonts['font-style'];
 Chart.defaults.font.weight = chartDataFonts['font-weight'];
 Chart.defaults.color = textBlackRegular; // confirm if this is applying to the font?
-
-Chart.register(ChartDataLabels);
-Chart.defaults.set('plugins.datalabels', {
-  font: {
-    family: chartDataFonts['font-family'],
-    size: chartDataFonts['font-size'].toString(),
-    style: chartDataFonts['font-style'],
-    weight: chartDataFonts['font-weight'],
-  },
-  anchor: 'end',
-  align: 'top',
-  clamp: true,
-  offset: 7,
-  formatter: function (value) {
-    return value === undefined ? '' : `$${value}k`;
-  },
-});
 
 Chart.register(ChartDeferred);
 
@@ -146,6 +128,11 @@ const Returns = () => {
       plugins: {
         legend: {
           display: false,
+        },
+        plugins: {
+          deferred: {
+            yOffset: '70%',
+          },
         },
       },
       scales: {
