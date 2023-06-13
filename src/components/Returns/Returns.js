@@ -140,18 +140,26 @@ const Returns = () => {
           beginAtZero: true,
           ticks: {
             callback: function (value, index, values) {
-              if (value < 100000) {
-                if (value % 50000 == 0) {
-                  return '$' + value / 1000 + 'k';
-                }
-              } else {
-                if (value % 50000 == 0) {
-                  return '$' + value / 1000 + 'k';
-                }
-              }
+              return '$' + value / 1000 + 'k';
             },
-            stepSize: 50000,
+            min: 0,
             max: 400000,
+            stepSize: 50000,
+            autoSkip: false,
+            autoSkipPadding: 0,
+            maxTicksLimit: 10,
+            padding: 0,
+          },
+          afterBuildTicks: function (scale) {
+            scale.ticks = [
+              0, 100000, 150000, 200000, 250000, 300000, 350000, 400000,
+            ];
+            return;
+          },
+          beforeUpdate: function (scale) {
+            scale.options.ticks.max = Math.max(
+              ...scale.chart.data.datasets[0].data
+            );
           },
         },
       },
