@@ -127,7 +127,10 @@ const Returns = () => {
       datasets: [
         {
           label: 'Money',
-          data: [100000, 150000, 200000, 250000, 300000, 350000, 400000],
+          data: [
+            190000, 207100, 227900, 255900, 270500, 299300, 336100, 357900,
+            390500,
+          ],
           backgroundColor: 'rgba(75, 192, 192, 0.2)',
           borderColor: 'rgba(75, 192, 192, 1)',
           borderWidth: 1,
@@ -152,7 +155,7 @@ const Returns = () => {
           },
           afterBuildTicks: function (scale) {
             scale.ticks = [
-              0, 100000, 150000, 200000, 250000, 300000, 350000, 400000,
+              0, 50000, 100000, 150000, 200000, 250000, 300000, 350000, 400000,
             ].map((value) => ({ value: value }));
             return;
           },
