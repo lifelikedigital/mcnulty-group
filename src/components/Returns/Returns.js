@@ -3,33 +3,37 @@ import ChartDataLabels from 'chartjs-plugin-datalabels';
 import ChartDeferred from 'chartjs-plugin-deferred';
 
 const ctx = $('#mcnulty-returns');
-const brandBlueDark = '#B9C9D4';
-const brandBlueDarker = '#A9B8C1';
-const brandBlueLight = '#F3F6F8';
-const brandBlueMedium = '#DBE4E9';
-const black100 = '#000';
-const black20 = '#CCC';
+const brandLightBlueMedium = '#B7C5D3';
+const brandLightBlueDark = '#97ACC1';
+const textBlackRegular = '#797979';
+const uiBlackRegular = '#B5B5B5';
+const chartDataFonts = {
+  'font-family': "'Helvetica Now Micro', sans-serif",
+  'font-weight': '400',
+  'font-style': 'normal',
+  'font-size': 13,
+};
 
-Chart.defaults.font.size = 13;
-Chart.defaults.font.family = "'Circular', sans-serif";
-Chart.defaults.font.style = 'normal';
-Chart.defaults.font.weight = '300';
-Chart.defaults.color = black100;
+Chart.defaults.font.size = chartDataFonts['font-size'];
+Chart.defaults.font.family = chartDataFonts['font-family'];
+Chart.defaults.font.style = chartDataFonts['font-style'];
+Chart.defaults.font.weight = chartDataFonts['font-weight'];
+Chart.defaults.color = textBlackRegular; // confirm if this is applying to the font?
 
 Chart.register(ChartDataLabels);
 Chart.defaults.set('plugins.datalabels', {
   font: {
-    family: "'Circular', sans-serif",
-    size: '13',
-    style: 'normal',
-    weight: '300',
+    family: chartDataFonts['font-family'],
+    size: chartDataFonts['font-size'].toString(),
+    style: chartDataFonts['font-style'],
+    weight: chartDataFonts['font-weight'],
   },
   anchor: 'end',
   align: 'top',
   clamp: true,
   offset: 7,
   formatter: function (value) {
-    return value === undefined ? '' : `$${value}K`;
+    return value === undefined ? '' : `$${value}k`;
   },
 });
 
@@ -41,55 +45,49 @@ const Returns = () => {
     data: {
       datasets: [
         {
-          // prettier-ignore
-          // data: [,,190,207.1,227.9,255.9,270.5,299.3,336.1,357.9,390.5,,,,],
-          // prettier-ignore
-          data: [190,207.1,227.9,255.9,270.5,299.3,336.1,357.9,390.5],
-          backgroundColor: [brandBlueDark],
-          hoverBackgroundColor: [brandBlueDarker],
+          backgroundColor: [brandLightBlueMedium],
+          hoverBackgroundColor: [brandLightBlueDark],
         },
       ],
-      // prettier-ignore
-      // labels: [,,2013,2014,2015,2016,2017,2018,2019,2020,2021,,,,],
       // prettier-ignore
       labels: [2013,2014,2015,2016,2017,2018,2019,2020,2021],
     },
     options: {
       scales: {
         y: {
-          beginAtZero: true,
+          beginAtZero: false,
           grid: {
-            borderColor: black100,
-            color: black20,
+            borderColor: uiBlackRegular,
+            color: uiBlackRegular,
             drawTicks: false,
           },
           ticks: {
             callback: function (value) {
-              return value <= 0 ? '' : `$${value}K`;
+              return value <= 0 ? '' : `$${value}k`;
             },
-            padding: 14,
+            padding: 14, // what?
           },
         },
         x: {
           grid: {
-            borderColor: black100,
+            borderColor: uiBlackRegular,
             display: false,
           },
           ticks: {
-            count: 18,
+            count: 18, // what?
           },
         },
       },
       animations: {
         color: {
           duration: 3000,
-          from: brandBlueLight,
-          to: brandBlueDark,
+          from: brandLightBlueMedium,
+          to: brandLightBlueDark,
         },
       },
       maintainAspectRatio: false,
       responsive: true,
-      maxBarThickness: 58,
+      maxBarThickness: 50,
       barPercentage: 1,
       devicePixelRatio: 3,
       layout: {
