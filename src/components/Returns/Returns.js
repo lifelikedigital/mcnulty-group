@@ -129,6 +129,9 @@ const Returns = () => {
         legend: {
           display: false,
         },
+        tooltip: {
+          enabled: false,
+        },
         plugins: {
           deferred: {
             yOffset: '70%',
@@ -137,6 +140,9 @@ const Returns = () => {
       },
       scales: {
         y: {
+          grid: {
+            display: false,
+          },
           beginAtZero: true,
           ticks: {
             callback: function (value, index, values) {
