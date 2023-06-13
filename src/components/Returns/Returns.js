@@ -140,9 +140,6 @@ const Returns = () => {
       },
       scales: {
         y: {
-          grid: {
-            display: false,
-          },
           beginAtZero: true,
           ticks: {
             callback: function (value, index, values) {
@@ -166,6 +163,11 @@ const Returns = () => {
             scale.options.ticks.max = Math.max(
               ...scale.chart.data.datasets[0].data
             );
+          },
+        },
+        x: {
+          grid: {
+            display: false,
           },
         },
       },
