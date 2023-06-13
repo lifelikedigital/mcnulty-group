@@ -80,20 +80,20 @@ const Returns = () => {
             callback: function (value, index, values) {
               return '$' + value / 1000 + 'k';
             },
-            // min: 0,
-            // max: 400000,
-            // stepSize: 50000,
-            // autoSkip: false,
-            // autoSkipPadding: 0,
-            // maxTicksLimit: 10,
+            min: 0,
+            max: 400000,
+            stepSize: 50000,
+            autoSkip: false,
+            autoSkipPadding: 0,
+            maxTicksLimit: 10,
             padding: 14, // look into what this controls
           },
-          afterBuildTicks: function (scale) {
-            scale.ticks = [
-              0, 50000, 100000, 150000, 200000, 250000, 300000, 350000, 400000,
-            ].map((value) => ({ value: value }));
-            return;
-          },
+          // afterBuildTicks: function (scale) {
+          //   scale.ticks = [
+          //     0, 50000, 100000, 150000, 200000, 250000, 300000, 350000, 400000,
+          //   ].map((value) => ({ value: value }));
+          //   return;
+          // },
           beforeUpdate: function (scale) {
             scale.options.ticks.max = Math.max(
               ...scale.chart.data.datasets[0].data
