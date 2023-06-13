@@ -181,7 +181,7 @@ const Returns = () => {
             borderColor: uiBlackRegular,
             lineWidth: 0.35,
             // color: uiBlackRegular,
-            color: 'red',
+            color: '#F9f9',
           },
         },
       },
