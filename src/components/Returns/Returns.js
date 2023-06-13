@@ -21,7 +21,7 @@ Chart.defaults.color = textBlackRegular; // confirm if this is applying to the f
 
 Chart.register(ChartDeferred);
 
-Chart.register({
+Chart.plugins.register({
   beforeDraw: function (chart, args, options) {
     var ctx = chart.ctx;
     var xAxis = chart.scales['x'];
