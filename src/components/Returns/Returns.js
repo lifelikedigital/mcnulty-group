@@ -168,6 +168,12 @@ const Returns = () => {
             );
           },
         },
+        x: {
+          grid: {
+            display: false,
+            drawTicks: false,
+          },
+        },
       },
     },
   });
