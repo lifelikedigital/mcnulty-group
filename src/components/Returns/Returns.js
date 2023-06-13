@@ -20,8 +20,8 @@ Chart.defaults.font.weight = chartDataFonts['font-weight'];
 Chart.defaults.color = textBlackRegular; // confirm if this is applying to the font?
 
 Chart.register(ChartDeferred);
-Chart.register({
-  beforeDraw: function (chart) {
+Chart.plugins.register({
+  beforeDraw: function (chart, args, options) {
     var ctx = chart.ctx;
     var xAxis = chart.scales['x'];
     var yAxis = chart.scales['y'];
