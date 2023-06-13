@@ -142,9 +142,11 @@ const Returns = () => {
         y: {
           grid: {
             drawTicks: false,
-            borderColor: uiBlackRegular,
-            borderWidth: 1,
             drawBorder: true,
+            borderWidth: 1,
+            borderColor: uiBlackRegular,
+            lineWidth: 0.35,
+            color: uiBlackRegular,
           },
           beginAtZero: true,
           ticks: {
@@ -174,10 +176,12 @@ const Returns = () => {
         x: {
           grid: {
             display: false,
-            drawTicks: false,
-            borderColor: uiBlackRegular,
-            borderWidth: 1,
             drawBorder: true,
+            // drawTicks: false,
+            borderWidth: 1,
+            borderColor: uiBlackRegular,
+            lineWidth: 0.35,
+            color: uiBlackRegular,
           },
         },
       },
