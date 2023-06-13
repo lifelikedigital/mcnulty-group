@@ -41,6 +41,7 @@ Chart.register(ChartDeferred);
 
 const Returns = () => {
   const myChart = new Chart(ctx, {
+    /* Old Chart
     type: 'bar',
     data: {
       datasets: [
@@ -105,6 +106,53 @@ const Returns = () => {
         },
         deferred: {
           yOffset: '70%',
+        },
+      },
+    },*/
+
+    // New Chart
+    type: 'bar',
+    data: {
+      labels: [
+        '2013',
+        '2014',
+        '2015',
+        '2016',
+        '2017',
+        '2018',
+        '2019',
+        '2020',
+        '2021',
+      ],
+      datasets: [
+        {
+          label: 'Money',
+          data: [100000, 150000, 200000, 250000, 300000, 350000, 400000],
+          backgroundColor: 'rgba(75, 192, 192, 0.2)',
+          borderColor: 'rgba(75, 192, 192, 1)',
+          borderWidth: 1,
+        },
+      ],
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true,
+          ticks: {
+            callback: function (value, index, values) {
+              if (value < 100000) {
+                if (value % 50000 == 0) {
+                  return '$' + value / 1000 + 'k';
+                }
+              } else {
+                if (value % 50000 == 0) {
+                  return '$' + value / 1000 + 'k';
+                }
+              }
+            },
+            stepSize: 50000,
+            max: 400000,
+          },
         },
       },
     },
