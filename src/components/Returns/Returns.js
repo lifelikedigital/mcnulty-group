@@ -153,7 +153,7 @@ const Returns = () => {
           afterBuildTicks: function (scale) {
             scale.ticks = [
               0, 100000, 150000, 200000, 250000, 300000, 350000, 400000,
-            ];
+            ].map((value) => ({ value: value }));
             return;
           },
           beforeUpdate: function (scale) {
