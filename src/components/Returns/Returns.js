@@ -143,10 +143,9 @@ const Returns = () => {
           bottom: 55,
         },
       },
-      legend: {
-        position: 'bottom',
-        labels: {
-          boxWidth: 10,
+      plugins: {
+        legend: {
+          display: false,
         },
       },
       scales: {
