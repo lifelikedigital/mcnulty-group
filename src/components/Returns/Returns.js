@@ -20,6 +20,52 @@ Chart.defaults.font.weight = chartDataFonts['font-weight'];
 Chart.defaults.color = textBlackRegular; // confirm if this is applying to the font?
 
 Chart.register(ChartDeferred);
+Chart.register({
+  beforeDraw: function (chart) {
+    var ctx = chart.ctx;
+    var xAxis = chart.scales['x'];
+    var yAxis = chart.scales['y'];
+    var chartArea = chart.chartArea;
+
+    // Draw X-axis border
+    ctx.lineWidth = 10; // Set the desired width for the X-axis border
+    ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)'; // Set the desired color for the X-axis border
+    ctx.beginPath();
+    ctx.moveTo(chartArea.left, xAxis.top);
+    ctx.lineTo(chartArea.right, xAxis.top);
+    ctx.stroke();
+
+    // Draw Y-axis border
+    ctx.lineWidth = 10; // Set the desired width for the Y-axis border
+    ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)'; // Set the desired color for the Y-axis border
+    ctx.beginPath();
+    ctx.moveTo(yAxis.right, chartArea.top);
+    ctx.lineTo(yAxis.right, chartArea.bottom);
+    ctx.stroke();
+
+    // Draw grid lines
+    ctx.lineWidth = 5; // Set the desired width for the grid lines
+    ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)'; // Set the desired color for the grid lines
+    xAxis.ticks.forEach(function (tick, index) {
+      if (index > 0 && index < xAxis.ticks.length - 1) {
+        var xPos = xAxis.getPixelForTick(index);
+        ctx.beginPath();
+        ctx.moveTo(xPos, chartArea.top);
+        ctx.lineTo(xPos, chartArea.bottom);
+        ctx.stroke();
+      }
+    });
+    yAxis.ticks.forEach(function (tick, index) {
+      if (index > 0 && index < yAxis.ticks.length - 1) {
+        var yPos = yAxis.getPixelForTick(index);
+        ctx.beginPath();
+        ctx.moveTo(chartArea.left, yPos);
+        ctx.lineTo(chartArea.right, yPos);
+        ctx.stroke();
+      }
+    });
+  },
+});
 
 const Returns = () => {
   const myChart = new Chart(ctx, {
