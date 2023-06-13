@@ -143,11 +143,8 @@ const Returns = () => {
           grid: {
             drawTicks: false,
             drawBorder: true,
-            borderWidth: 10,
-            // borderWidth: 1,
-            // borderColor: uiBlackRegular,
-            borderColor: '#f9f9',
-            lineWidth: 0.35,
+            borderWidth: 1,
+            borderColor: uiBlackRegular,
             // color: uiBlackRegular,
             color: '#f9f9',
           },
