@@ -143,10 +143,13 @@ const Returns = () => {
           grid: {
             drawTicks: false,
             drawBorder: true,
-            borderWidth: 1,
-            borderColor: uiBlackRegular,
+            borderWidth: 10,
+            // borderWidth: 1,
+            // borderColor: uiBlackRegular,
+            borderColor: '#f9f9',
             lineWidth: 0.35,
-            color: uiBlackRegular,
+            // color: uiBlackRegular,
+            color: '#f9f9',
           },
           beginAtZero: true,
           ticks: {
@@ -176,15 +179,6 @@ const Returns = () => {
         x: {
           grid: {
             display: false,
-            drawBorder: true,
-            // borderWidth: 1,
-            borderWidth: 10,
-            // borderColor: uiBlackRegular,
-            borderColor: '#F9f9',
-            // lineWidth: 0.35,
-            lineWidth: 10,
-            // color: uiBlackRegular,
-            color: '#F9f9',
           },
         },
       },
