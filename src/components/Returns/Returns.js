@@ -23,76 +23,6 @@ Chart.register(ChartDeferred);
 
 const Returns = () => {
   const myChart = new Chart(ctx, {
-    /* Old Chart
-    type: 'bar',
-    data: {
-      datasets: [
-        {
-          backgroundColor: [brandLightBlueMedium],
-          hoverBackgroundColor: [brandLightBlueDark],
-        },
-      ],
-      // prettier-ignore
-      labels: [2013,2014,2015,2016,2017,2018,2019,2020,2021],
-    },
-    options: {
-      scales: {
-        y: {
-          beginAtZero: false,
-          grid: {
-            borderColor: uiBlackRegular,
-            color: uiBlackRegular,
-            drawTicks: false,
-          },
-          ticks: {
-            callback: function (value) {
-              return value <= 0 ? '' : `$${value}k`;
-            },
-            padding: 14, // what?
-          },
-        },
-        x: {
-          grid: {
-            borderColor: uiBlackRegular,
-            display: false,
-          },
-          ticks: {
-            count: 18, // what?
-          },
-        },
-      },
-      animations: {
-        color: {
-          duration: 3000,
-          from: brandLightBlueMedium,
-          to: brandLightBlueDark,
-        },
-      },
-      maintainAspectRatio: false,
-      responsive: true,
-      maxBarThickness: 50,
-      barPercentage: 1,
-      devicePixelRatio: 3,
-      layout: {
-        padding: {
-          top: 20,
-          right: 15,
-        },
-      },
-      plugins: {
-        legend: {
-          display: false,
-        },
-        tooltip: {
-          enabled: false,
-        },
-        deferred: {
-          yOffset: '70%',
-        },
-      },
-    },*/
-
-    // New Chart
     type: 'bar',
     data: {
       labels: [
@@ -156,7 +86,7 @@ const Returns = () => {
             autoSkip: false,
             autoSkipPadding: 0,
             maxTicksLimit: 10,
-            padding: 14,
+            padding: 14, // look into what this controls
           },
           afterBuildTicks: function (scale) {
             scale.ticks = [
@@ -173,6 +103,24 @@ const Returns = () => {
         x: {
           grid: {
             display: false,
+          },
+        },
+        animations: {
+          color: {
+            duration: 3000,
+            from: brandLightBlueMedium,
+            to: brandLightBlueDark,
+          },
+        },
+        maintainAspectRatio: false,
+        responsive: true,
+        maxBarThickness: 50,
+        barPercentage: 1,
+        devicePixelRatio: 3,
+        layout: {
+          padding: {
+            top: 20,
+            right: 15,
           },
         },
       },
