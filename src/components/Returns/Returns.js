@@ -112,17 +112,17 @@ const Returns = () => {
             to: brandLightBlueDark,
           },
         },
-        maintainAspectRatio: false,
-        responsive: true,
-        maxBarThickness: 50,
-        barPercentage: 1,
-        devicePixelRatio: 3,
-        layout: {
-          padding: {
-            top: 20,
-            right: 15,
-          },
-        },
+        // maintainAspectRatio: false,
+        // responsive: true,
+        // maxBarThickness: 50,
+        // barPercentage: 1,
+        // devicePixelRatio: 3,
+        // layout: {
+        //   padding: {
+        //     top: 20,
+        //     right: 15,
+        //   },
+        // },
       },
     },
   });
