@@ -126,7 +126,7 @@ const Returns = () => {
       ],
       datasets: [
         {
-          label: 'Money',
+          label: 'Annual Dividend Income Growth',
           data: [
             190000, 207100, 227900, 255900, 270500, 299300, 336100, 357900,
             390500,
@@ -138,6 +138,17 @@ const Returns = () => {
       ],
     },
     options: {
+      layout: {
+        padding: {
+          bottom: 55,
+        },
+      },
+      legend: {
+        position: 'bottom',
+        labels: {
+          boxWidth: 10,
+        },
+      },
       scales: {
         y: {
           beginAtZero: true,
