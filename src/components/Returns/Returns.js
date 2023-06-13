@@ -142,6 +142,9 @@ const Returns = () => {
         y: {
           grid: {
             drawTicks: false,
+            borderColor: uiBlackRegular,
+            borderWidth: 1,
+            drawBorder: true,
           },
           beginAtZero: true,
           ticks: {
@@ -172,6 +175,9 @@ const Returns = () => {
           grid: {
             display: false,
             drawTicks: false,
+            borderColor: uiBlackRegular,
+            borderWidth: 1,
+            drawBorder: true,
           },
         },
       },
