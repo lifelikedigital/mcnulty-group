@@ -80,12 +80,12 @@ const Returns = () => {
             callback: function (value, index, values) {
               return '$' + value / 1000 + 'k';
             },
-            min: 0,
-            max: 400000,
-            stepSize: 50000,
-            autoSkip: false,
-            autoSkipPadding: 0,
-            maxTicksLimit: 10,
+            // min: 0,
+            // max: 400000,
+            // stepSize: 50000,
+            // autoSkip: false,
+            // autoSkipPadding: 0,
+            // maxTicksLimit: 10,
             padding: 14, // look into what this controls
           },
           // afterBuildTicks: function (scale) {
@@ -94,11 +94,11 @@ const Returns = () => {
           //   ].map((value) => ({ value: value }));
           //   return;
           // },
-          beforeUpdate: function (scale) {
-            scale.options.ticks.max = Math.max(
-              ...scale.chart.data.datasets[0].data
-            );
-          },
+          // beforeUpdate: function (scale) {
+          //   scale.options.ticks.max = Math.max(
+          //     ...scale.chart.data.datasets[0].data
+          //   );
+          // },
         },
         x: {
           grid: {
