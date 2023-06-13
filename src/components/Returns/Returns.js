@@ -177,11 +177,11 @@ const Returns = () => {
           grid: {
             display: false,
             drawBorder: true,
-            // drawTicks: false,
             borderWidth: 1,
             borderColor: uiBlackRegular,
             lineWidth: 0.35,
-            color: uiBlackRegular,
+            // color: uiBlackRegular,
+            color: 'red',
           },
         },
       },
