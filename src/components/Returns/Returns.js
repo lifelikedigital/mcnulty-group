@@ -108,14 +108,12 @@ const Returns = () => {
       ],
       datasets: [
         {
-          label: 'Annual Dividend Income Growth',
           data: [
             190000, 207100, 227900, 255900, 270500, 299300, 336100, 357900,
             390500,
           ],
-          backgroundColor: 'rgba(75, 192, 192, 0.2)',
-          borderColor: 'rgba(75, 192, 192, 1)',
-          borderWidth: 1,
+          backgroundColor: brandLightBlueMedium,
+          hoverBackgroundColor: brandLightBlueDark,
         },
       ],
     },
@@ -135,50 +133,6 @@ const Returns = () => {
         plugins: {
           deferred: {
             yOffset: '70%',
-          },
-          beforeDraw: function (chart, args, options) {
-            var ctx = chart.ctx;
-            var xAxis = chart.scales['x'];
-            var yAxis = chart.scales['y'];
-            var chartArea = chart.chartArea;
-
-            // Draw X-axis border
-            ctx.lineWidth = 10; // Set the desired width for the X-axis border
-            ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)'; // Set the desired color for the X-axis border
-            ctx.beginPath();
-            ctx.moveTo(chartArea.left, xAxis.top);
-            ctx.lineTo(chartArea.right, xAxis.top);
-            ctx.stroke();
-
-            // Draw Y-axis border
-            ctx.lineWidth = 10; // Set the desired width for the Y-axis border
-            ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)'; // Set the desired color for the Y-axis border
-            ctx.beginPath();
-            ctx.moveTo(yAxis.right, chartArea.top);
-            ctx.lineTo(yAxis.right, chartArea.bottom);
-            ctx.stroke();
-
-            // Draw grid lines
-            ctx.lineWidth = 5; // Set the desired width for the grid lines
-            ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)'; // Set the desired color for the grid lines
-            xAxis.ticks.forEach(function (tick, index) {
-              if (index > 0 && index < xAxis.ticks.length - 1) {
-                var xPos = xAxis.getPixelForTick(index);
-                ctx.beginPath();
-                ctx.moveTo(xPos, chartArea.top);
-                ctx.lineTo(xPos, chartArea.bottom);
-                ctx.stroke();
-              }
-            });
-            yAxis.ticks.forEach(function (tick, index) {
-              if (index > 0 && index < yAxis.ticks.length - 1) {
-                var yPos = yAxis.getPixelForTick(index);
-                ctx.beginPath();
-                ctx.moveTo(chartArea.left, yPos);
-                ctx.lineTo(chartArea.right, yPos);
-                ctx.stroke();
-              }
-            });
           },
         },
       },
