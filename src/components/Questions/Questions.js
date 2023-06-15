@@ -23,11 +23,15 @@ const initializeStickyElementBehavior = () => {
 
   // Define a function to update the sticky parent height.
   const updateStickyParentHeight = () => {
-    // Get the position of the text baseline.
+    // Get the position of the text baseline and sticky parent top.
     const textBaseline = textElement.getBoundingClientRect().bottom;
+    const stickyParentTop = stickyParent.getBoundingClientRect().top;
+
+    // Calculate the difference between the text baseline and sticky parent top.
+    const height = textBaseline - stickyParentTop;
 
     // Adjust the height of the sticky element's parent.
-    stickyParent.style.height = `${textBaseline}px`;
+    stickyParent.style.height = `${height}px`;
   };
 
   // Define the intersection observer callback.
