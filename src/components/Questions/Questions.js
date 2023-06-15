@@ -33,29 +33,42 @@ const initializeStickyElementBehavior = () => {
     // Adjust the height of the sticky element's parent.
     stickyParent.style.height = `${height}px`;
   };
+  function setupObserver() {
+    if (window.innerWidth >= 768) {
+      const observerCallback = (entries, observer) => {
+        for (let entry of entries) {
+          // If the text element's position has changed...
+          if (entry.isIntersecting) {
+            // Update the sticky parent height.
+            updateStickyParentHeight();
+          }
+        }
+      };
 
-  // Define the intersection observer callback.
-  const observerCallback = (entries, observer) => {
-    for (let entry of entries) {
-      // If the text element's position has changed...
-      if (entry.isIntersecting) {
-        // Update the sticky parent height.
-        updateStickyParentHeight();
-      }
+      const observerOptions = {
+        threshold: [0, 1],
+        rootMargin: '50px',
+      };
+
+      const observer = new IntersectionObserver(
+        observerCallback,
+        observerOptions
+      );
+
+      observer.observe(textElement);
+      return observer;
     }
-  };
+    return null;
+  }
 
-  // Observer options
-  const observerOptions = {
-    threshold: [0, 1],
-    rootMargin: '50px',
-  };
+  let observer = setupObserver();
 
-  // Create an intersection observer.
-  const observer = new IntersectionObserver(observerCallback, observerOptions);
-
-  // Start observing the text element.
-  observer.observe(textElement);
+  window.addEventListener('resize', () => {
+    if (observer) {
+      observer.disconnect(); // Stop observing with the old observer.
+    }
+    observer = setupObserver(); // Set up a new observer if the window is now wide enough.
+  });
 };
 
 const Questions = () => {
