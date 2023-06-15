@@ -15,17 +15,37 @@ const activeToggleIcon = 'faq__toggle-icon--active';
 let tabFocus = 0;
 
 // Functions
-const updateStickyParentHeight = () => {
-  // Get the position of the text baseline.
-  const textBaseline = document
-    .querySelector('#question4')
-    .getBoundingClientRect().bottom;
-
-  // Get the sticky element's parent.
+// Intersection Observer Implementation
+const initializeStickyElementBehavior = () => {
+  // Get references to the text and sticky elements.
+  const textElement = document.querySelector('#question4');
   const stickyParent = document.querySelector('#sticky-faq').parentNode;
 
-  // Adjust the height of the sticky element's parent.
-  stickyParent.style.height = `${textBaseline}px`;
+  // Define a function to update the sticky parent height.
+  const updateStickyParentHeight = () => {
+    // Get the position of the text baseline.
+    const textBaseline = textElement.getBoundingClientRect().bottom;
+
+    // Adjust the height of the sticky element's parent.
+    stickyParent.style.height = `${textBaseline}px`;
+  };
+
+  // Define the intersection observer callback.
+  const observerCallback = (entries, observer) => {
+    for (let entry of entries) {
+      // If the text element's position has changed...
+      if (entry.isIntersecting) {
+        // Update the sticky parent height.
+        updateStickyParentHeight();
+      }
+    }
+  };
+
+  // Create an intersection observer.
+  const observer = new IntersectionObserver(observerCallback);
+
+  // Start observing the text element.
+  observer.observe(textElement);
 };
 
 const Questions = () => {
@@ -125,14 +145,9 @@ const Questions = () => {
       $questionAnswer[tabFocus].firstChild.focus();
     }
   });
-  // Sticky Header
-  window.addEventListener('scroll', updateStickyParentHeight);
 
-  // Add other event listeners as needed.
-  window.addEventListener('resize', updateStickyParentHeight);
-  document.querySelectorAll('.faq__question-container').forEach((element) => {
-    element.addEventListener('click', updateStickyParentHeight);
-  });
+  // Dynamic Sticky Header
+  initializeStickyElementBehavior();
 };
 
 export default Questions;
