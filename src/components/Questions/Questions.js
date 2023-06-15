@@ -57,8 +57,11 @@ const initializeStickyElementBehavior = () => {
 
       observer.observe(textElement);
       return observer;
+    } else {
+      // If the viewport is 767px or less, set the sticky parent's height to "auto"
+      stickyParent.style.height = 'auto';
+      return null;
     }
-    return null;
   }
 
   let observer = setupObserver();
