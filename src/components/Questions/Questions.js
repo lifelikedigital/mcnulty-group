@@ -28,7 +28,7 @@ const initializeStickyElementBehavior = () => {
     const stickyParentTop = stickyParent.getBoundingClientRect().top;
 
     // Calculate the difference between the text baseline and sticky parent top.
-    const height = textBaseline - stickyParentTop + 14;
+    const height = textBaseline - stickyParentTop + 15;
 
     // Adjust the height of the sticky element's parent.
     stickyParent.style.height = `${height}px`;
