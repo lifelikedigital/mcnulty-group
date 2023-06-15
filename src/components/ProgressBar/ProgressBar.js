@@ -20,7 +20,7 @@ const ProgressBar = () => {
   addProgressBar();
   // Codyhouse
   // utility functions
-  if (!Util) function Util() {}
+  var Util = Util || {};
 
   Util.addClass = function (el, className) {
     var classList = className.split(' ');
