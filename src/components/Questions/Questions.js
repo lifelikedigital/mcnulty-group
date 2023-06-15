@@ -46,7 +46,17 @@ const initializeStickyElementBehavior = () => {
   };
 
   // Create an intersection observer.
-  const observer = new IntersectionObserver(observerCallback);
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        updateStickyParentHeight();
+      }
+    },
+    {
+      threshold: [0, 1],
+      rootMargin: '50px',
+    }
+  );
 
   // Start observing the text element.
   observer.observe(textElement);
@@ -80,7 +90,7 @@ const Questions = () => {
       $this.find($toggleIcon).addClass(activeToggleIcon);
       gsap.fromTo($this.find($toggleIcon), { duration: 0.25, rotation: 0 }, { duration: 0.25, rotation: 90 });
     }
-    // updateStickyParentHeight();
+    updateStickyParentHeight();
   });
   // Enter handling
   $toggleButton.on('keyup', function (e) {
@@ -115,7 +125,7 @@ const Questions = () => {
         gsap.fromTo($this.find($toggleIcon), { duration: 0.25, rotation: 0 }, { duration: 0.25, rotation: 90 });
       }
     }
-    // updateStickyParentHeight();
+    updateStickyParentHeight();
   });
   // Arrow handling
   $faqQuestionsParent.on('keydown', function (e) {
