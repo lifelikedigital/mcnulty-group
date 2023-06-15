@@ -80,7 +80,7 @@ const Questions = () => {
       $this.find($toggleIcon).addClass(activeToggleIcon);
       gsap.fromTo($this.find($toggleIcon), { duration: 0.25, rotation: 0 }, { duration: 0.25, rotation: 90 });
     }
-    updateStickyParentHeight();
+    // updateStickyParentHeight();
   });
   // Enter handling
   $toggleButton.on('keyup', function (e) {
@@ -115,7 +115,7 @@ const Questions = () => {
         gsap.fromTo($this.find($toggleIcon), { duration: 0.25, rotation: 0 }, { duration: 0.25, rotation: 90 });
       }
     }
-    updateStickyParentHeight();
+    // updateStickyParentHeight();
   });
   // Arrow handling
   $faqQuestionsParent.on('keydown', function (e) {
