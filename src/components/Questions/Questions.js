@@ -14,6 +14,20 @@ const activeToggleIcon = 'faq__toggle-icon--active';
 // Other
 let tabFocus = 0;
 
+// Functions
+const updateStickyParentHeight = () => {
+  // Get the position of the text baseline.
+  const textBaseline = document
+    .querySelector('#question4')
+    .getBoundingClientRect().bottom;
+
+  // Get the sticky element's parent.
+  const stickyParent = document.querySelector('#sticky-faq').parentNode;
+
+  // Adjust the height of the sticky element's parent.
+  stickyParent.style.height = `${textBaseline}px`;
+};
+
 const Questions = () => {
   // Click handling
   $toggleButton.on('click', function () {
@@ -110,6 +124,14 @@ const Questions = () => {
       );
       $questionAnswer[tabFocus].firstChild.focus();
     }
+  });
+  // Sticky Header
+  window.addEventListener('scroll', updateStickyParentHeight);
+
+  // Add other event listeners as needed.
+  window.addEventListener('resize', updateStickyParentHeight);
+  document.querySelectorAll('.faq__question-container').forEach((element) => {
+    element.addEventListener('click', updateStickyParentHeight);
   });
 };
 
