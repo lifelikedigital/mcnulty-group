@@ -7,7 +7,7 @@ const RemoveEmptyScriptsPlugin = require('webpack-remove-empty-scripts');
 
 module.exports = {
   entry: {
-    global: ['./src/global.js' /*'./src/global.css'*/],
+    global: ['./src/global.js', './src/global.css'],
   },
   output: {
     filename: '[name].js',
