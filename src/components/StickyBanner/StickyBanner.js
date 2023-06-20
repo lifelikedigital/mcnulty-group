@@ -24,6 +24,7 @@ const libUtility = () => {
 };
 
 const libComponent = () => {
+  libUtility();
   // File#: _1_sticky-banner
   // Usage: codyhouse.co/license
   (function () {
@@ -187,7 +188,6 @@ const libComponent = () => {
 };
 
 const StickyBanner = () => {
-  libUtility();
   libComponent();
 };
 
