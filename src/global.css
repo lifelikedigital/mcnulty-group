@@ -970,3 +970,18 @@ Usage: codyhouse.co/license
 .md3-bg-opacity-90\% {
   --md3-bg-o: 0.9;
 }
+
+/* -------------------------------- 
+
+File#: _1_sticky-banner
+Title: Sticky Banner
+Descr: A sticky banner that slides in passed a target element or a scrolling offset.
+Usage: codyhouse.co/license
+
+-------------------------------- */
+
+/* component */
+.sticky-banner--visible {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
