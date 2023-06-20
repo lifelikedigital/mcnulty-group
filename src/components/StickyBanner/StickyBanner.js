@@ -1,7 +1,8 @@
+// Variables
+var Util = Util || {};
+
 // Functions
 const libUtility = () => {
-  var Util = Util || {};
-
   (function () {
     Util.addClass = function (el, className) {
       var classList = className.split(' ');
@@ -24,7 +25,6 @@ const libUtility = () => {
 };
 
 const libComponent = () => {
-  libUtility();
   // File#: _1_sticky-banner
   // Usage: codyhouse.co/license
   (function () {
@@ -188,6 +188,7 @@ const libComponent = () => {
 };
 
 const StickyBanner = () => {
+  libUtility();
   libComponent();
 };
 
