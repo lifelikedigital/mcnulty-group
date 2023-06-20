@@ -982,6 +982,5 @@ Usage: codyhouse.co/license
 
 /* component */
 .sticky-banner--visible {
-  -webkit-transform: translateY(0);
   transform: translateY(0);
 }
