@@ -84,8 +84,6 @@ const Questions = () => {
     $this.attr('aria-selected', 'true');
     $otherTabs.find($toggleButton).attr('aria-selected', 'false');
     $this.toggleClass(activeToggleButton);
-    $this.next().toggleClass(activeAnswer);
-    // Calculate the target max-height based on the content's scrollHeight
     const targetMaxHeight = $this.next().hasClass(activeAnswer)
       ? $this.next()[0].scrollHeight + 'px'
       : '0';
@@ -93,6 +91,8 @@ const Questions = () => {
 
     // Apply the target max-height with a smooth transition
     $this.next().css('max-height', targetMaxHeight);
+    $this.next().toggleClass(activeAnswer);
+    // Calculate the target max-height based on the content's scrollHeight
 
     if (!$this.hasClass(activeToggleButton)) {
       $this.attr('aria-selected', 'false');
