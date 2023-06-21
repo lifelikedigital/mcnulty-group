@@ -6,6 +6,10 @@ const $toggleButton = $('.faq__question-container'); // container with question 
 const $toggleIcon = $('.faq__toggle-icon'); // toggle icon needs to rotate
 const $questionAnswer = $('.faq__question-answer'); // question and answer parent
 
+// Get references to the text and sticky elements.
+const textElement = document.querySelector('#question4');
+const stickyParent = document.querySelector('#sticky-faq').parentNode;
+
 // Classes
 const activeToggleButton = 'faq__question-container--active';
 const activeAnswer = 'faq__answer-container--active';
@@ -30,10 +34,6 @@ const updateStickyParentHeight = () => {
 
 // Intersection Observer Implementation
 const initializeStickyElementBehavior = () => {
-  // Get references to the text and sticky elements.
-  const textElement = document.querySelector('#question4');
-  const stickyParent = document.querySelector('#sticky-faq').parentNode;
-
   // Define a function to update the sticky parent height.
   updateStickyParentHeight();
   function setupObserver() {
