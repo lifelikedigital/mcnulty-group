@@ -87,24 +87,20 @@ const Questions = () => {
     const $answerContainer = $this.next();
     $answerContainer.toggleClass(activeAnswer);
 
-    if ($answerContainer.hasClass(activeAnswer)) {
-      // Set the max-height to the scrollHeight immediately
-      $answerContainer.css(
-        'max-height',
-        $answerContainer[0].scrollHeight + 'px'
-      );
-      // Force a reflow to apply the max-height
-      $answerContainer[0].offsetHeight;
-      // Enable the CSS transition
-      $answerContainer.css('transition', 'max-height 0.6s ease');
-    } else {
-      // Disable the CSS transition
-      $answerContainer.css('transition', 'none');
-      // Set the max-height to 0 after a small delay to allow the transition to be applied
-      setTimeout(() => {
-        $answerContainer.css('max-height', '0');
-      }, 10);
-    }
+    // Apply the target max-height immediately
+    const targetMaxHeight = $answerContainer.hasClass(activeAnswer)
+      ? $answerContainer[0].scrollHeight + 'px'
+      : '0';
+    $answerContainer.css('max-height', targetMaxHeight);
+
+    // Listen for the completion of the CSS transition
+    $answerContainer.on('transitionend', function () {
+      // Update the max-height based on the final scrollHeight value
+      const finalMaxHeight = $answerContainer.hasClass(activeAnswer)
+        ? '1000px'
+        : '0';
+      $answerContainer.css('max-height', finalMaxHeight);
+    });
 
     // aria handling
     if ($this.next().hasClass(activeAnswer)) {
