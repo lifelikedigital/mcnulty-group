@@ -84,25 +84,21 @@ const Questions = () => {
     $this.attr('aria-selected', 'true');
     $otherTabs.find($toggleButton).attr('aria-selected', 'false');
     $this.toggleClass(activeToggleButton);
-    const $answerContainer = $this.next();
-    $answerContainer.toggleClass(activeAnswer);
+    $this.next().toggleClass(activeAnswer);
 
-    // Apply the target max-height immediately
-    const targetMaxHeight = $answerContainer.hasClass(activeAnswer)
-      ? $answerContainer[0].scrollHeight + 'px'
+    const targetMaxHeight = $this.next().hasClass(activeAnswer)
+      ? $this.next()[0].scrollHeight + 'px'
       : '0';
-    $answerContainer.css('max-height', targetMaxHeight);
+    console.log($this.next()[0]);
 
-    // Listen for the completion of the CSS transition
-    $answerContainer.on('transitionend', function () {
-      // Update the max-height based on the final scrollHeight value
-      const finalMaxHeight = $answerContainer.hasClass(activeAnswer)
-        ? $answerContainer[0].scrollHeight + 'px'
-        : '0';
-      $answerContainer.css('max-height', targetMaxHeight);
-    });
+    // Apply the target max-height with a smooth transition
+    $this.next().css('max-height', targetMaxHeight);
+    // Calculate the target max-height based on the content's scrollHeight
 
     // aria handling
+    if (!$this.hasClass(activeToggleButton)) {
+      $this.attr('aria-selected', 'false');
+    }
     if ($this.next().hasClass(activeAnswer)) {
       // $this.next().removeAttr('hidden');
       $this.next().attr('aria-expanded', 'true');
