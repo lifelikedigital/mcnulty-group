@@ -992,7 +992,7 @@ Usage: codyhouse.co/license
 
 .faq__answer-container--active {
   max-height: 1000px;
-  transition: max-height 0.3s ease-in-out;
+  transition: max-height 2s ease-in;
   padding-bottom: 46px;
 }
 
