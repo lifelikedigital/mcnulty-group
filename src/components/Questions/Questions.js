@@ -95,7 +95,7 @@ const Questions = () => {
     // Listen for the completion of the CSS transition
     $this.next().on('transitionend', function () {
       // Update the height based on the final scrollHeight value
-      const finalHeight = $this.next().hasClass('active') ? 'auto' : '0';
+      const finalHeight = $this.next().hasClass('active') ? targetHeight : '0';
       $this.next().css('max-height', finalHeight);
     });
 
