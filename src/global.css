@@ -993,10 +993,10 @@ Usage: codyhouse.co/license
 .faq__answer-container--active {
   max-height: 1000px;
   transition: max-height 2s ease-in;
-  padding-bottom: 46px;
+  /* padding-bottom: 46px; */
 }
 
-@media screen and (max-width: 991px) {
+/* @media screen and (max-width: 991px) {
   .faq__answer-container--active {
     padding-bottom: 34px;
   }
@@ -1012,4 +1012,4 @@ Usage: codyhouse.co/license
   .faq__answer-container--active {
     padding-bottom: 22px;
   }
-}
+} */
