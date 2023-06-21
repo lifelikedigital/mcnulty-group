@@ -98,7 +98,7 @@ const Questions = () => {
     if (!$this.hasClass(activeToggleButton)) {
       $this.attr('aria-selected', 'false');
     }
-    if ($$answerContainer.hasClass(activeAnswer)) {
+    if ($answerContainer.hasClass(activeAnswer)) {
       // $this.next().removeAttr('hidden');
       $answerContainer.attr('aria-expanded', 'true');
     } else if (!$answerContainer.hasClass(activeAnswer)) {
