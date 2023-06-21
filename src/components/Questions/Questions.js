@@ -35,7 +35,6 @@ const updateStickyParentHeight = () => {
 // Intersection Observer Implementation
 const initializeStickyElementBehavior = () => {
   // Define a function to update the sticky parent height.
-  updateStickyParentHeight();
   function setupObserver() {
     if (window.innerWidth >= 768) {
       const observerCallback = (entries, observer) => {
