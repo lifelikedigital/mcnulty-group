@@ -88,10 +88,10 @@ const Questions = () => {
     }
     // aria handling
     if ($this.next().hasClass(activeAnswer)) {
-      $this.next().removeAttr('hidden');
+      // $this.next().removeAttr('hidden');
       $this.next().attr('aria-expanded', 'true');
     } else if (!$this.next().hasClass(activeAnswer)) {
-      $this.next().prop('hidden', true);
+      // $this.next().prop('hidden', true);
       $this.next().attr('aria-expanded', 'false');
     }
     // prettier-ignore
@@ -122,10 +122,10 @@ const Questions = () => {
       $this.next().toggleClass(activeAnswer);
       // aria handling
       if ($this.next().hasClass(activeAnswer)) {
-        $this.next().removeAttr('hidden');
+        // $this.next().removeAttr('hidden');
         $this.next().attr('aria-expanded', 'true');
       } else if (!$this.next().hasClass(activeAnswer)) {
-        $this.next().prop('hidden', true);
+        // $this.next().prop('hidden', true);
         $this.next().attr('aria-expanded', 'false');
       }
       // prettier-ignore

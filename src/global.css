@@ -989,3 +989,14 @@ Usage: codyhouse.co/license
 .faq__question-container--active {
   border-top: 1px solid #181a1c;
 }
+
+.faq__answer-container {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
+}
+
+.faq__answer-container--active {
+  height: auto;
+  transition: height 0.3s ease-in-out;
+}
