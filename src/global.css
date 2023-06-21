@@ -991,8 +991,8 @@ Usage: codyhouse.co/license
 }
 
 .faq__answer-container--active {
-  height: auto;
-  transition: height 0.3s ease-in-out;
+  max-height: 1000px;
+  transition: max-height 0.3s ease-in-out;
   padding-bottom: 46px;
 }
 
