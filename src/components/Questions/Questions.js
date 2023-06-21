@@ -88,7 +88,7 @@ const Questions = () => {
 
     // Apply the target height immediately
     const targetHeight = $this.next().hasClass('active')
-      ? $this.next()[0].scrollHeight
+      ? $this.next()[0].scrollHeight + 'px'
       : '0';
     $this.next().css('max-height', targetHeight);
 
