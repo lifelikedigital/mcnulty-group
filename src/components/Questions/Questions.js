@@ -86,17 +86,17 @@ const Questions = () => {
     $this.toggleClass(activeToggleButton);
     $this.next().toggleClass(activeAnswer);
 
-    // Apply the target max-height immediately
-    const targetMaxHeight = $this.next().hasClass(activeAnswer)
-      ? $this.next()[0].scrollHeight + 'px'
+    // Apply the target height immediately
+    const targetHeight = $this.next().hasClass('active')
+      ? $this.next()[0].scrollHeight
       : '0';
-    $this.next().css('max-height', targetMaxHeight);
+    $this.next().css('max-height', targetHeight);
 
-    // Listen for the 'transitionend' event to ensure the correct height is captured
-    $this.next().one('transitionend', function () {
-      // Update the max-height based on the final scrollHeight value
-      const finalMaxHeight = $this.next().hasClass(activeAnswer) ? 'none' : '0';
-      this.next().css('max-height', finalMaxHeight);
+    // Listen for the completion of the CSS transition
+    $this.next().on('transitionend', function () {
+      // Update the height based on the final scrollHeight value
+      const finalHeight = $this.next().hasClass('active') ? 'auto' : '0';
+      $this.next().css('max-height', finalHeight);
     });
 
     if (!$this.hasClass(activeToggleButton)) {
