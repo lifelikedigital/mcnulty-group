@@ -87,6 +87,7 @@ const Questions = () => {
     const targetMaxHeight = $this.next().hasClass(activeAnswer)
       ? $this.next()[0].scrollHeight + 'px'
       : '0';
+    console.log($this.next()[0]);
 
     // Apply the target max-height with a smooth transition
     $this.next().css('max-height', targetMaxHeight);
