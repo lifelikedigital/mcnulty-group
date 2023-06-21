@@ -992,24 +992,5 @@ Usage: codyhouse.co/license
 
 .faq__answer-container--active {
   max-height: 1000px;
-  transition: max-height 2s ease-in;
-  /* padding-bottom: 46px; */
+  transition: max-height 0.3s ease-in;
 }
-
-/* @media screen and (max-width: 991px) {
-  .faq__answer-container--active {
-    padding-bottom: 34px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .faq__answer-container--active {
-    padding-bottom: 35px;
-  }
-}
-
-@media screen and (max-width: 479px) {
-  .faq__answer-container--active {
-    padding-bottom: 22px;
-  }
-} */
