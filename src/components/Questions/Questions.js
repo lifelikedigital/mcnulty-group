@@ -82,7 +82,8 @@ const Questions = () => {
     $this.attr('aria-selected', 'true');
     $otherTabs.find($toggleButton).attr('aria-selected', 'false');
     $this.toggleClass(activeToggleButton);
-    $this.next().toggleClass(activeAnswer);
+    $this.next().toggleClass(activeAnswer).css('max-height', '1000px');
+
     if (!$this.hasClass(activeToggleButton)) {
       $this.attr('aria-selected', 'false');
     }
