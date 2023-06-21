@@ -995,5 +995,5 @@ Usage: codyhouse.co/license
 
 .faq__answer-container--active {
   will-change: max-height;
-  transition: max-height 0.6s ease-in;
+  transition: max-height 0.4s ease-in;
 }
