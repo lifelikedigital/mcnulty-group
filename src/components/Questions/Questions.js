@@ -97,9 +97,9 @@ const Questions = () => {
     $answerContainer.on('transitionend', function () {
       // Update the max-height based on the final scrollHeight value
       const finalMaxHeight = $answerContainer.hasClass(activeAnswer)
-        ? '1000px'
+        ? $answerContainer[0].scrollHeight + 'px'
         : '0';
-      $answerContainer.css('max-height', finalMaxHeight);
+      $answerContainer.css('max-height', targetMaxHeight);
     });
 
     // aria handling
