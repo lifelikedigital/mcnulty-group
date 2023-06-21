@@ -15,6 +15,19 @@ const activeToggleIcon = 'faq__toggle-icon--active';
 let tabFocus = 0;
 
 // Functions
+// Define a function to update the sticky parent height.
+const updateStickyParentHeight = () => {
+  // Get the position of the text baseline and sticky parent top.
+  const textBaseline = textElement.getBoundingClientRect().bottom;
+  const stickyParentTop = stickyParent.getBoundingClientRect().top;
+
+  // Calculate the difference between the text baseline and sticky parent top.
+  const height = textBaseline - stickyParentTop + 15;
+
+  // Adjust the height of the sticky element's parent.
+  stickyParent.style.height = `${height}px`;
+};
+
 // Intersection Observer Implementation
 const initializeStickyElementBehavior = () => {
   // Get references to the text and sticky elements.
@@ -22,17 +35,7 @@ const initializeStickyElementBehavior = () => {
   const stickyParent = document.querySelector('#sticky-faq').parentNode;
 
   // Define a function to update the sticky parent height.
-  const updateStickyParentHeight = () => {
-    // Get the position of the text baseline and sticky parent top.
-    const textBaseline = textElement.getBoundingClientRect().bottom;
-    const stickyParentTop = stickyParent.getBoundingClientRect().top;
-
-    // Calculate the difference between the text baseline and sticky parent top.
-    const height = textBaseline - stickyParentTop + 15;
-
-    // Adjust the height of the sticky element's parent.
-    stickyParent.style.height = `${height}px`;
-  };
+  updateStickyParentHeight();
   function setupObserver() {
     if (window.innerWidth >= 768) {
       const observerCallback = (entries, observer) => {
