@@ -82,7 +82,14 @@ const Questions = () => {
     $this.attr('aria-selected', 'true');
     $otherTabs.find($toggleButton).attr('aria-selected', 'false');
     $this.toggleClass(activeToggleButton);
-    $this.next().toggleClass(activeAnswer).css('max-height', '1000px');
+    $this.next().toggleClass(activeAnswer);
+    // Calculate the target max-height based on the content's scrollHeight
+    const targetMaxHeight = $this.next().hasClass(activeAnswer)
+      ? $this.next()[0].scrollHeight + 'px'
+      : '0';
+
+    // Apply the target max-height with a smooth transition
+    $this.next().css('max-height', targetMaxHeight);
 
     if (!$this.hasClass(activeToggleButton)) {
       $this.attr('aria-selected', 'false');
@@ -94,7 +101,6 @@ const Questions = () => {
     } else if (!$this.next().hasClass(activeAnswer)) {
       // $this.next().prop('hidden', true);
       $this.next().attr('aria-expanded', 'false');
-      $this.next().css('max-height', '0px');
     }
     // prettier-ignore
     if ($this.find($toggleIcon).hasClass(activeToggleIcon)) {
