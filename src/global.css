@@ -984,3 +984,8 @@ Usage: codyhouse.co/license
 .sticky-banner--visible {
   transform: translateY(0);
 }
+
+/* FAQ Related */
+.faq__question-container--active {
+  border-top: 1px solid #181a1c;
+}
