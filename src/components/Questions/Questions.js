@@ -94,6 +94,7 @@ const Questions = () => {
     } else if (!$this.next().hasClass(activeAnswer)) {
       // $this.next().prop('hidden', true);
       $this.next().attr('aria-expanded', 'false');
+      $this.next().css('max-height', '0px');
     }
     // prettier-ignore
     if ($this.find($toggleIcon).hasClass(activeToggleIcon)) {
