@@ -196,8 +196,9 @@ Usage: codyhouse.co/license
   top: var(--mc4-space-sm);
   right: var(--mc4-space-sm);
   z-index: 10;
-  background-color: hsla(var(--mc4-color-black-hsl), 0.9);
-  transition: 0.2s;
+  /* background-color: hsla(var(--mc4-color-black-hsl), 0.9); */ /* OG */
+  background-color: transparent;
+  transition: 0.25s;
 }
 .modal__close-btn--outer svg {
   color: hsl(var(--mc4-color-white-hsl));
