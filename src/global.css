@@ -209,11 +209,12 @@ Usage: codyhouse.co/license
     -webkit-transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 .modal__close-btn--outer:hover {
-  background-color: hsla(var(--mc4-color-black-hsl), 1);
+  /* background-color: hsla(var(--mc4-color-black-hsl), 1); */ /* OG */
+  background-color: transparent;
 }
 .modal__close-btn--outer:hover svg {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+  /* -webkit-transform: scale(1.1); */ /* OGs */
+  /* transform: scale(1.1); */ /* OGs */
 }
 
 .modal__close-btn--inner {
