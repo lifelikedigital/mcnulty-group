@@ -869,10 +869,6 @@ Usage: codyhouse.co/license
   --md3-size: 24px;
 }
 
-.md3-icon--md {
-  --md3-size: 34px; /* spinner size */
-}
-
 .md3-icon--lg {
   --md3-size: 48px;
 }
