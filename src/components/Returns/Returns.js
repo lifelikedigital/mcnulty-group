@@ -7,7 +7,7 @@ const Returns = () => {
           const tdElements = document.querySelectorAll('#returns tbody td');
           tdElements.forEach((td) => {
             td.style.animation =
-              'revealing-bars 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards';
+              'revealing-bars 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards'; // easeOutQuad
           });
           observer.disconnect();
         }
