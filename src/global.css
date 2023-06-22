@@ -193,12 +193,32 @@ Usage: codyhouse.co/license
   width: 48px;
   height: 48px;
   position: fixed;
-  top: var(--mc4-space-sm);
-  right: var(--mc4-space-sm);
+  /* top: var(--mc4-space-sm); */
+  /* right: var(--mc4-space-sm); */
+  top: 30;
+  right: 30;
   z-index: 10;
   /* background-color: hsla(var(--mc4-color-black-hsl), 0.9); */ /* OG */
   background-color: transparent;
   /* transition: 0.25s; */
+}
+@media screen and (max-width: 991px) {
+  .modal__close-btn--outer {
+    top: 18;
+    right: 30;
+  }
+}
+@media screen and (max-width: 767px) {
+  .modal__close-btn--outer {
+    top: 14;
+    right: 28;
+  }
+}
+@media screen and (max-width: 479px) {
+  .modal__close-btn--outer {
+    top: 4;
+    right: 8;
+  }
 }
 .modal__close-btn--outer svg {
   color: hsl(var(--mc4-color-white-hsl));
