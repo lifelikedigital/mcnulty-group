@@ -195,8 +195,8 @@ Usage: codyhouse.co/license
   position: fixed;
   /* top: var(--mc4-space-sm); */
   /* right: var(--mc4-space-sm); */
-  top: 30;
-  right: 30;
+  top: 30px;
+  right: 30px;
   z-index: 10;
   /* background-color: hsla(var(--mc4-color-black-hsl), 0.9); */ /* OG */
   background-color: transparent;
@@ -204,20 +204,20 @@ Usage: codyhouse.co/license
 }
 @media screen and (max-width: 991px) {
   .modal__close-btn--outer {
-    top: 18;
-    right: 30;
+    top: 18px;
+    right: 30px;
   }
 }
 @media screen and (max-width: 767px) {
   .modal__close-btn--outer {
-    top: 14;
-    right: 28;
+    top: 14px;
+    right: 28px;
   }
 }
 @media screen and (max-width: 479px) {
   .modal__close-btn--outer {
-    top: 4;
-    right: 8;
+    top: 4px;
+    right: 8px;
   }
 }
 .modal__close-btn--outer svg {
