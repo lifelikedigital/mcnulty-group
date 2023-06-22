@@ -123,9 +123,7 @@ const Questions = () => {
     if (e.keyCode === enterKey) {
       const $this = $(this);
       const $otherTabs = $this.parent().siblings($questionAnswer);
-      // $this.attr('tabindex', '-1');
       $this.attr('aria-selected', 'true');
-      // $otherTabs.find($toggleButton).attr('tabindex', '0');
       $otherTabs.find($toggleButton).attr('aria-selected', 'false');
       $this.toggleClass(activeToggleButton);
       const $answerContainer = $this.next();
@@ -137,18 +135,17 @@ const Questions = () => {
       // Apply the target max-height with a smooth transition
       $answerContainer.css('max-height', targetMaxHeight);
       // Calculate the target max-height based on the content's scrollHeight
+
       // aria handling
-      // if ($otherTabs.find($toggleButton).hasClass(activeToggleButton)) {
-      //   $otherTabs.find($toggleButton).attr('aria-selected', 'false');
-      // }
-      $this.next().toggleClass(activeAnswer);
-      // aria handling
-      if ($this.next().hasClass(activeAnswer)) {
+      if (!$this.hasClass(activeToggleButton)) {
+        $this.attr('aria-selected', 'false');
+      }
+      if ($answerContainer.hasClass(activeAnswer)) {
         // $this.next().removeAttr('hidden');
-        $this.next().attr('aria-expanded', 'true');
-      } else if (!$this.next().hasClass(activeAnswer)) {
+        $answerContainer.attr('aria-expanded', 'true');
+      } else if (!$answerContainer.hasClass(activeAnswer)) {
         // $this.next().prop('hidden', true);
-        $this.next().attr('aria-expanded', 'false');
+        $answerContainer.attr('aria-expanded', 'false');
       }
       // prettier-ignore
       if ($this.find($toggleIcon).hasClass(activeToggleIcon)) {
@@ -158,9 +155,9 @@ const Questions = () => {
         $this.find($toggleIcon).addClass(activeToggleIcon);
         gsap.fromTo($this.find($toggleIcon), { duration: 0.2, rotation: 90 }, { duration: 0.2, rotation: 180 });
       }
-    }
-    if (window.innerWidth >= 768) {
-      updateStickyParentHeight();
+      if (window.innerWidth >= 768) {
+        updateStickyParentHeight();
+      }
     }
   });
   // Arrow handling
