@@ -3,7 +3,7 @@ const Returns = () => {
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting && entry.intersectionRatio >= 0.8) {
+        if (entry.isIntersecting && entry.intersectionRatio >= 0.9) {
           const tdElements = document.querySelectorAll('#returns tbody td');
           tdElements.forEach((td) => {
             td.style.animation =
@@ -14,7 +14,7 @@ const Returns = () => {
         }
       });
     },
-    { threshold: 0.8 }
+    { threshold: 0.9 }
   );
 
   // Select the target element
