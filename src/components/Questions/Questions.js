@@ -128,6 +128,15 @@ const Questions = () => {
       // $otherTabs.find($toggleButton).attr('tabindex', '0');
       $otherTabs.find($toggleButton).attr('aria-selected', 'false');
       $this.toggleClass(activeToggleButton);
+      const $answerContainer = $this.next();
+      $answerContainer.toggleClass(activeAnswer);
+
+      const targetMaxHeight = $answerContainer.hasClass(activeAnswer)
+        ? $answerContainer[0].scrollHeight + 'px'
+        : '0';
+      // Apply the target max-height with a smooth transition
+      $answerContainer.css('max-height', targetMaxHeight);
+      // Calculate the target max-height based on the content's scrollHeight
       // aria handling
       // if ($otherTabs.find($toggleButton).hasClass(activeToggleButton)) {
       //   $otherTabs.find($toggleButton).attr('aria-selected', 'false');
