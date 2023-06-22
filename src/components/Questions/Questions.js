@@ -3,7 +3,7 @@ import { gsap } from 'gsap';
 // Selectors
 const $faqQuestionsParent = $('.faq__questions'); // houses all of the toggle buttons
 const $toggleButton = $('.faq__question-container'); // container with question and toggle icon - triggers the whole thing
-const $toggleIcon = $('.faq__toggle-icon'); // toggle icon needs to rotate
+const $toggleIcon = $('.faq__open-icon'); // toggle icon needs to rotate
 const $questionAnswer = $('.faq__question-answer'); // question and answer parent
 
 // Get references to the text and sticky elements.
@@ -13,7 +13,7 @@ const stickyParent = document.querySelector('#sticky-faq').parentNode;
 // Classes
 const activeToggleButton = 'faq__question-container--active';
 const activeAnswer = 'faq__answer-container--active';
-const activeToggleIcon = 'faq__toggle-icon--active';
+const activeToggleIcon = '.faq__open-icon--active';
 
 // Other
 let tabFocus = 0;
