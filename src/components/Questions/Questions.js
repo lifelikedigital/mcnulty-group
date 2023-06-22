@@ -108,7 +108,7 @@ const Questions = () => {
     // prettier-ignore
     if ($this.find($toggleIcon).hasClass(activeToggleIcon)) {
       $this.find($toggleIcon).removeClass(activeToggleIcon);
-      gsap.fromTo($this.find($toggleIcon), { duration: 0.25, rotation: 180 }, { duration: 0.25, rotation: 90 });
+      gsap.fromTo($this.find($toggleIcon), { duration: 0.25, rotation: 180 }, { duration: 0.25, rotation: 0 });
     } else {
       $this.find($toggleIcon).addClass(activeToggleIcon);
       gsap.fromTo($this.find($toggleIcon), { duration: 0.25, rotation: 90 }, { duration: 0.25, rotation: 180 });
