@@ -1003,6 +1003,9 @@ Usage: codyhouse.co/license
   0% {
     transform: scale3d(1, 0, 1);
   }
+  1% {
+    transform: translateY(1px);
+  }
   20% {
     transform: scale3d(1, 1, 1);
   }
