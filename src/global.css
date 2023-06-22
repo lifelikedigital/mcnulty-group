@@ -774,7 +774,7 @@ Usage: codyhouse.co/license
   --md3-color-bg-hsl: 0, 0%, 100%;
   --md3-color-contrast-high-hsl: 230, 7%, 23%;
   --md3-color-contrast-higher-hsl: 230, 13%, 9%;
-  --md3-color-black-hsl: 230, 13%, 9%;
+  --md3-color-black-hsl: 0, 0%, 0%; /* modal background-color */
   --md3-color-bg-dark-hsl: 240, 4%, 95%;
   --md3-color-white-hsl: 0, 0%, 100%;
   --md3-color-primary-darker-hsl: 250, 84%, 38%;
