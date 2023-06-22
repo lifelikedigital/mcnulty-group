@@ -1001,7 +1001,7 @@ Usage: codyhouse.co/license
 /* Chart Related */
 #returns tbody td {
   transform-origin: bottom;
-  animation: revealing-bars 4s linear infinite;
+  animation: revealing-bars 3s linear infinite;
 }
 
 @keyframes revealing-bars {
