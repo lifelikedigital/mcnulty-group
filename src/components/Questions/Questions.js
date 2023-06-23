@@ -113,9 +113,9 @@ const Questions = () => {
       $this.find($toggleIcon).addClass(activeToggleIcon);
       gsap.fromTo($this.find($toggleIcon), { duration: 0.2, rotation: 90 }, { duration: 0.2, rotation: 180 });
     }
-    // if (window.innerWidth >= 768) {
-    //   updateStickyParentHeight();
-    // }
+    if (window.innerWidth >= 768) {
+      updateStickyParentHeight();
+    }
   });
   // Enter handling
   $toggleButton.on('keyup', function (e) {
@@ -155,9 +155,9 @@ const Questions = () => {
         $this.find($toggleIcon).addClass(activeToggleIcon);
         gsap.fromTo($this.find($toggleIcon), { duration: 0.2, rotation: 90 }, { duration: 0.2, rotation: 180 });
       }
-      // if (window.innerWidth >= 768) {
-      //   updateStickyParentHeight();
-      // }
+      if (window.innerWidth >= 768) {
+        updateStickyParentHeight();
+      }
     }
   });
   // Arrow handling
