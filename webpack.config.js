@@ -5,6 +5,7 @@ const TerserPlugin = require('terser-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const RemoveEmptyScriptsPlugin = require('webpack-remove-empty-scripts');
 const autoprefixer = require('autoprefixer');
+const webpack = require('webpack');
 
 module.exports = {
   entry: {
@@ -50,8 +51,10 @@ module.exports = {
     }),
     new CleanWebpackPlugin(),
     new RemoveEmptyScriptsPlugin(),
+    new webpack.LoaderOptionsPlugin({
+      options: {
+        postcss: [autoprefixer()],
+      },
+    }),
   ],
-  postcss: {
-    plugins: [autoprefixer()],
-  },
 };
