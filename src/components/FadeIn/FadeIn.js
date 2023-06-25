@@ -12,7 +12,7 @@ const FadeIn = () => {
   const fadeInSection = document.querySelectorAll('.fade-in'); // Select elements with the fade-in class
 
   const observerOptions = {
-    threshold: 0.9, // Trigger the callback when 90% of the element is in the viewport
+    threshold: 0.5, // Trigger the callback when 90% of the element is in the viewport
   };
 
   const observer = new IntersectionObserver(observerCallback, observerOptions);
