@@ -1,4 +1,8 @@
-import { gsap, CustomEase } from 'gsap';
+import { gsap } from 'gsap';
+import CustomEase from 'gsap/CustomEase';
+
+// Register the CustomEase plugin
+gsap.registerPlugin(CustomEase);
 
 // Selectors
 const $faqQuestionsParent = $('.faq__questions'); // houses all of the toggle buttons
@@ -109,10 +113,10 @@ const Questions = () => {
     // prettier-ignore
     if ($this.find($toggleIcon).hasClass(activeToggleIcon)) {
       $this.find($toggleIcon).removeClass(activeToggleIcon);
-      gsap.fromTo($this.find($toggleIcon), { duration: 0.2, rotation: 180 }, { duration: 0.2, rotation: 90, ease: 'ease' });
+      gsap.fromTo($this.find($toggleIcon), { duration: 0.2, rotation: 180 }, { duration: 0.2, rotation: 90, ease: 'basicEase' });
     } else {
       $this.find($toggleIcon).addClass(activeToggleIcon);
-      gsap.fromTo($this.find($toggleIcon), { duration: 0.2, rotation: 90 }, { duration: 0.2, rotation: 180, ease: 'ease' });
+      gsap.fromTo($this.find($toggleIcon), { duration: 0.2, rotation: 90 }, { duration: 0.2, rotation: 180, ease: 'basicEase' });
     }
     if (window.innerWidth >= 768) {
       updateStickyParentHeight();
@@ -151,10 +155,10 @@ const Questions = () => {
       // prettier-ignore
       if ($this.find($toggleIcon).hasClass(activeToggleIcon)) {
         $this.find($toggleIcon).removeClass(activeToggleIcon);
-        gsap.fromTo($this.find($toggleIcon), { duration: 0.2, rotation: 180 }, { duration: 0.2, rotation: 90, ease: 'ease' });
+        gsap.fromTo($this.find($toggleIcon), { duration: 0.2, rotation: 180 }, { duration: 0.2, rotation: 90, ease: 'basicEase' });
       } else {
         $this.find($toggleIcon).addClass(activeToggleIcon);
-        gsap.fromTo($this.find($toggleIcon), { duration: 0.2, rotation: 90 }, { duration: 0.2, rotation: 180, ease: 'ease' });
+        gsap.fromTo($this.find($toggleIcon), { duration: 0.2, rotation: 90 }, { duration: 0.2, rotation: 180, ease: 'basicEase' });
       }
       if (window.innerWidth >= 768) {
         updateStickyParentHeight();
