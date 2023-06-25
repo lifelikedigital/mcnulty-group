@@ -4,6 +4,7 @@ const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const RemoveEmptyScriptsPlugin = require('webpack-remove-empty-scripts');
+const autoprefixer = require('autoprefixer');
 
 module.exports = {
   entry: {
@@ -18,7 +19,12 @@ module.exports = {
     rules: [
       {
         test: /\.s?css$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          'postcss-loader',
+          'sass-loader',
+        ],
       },
       {
         test: /\.js$/,
@@ -42,8 +48,10 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: '[name].css',
     }),
-    // prettier-ignore
     new CleanWebpackPlugin(),
     new RemoveEmptyScriptsPlugin(),
   ],
+  postcss: {
+    plugins: [autoprefixer()],
+  },
 };
