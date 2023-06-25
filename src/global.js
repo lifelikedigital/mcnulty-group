@@ -1,3 +1,4 @@
+import FadeIn from './components/FadeIn/FadeIn';
 import Questions from './components/Questions/Questions';
 import SocialShare from './components/SocialShare/SocialShare';
 import Copyright from './components/Copyright/Copyright';
@@ -7,6 +8,7 @@ import StickyBanner from './components/StickyBanner/StickyBanner';
 import Returns from './components/Returns/Returns';
 
 const GlobalComponents = () => {
+  FadeIn();
   Questions();
   SocialShare();
   Copyright();
