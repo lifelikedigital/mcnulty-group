@@ -1019,7 +1019,7 @@ Usage: codyhouse.co/license
 
 .faq__answer-container--active {
   will-change: max-height;
-  transition: max-height 0.4s ease-in;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Chart Related */
