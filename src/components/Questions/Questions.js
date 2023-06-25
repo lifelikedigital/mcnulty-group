@@ -1,6 +1,4 @@
-import { gsap } from 'gsap';
-// Register the CustomEase plugin
-gsap.registerPlugin(CustomEase);
+import { gsap, CustomEase } from 'gsap';
 
 // Selectors
 const $faqQuestionsParent = $('.faq__questions'); // houses all of the toggle buttons
