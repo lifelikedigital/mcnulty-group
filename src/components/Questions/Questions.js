@@ -108,10 +108,10 @@ const Questions = () => {
     // prettier-ignore
     if ($this.find($toggleIcon).hasClass(activeToggleIcon)) {
       $this.find($toggleIcon).removeClass(activeToggleIcon);
-      gsap.fromTo($this.find($toggleIcon), { duration: 0.2, rotation: 180 }, { duration: 0.2, rotation: 90 });
+      gsap.fromTo($this.find($toggleIcon), { duration: 0.2, rotation: 180 }, { duration: 0.2, rotation: 90, ease: CustomEase.create("custom", "M0,0 C0.17,0.67 0.83,0.67 1,1 ") });
     } else {
       $this.find($toggleIcon).addClass(activeToggleIcon);
-      gsap.fromTo($this.find($toggleIcon), { duration: 0.2, rotation: 90 }, { duration: 0.2, rotation: 180 });
+      gsap.fromTo($this.find($toggleIcon), { duration: 0.2, rotation: 90 }, { duration: 0.2, rotation: 180, ease: CustomEase.create("custom", "M0,0 C0.17,0.67 0.83,0.67 1,1 ") });
     }
     if (window.innerWidth >= 768) {
       updateStickyParentHeight();
@@ -150,10 +150,10 @@ const Questions = () => {
       // prettier-ignore
       if ($this.find($toggleIcon).hasClass(activeToggleIcon)) {
         $this.find($toggleIcon).removeClass(activeToggleIcon);
-        gsap.fromTo($this.find($toggleIcon), { duration: 0.2, rotation: 180 }, { duration: 0.2, rotation: 90 });
+        gsap.fromTo($this.find($toggleIcon), { duration: 0.2, rotation: 180 }, { duration: 0.2, rotation: 90, ease: CustomEase.create("custom", "M0,0 C0.17,0.67 0.83,0.67 1,1 ") });
       } else {
         $this.find($toggleIcon).addClass(activeToggleIcon);
-        gsap.fromTo($this.find($toggleIcon), { duration: 0.2, rotation: 90 }, { duration: 0.2, rotation: 180 });
+        gsap.fromTo($this.find($toggleIcon), { duration: 0.2, rotation: 90 }, { duration: 0.2, rotation: 180, ease: CustomEase.create("custom", "M0,0 C0.17,0.67 0.83,0.67 1,1 ") });
       }
       if (window.innerWidth >= 768) {
         updateStickyParentHeight();
