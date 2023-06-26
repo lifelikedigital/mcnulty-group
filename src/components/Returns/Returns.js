@@ -14,7 +14,7 @@ const Returns = () => {
               'revealing-bars 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards';
             td.style.transform = isMobileLandscape
               ? 'scale3d(1, 1, 1) translateY(0.95px)'
-              : 'scale3d(1, 1, 1) translateY(1.35px)';
+              : 'scale3d(1, 1, 1) translateY(1px)';
           });
           observer.disconnect();
         }
