@@ -8,7 +8,7 @@ const Returns = () => {
           tdElements.forEach((td) => {
             td.style.animation =
               'revealing-bars 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards'; // easeOutQuad
-            td.style.transform = 'scale3d(1, 1, 1) translateY(1px)';
+            td.style.transform = 'scale3d(1, 1, 1) translateY(1.35px)';
           });
           observer.disconnect();
         }
