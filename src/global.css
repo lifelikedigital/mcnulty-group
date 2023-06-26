@@ -1031,3 +1031,14 @@ Usage: codyhouse.co/license
     transform: scale3d(1, 1, 1) translateY(1.35px);
   }
 }
+
+@media screen and (max-width: 991px) {
+  @keyframes revealing-bars {
+    0% {
+      transform: scale3d(1, 0, 1) translateY(0.95px);
+    }
+    20% {
+      transform: scale3d(1, 1, 1) translateY(0.95px);
+    }
+  }
+}
