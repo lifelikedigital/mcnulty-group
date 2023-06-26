@@ -1,23 +1,26 @@
 const Returns = () => {
+  const isMobileLandscape =
+    window.innerWidth <= 991 &&
+    window.matchMedia('(orientation: landscape)').matches;
+  const threshold = isMobileLandscape ? 0.5 : 0.9;
+
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting && entry.intersectionRatio >= 0.9) {
+        if (entry.isIntersecting && entry.intersectionRatio >= threshold) {
           const tdElements = document.querySelectorAll('#returns tbody td');
           tdElements.forEach((td) => {
             td.style.animation =
-              'revealing-bars 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards'; // easeOutQuad
-            if (window.innerWidth <= 991) {
-              td.style.transform = 'scale3d(1, 1, 1) translateY(0.95px)';
-            } else {
-              td.style.transform = 'scale3d(1, 1, 1) translateY(1.35px)';
-            }
+              'revealing-bars 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards';
+            td.style.transform = isMobileLandscape
+              ? 'scale3d(1, 1, 1) translateY(0.95px)'
+              : 'scale3d(1, 1, 1) translateY(1.35px)';
           });
           observer.disconnect();
         }
       });
     },
-    { threshold: 0.9 }
+    { threshold }
   );
 
   const targetElement = document.querySelector('#returns');
