@@ -6,6 +6,7 @@ import ProgressBar from './components/ProgressBar/ProgressBar';
 import VideoModal from './components/VideoModal/VideoModal';
 import StickyBanner from './components/StickyBanner/StickyBanner';
 import Returns from './components/Returns/Returns';
+import Copyright from './components/Copyright/Copyright';
 
 const GlobalComponents = () => {
   FadeIn();
@@ -16,6 +17,7 @@ const GlobalComponents = () => {
   VideoModal();
   StickyBanner();
   Returns();
+  Copyright();
 };
 
 const init = () => {
