@@ -12,7 +12,6 @@ const GlobalComponents = () => {
   FadeIn();
   Questions();
   SocialShare();
-  Copyright();
   ProgressBar();
   VideoModal();
   StickyBanner();

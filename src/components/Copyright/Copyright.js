@@ -4,6 +4,7 @@ const Copyright = () => {
 
   if (copyrightYearElement) {
     copyrightYearElement.textContent = currentYear;
+    console.log(currentYear);
   }
 };
 
