@@ -10,10 +10,6 @@ const $toggleButton = $('.faq__question-container'); // container with question 
 const $toggleIcon = $('.faq__open-icon'); // toggle icon needs to rotate
 const $questionAnswer = $('.faq__question-answer'); // question and answer parent
 
-// Get references to the text and sticky elements.
-const textElement = document.querySelector('#question4');
-const stickyParent = document.querySelector('#sticky-faq').parentNode;
-
 // Classes
 const activeToggleButton = 'faq__question-container--active';
 const activeAnswer = 'faq__answer-container--active';
@@ -24,63 +20,6 @@ let tabFocus = 0;
 CustomEase.create('basicEase', 'M0,0 C0.17,0.67 0.83,0.67 1,1 ');
 
 // Functions
-// Define a function to update the sticky parent height.
-const updateStickyParentHeight = () => {
-  // Get the position of the text baseline and sticky parent top.
-  const textBaseline = textElement.getBoundingClientRect().bottom;
-  const stickyParentTop = stickyParent.getBoundingClientRect().top;
-
-  // Calculate the difference between the text baseline and sticky parent top.
-  const height = textBaseline - stickyParentTop + 15;
-
-  // Adjust the height of the sticky element's parent.
-  stickyParent.style.height = `${height}px`;
-};
-
-// Intersection Observer Implementation
-const initializeStickyElementBehavior = () => {
-  // Define a function to update the sticky parent height.
-  function setupObserver() {
-    if (window.innerWidth >= 768) {
-      const observerCallback = (entries, observer) => {
-        for (let entry of entries) {
-          // If the text element's position has changed...
-          if (entry.isIntersecting) {
-            // Update the sticky parent height.
-            updateStickyParentHeight();
-          }
-        }
-      };
-
-      const observerOptions = {
-        threshold: [0, 1],
-        rootMargin: '50px',
-      };
-
-      const observer = new IntersectionObserver(
-        observerCallback,
-        observerOptions
-      );
-
-      observer.observe(textElement);
-      return observer;
-    } else {
-      // If the viewport is 767px or less, set the sticky parent's height to "auto"
-      stickyParent.style.height = 'auto';
-      return null;
-    }
-  }
-
-  let observer = setupObserver();
-
-  window.addEventListener('resize', () => {
-    if (observer) {
-      observer.disconnect(); // Stop observing with the old observer.
-    }
-    observer = setupObserver(); // Set up a new observer if the window is now wide enough.
-  });
-};
-
 const Questions = () => {
   // Click handling
   $toggleButton.on('click', function () {
@@ -117,9 +56,6 @@ const Questions = () => {
     } else {
       $this.find($toggleIcon).addClass(activeToggleIcon);
       gsap.fromTo($this.find($toggleIcon), { duration: 0.3, rotation: 90 }, { duration: 0.3, rotation: 180, ease: 'basicEase' });
-    }
-    if (window.innerWidth >= 768) {
-      updateStickyParentHeight();
     }
   });
   // Enter handling
@@ -160,9 +96,6 @@ const Questions = () => {
         $this.find($toggleIcon).addClass(activeToggleIcon);
         gsap.fromTo($this.find($toggleIcon), { duration: 0.3, rotation: 90 }, { duration: 0.3, rotation: 180, ease: 'basicEase' });
       }
-      if (window.innerWidth >= 768) {
-        updateStickyParentHeight();
-      }
     }
   });
   // Arrow handling
@@ -199,9 +132,6 @@ const Questions = () => {
       $questionAnswer[tabFocus].firstChild.focus();
     }
   });
-
-  // Dynamic Sticky Header
-  initializeStickyElementBehavior();
 };
 
 export default Questions;
