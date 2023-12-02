@@ -998,9 +998,6 @@ Usage: codyhouse.co/license
 .faq__question-container {
   will-change: max-height;
 }
-.faq__question-container--active {
-  border-top: 1px solid #181a1c;
-}
 
 .faq__answer-container--active {
   will-change: max-height;
