@@ -97,7 +97,7 @@ const Questions = () => {
         '.faq__open-icon' + activeToggleIcon
       );
       $otherActiveToggleIcon.removeClass(activeToggleIcon);
-      gsap.to(
+      gsap.fromTo(
         $otherActiveToggleIcon,
         { duration: 0.3, rotation: 180 },
         { duration: 0.3, rotation: 90, ease: 'basicEase' }
