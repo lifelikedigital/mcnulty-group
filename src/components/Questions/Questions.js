@@ -34,7 +34,7 @@ const Questions = () => {
       .css('max-height', '0')
       .attr('aria-expanded', 'false');
     const $otherActiveToggleIcon = $otherTabs.find('.faq__open-icon');
-    console.log($otherActiveToggleIcon);
+    // console.log($otherActiveToggleIcon);
     $otherActiveToggleIcon.removeClass('faq__open-icon--active');
     gsap.fromTo($otherActiveToggleIcon, {
       duration: 0.3,
