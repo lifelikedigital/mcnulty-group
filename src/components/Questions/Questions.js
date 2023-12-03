@@ -31,22 +31,22 @@ const Questions = () => {
       .removeClass(activeAnswer)
       .css('max-height', '0')
       .attr('aria-expanded', 'false');
-    $otherTabs.each(function () {
-      const $tab = $(this);
-      if ($tab.hasClass(activeToggleButton)) {
-        $tab.find($toggleIcon).removeClass(activeToggleIcon);
-        gsap.fromTo(
-          $tab.find($toggleIcon),
-          { duration: 0.3, rotation: 180 },
-          { duration: 0.3, rotation: 90, ease: 'basicEase' }
-        );
-      }
-    });
-    gsap.fromTo(
-      $otherTabs.find($toggleIcon),
-      { duration: 0.3, rotation: 180 },
-      { duration: 0.3, rotation: 90, ease: 'basicEase' }
-    );
+    const $thisToggleIcon = $this.find($toggleIcon);
+    if ($this.hasClass(activeToggleButton)) {
+      $thisToggleIcon.removeClass(activeToggleIcon);
+      gsap.fromTo(
+        $thisToggleIcon,
+        { duration: 0.3, rotation: 180 },
+        { duration: 0.3, rotation: 90, ease: 'basicEase' }
+      );
+    } else {
+      $thisToggleIcon.addClass(activeToggleIcon);
+      gsap.fromTo(
+        $thisToggleIcon,
+        { duration: 0.3, rotation: 90 },
+        { duration: 0.3, rotation: 180, ease: 'basicEase' }
+      );
+    }
     $this.attr('aria-selected', 'true');
     $otherTabs.find($toggleButton).attr('aria-selected', 'false');
     $this.toggleClass(activeToggleButton);
@@ -71,14 +71,6 @@ const Questions = () => {
       // $this.next().prop('hidden', true);
       $answerContainer.attr('aria-expanded', 'false');
     }
-    // prettier-ignore
-    if ($this.find($toggleIcon).hasClass(activeToggleIcon)) {
-      $this.find($toggleIcon).removeClass(activeToggleIcon);
-      gsap.fromTo($this.find($toggleIcon), { duration: 0.3, rotation: 180 }, { duration: 0.3, rotation: 90, ease: 'basicEase' });
-    } else {
-      $this.find($toggleIcon).addClass(activeToggleIcon);
-      gsap.fromTo($this.find($toggleIcon), { duration: 0.3, rotation: 90 }, { duration: 0.3, rotation: 180, ease: 'basicEase' });
-    }
   });
   // Enter handling
   $toggleButton.on('keyup', function (e) {
@@ -92,22 +84,22 @@ const Questions = () => {
         .removeClass(activeAnswer)
         .css('max-height', '0')
         .attr('aria-expanded', 'false');
-      $otherTabs.each(function () {
-        const $tab = $(this);
-        if ($tab.hasClass(activeToggleButton)) {
-          $tab.find($toggleIcon).removeClass(activeToggleIcon);
-          gsap.fromTo(
-            $tab.find($toggleIcon),
-            { duration: 0.3, rotation: 180 },
-            { duration: 0.3, rotation: 90, ease: 'basicEase' }
-          );
-        }
-      });
-      gsap.fromTo(
-        $otherTabs.find($toggleIcon),
-        { duration: 0.3, rotation: 180 },
-        { duration: 0.3, rotation: 90, ease: 'basicEase' }
-      );
+      const $thisToggleIcon = $this.find($toggleIcon);
+      if ($this.hasClass(activeToggleButton)) {
+        $thisToggleIcon.removeClass(activeToggleIcon);
+        gsap.fromTo(
+          $thisToggleIcon,
+          { duration: 0.3, rotation: 180 },
+          { duration: 0.3, rotation: 90, ease: 'basicEase' }
+        );
+      } else {
+        $thisToggleIcon.addClass(activeToggleIcon);
+        gsap.fromTo(
+          $thisToggleIcon,
+          { duration: 0.3, rotation: 90 },
+          { duration: 0.3, rotation: 180, ease: 'basicEase' }
+        );
+      }
       $this.attr('aria-selected', 'true');
       $otherTabs.find($toggleButton).attr('aria-selected', 'false');
       $this.toggleClass(activeToggleButton);
@@ -131,14 +123,6 @@ const Questions = () => {
       } else if (!$answerContainer.hasClass(activeAnswer)) {
         // $this.next().prop('hidden', true);
         $answerContainer.attr('aria-expanded', 'false');
-      }
-      // prettier-ignore
-      if ($this.find($toggleIcon).hasClass(activeToggleIcon)) {
-        $this.find($toggleIcon).removeClass(activeToggleIcon);
-        gsap.fromTo($this.find($toggleIcon), { duration: 0.3, rotation: 180 }, { duration: 0.3, rotation: 90, ease: 'basicEase' });
-      } else {
-        $this.find($toggleIcon).addClass(activeToggleIcon);
-        gsap.fromTo($this.find($toggleIcon), { duration: 0.3, rotation: 90 }, { duration: 0.3, rotation: 180, ease: 'basicEase' });
       }
     }
   });
