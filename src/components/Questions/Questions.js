@@ -25,18 +25,23 @@ const Questions = () => {
   $toggleButton.on('click', function () {
     const $this = $(this);
     const $otherTabs = $this.parent().siblings().find($toggleButton);
-    const $otherToggleIcons = $otherTabs.find($toggleIcon);
-    $otherTabs.removeClass(activeToggleButton).attr('aria-selected', 'false');
-    $otherTabs
-      .next()
-      .removeClass(activeAnswer)
-      .css('max-height', '0')
-      .attr('aria-expanded', 'false');
-    $otherToggleIcons.removeClass(activeToggleIcon);
-    gsap.to($otherToggleIcons, {
-      duration: 0.3,
-      rotation: 0,
-      ease: 'basicEase',
+    $otherTabs.each(function () {
+      const $tab = $(this);
+      if ($tab.hasClass(activeToggleButton)) {
+        $tab.removeClass(activeToggleButton).attr('aria-selected', 'false');
+        $tab
+          .next()
+          .removeClass(activeAnswer)
+          .css('max-height', '0')
+          .attr('aria-expanded', 'false');
+        const $toggleIcon = $tab.find($toggleIcon);
+        $toggleIcon.removeClass(activeToggleIcon);
+        ggsap.fromTo(
+          $toggleIcon,
+          { duration: 0.3, rotation: 180 },
+          { duration: 0.3, rotation: 90, ease: 'basicEase' }
+        );
+      }
     });
     const $thisToggleIcon = $this.find($toggleIcon);
     if ($this.hasClass(activeToggleButton)) {
