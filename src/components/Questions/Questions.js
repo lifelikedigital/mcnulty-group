@@ -32,24 +32,24 @@ const Questions = () => {
       .css('max-height', '0')
       .attr('aria-expanded', 'false');
     const $otherActiveToggleIcon = $otherTabs.find(
-      '.faq__open-icon' + activeToggleIcon
+      $toggleIcon + activeToggleIcon
     );
     $otherActiveToggleIcon.removeClass(activeToggleIcon);
-    gsap.fromTo($otherActiveToggleIcon, {
+    gsap.to($otherActiveToggleIcon, {
       duration: 0.3,
-      rotation: 180,
+      rotation: 90,
       ease: 'basicEase',
     });
     const $thisToggleIcon = $this.find($toggleIcon);
     if ($this.hasClass(activeToggleButton)) {
-      $thisToggleIcon.removeClass('faq__open-icon--active');
+      $thisToggleIcon.removeClass(activeToggleIcon);
       gsap.fromTo(
         $thisToggleIcon,
         { duration: 0.3, rotation: 180 },
         { duration: 0.3, rotation: 90, ease: 'basicEase' }
       );
     } else {
-      $thisToggleIcon.addClass('faq__open-icon--active');
+      $thisToggleIcon.addClass(activeToggleIcon);
       gsap.fromTo(
         $thisToggleIcon,
         { duration: 0.3, rotation: 90 },
@@ -94,24 +94,24 @@ const Questions = () => {
         .css('max-height', '0')
         .attr('aria-expanded', 'false');
       const $otherActiveToggleIcon = $otherTabs.find(
-        '.faq__open-icon' + activeToggleIcon
+        $toggleIcon + activeToggleIcon
       );
       $otherActiveToggleIcon.removeClass(activeToggleIcon);
       gsap.to($otherActiveToggleIcon, {
         duration: 0.3,
-        rotation: 180,
+        rotation: 90,
         ease: 'basicEase',
       });
       const $thisToggleIcon = $this.find($toggleIcon);
       if ($this.hasClass(activeToggleButton)) {
-        $thisToggleIcon.removeClass('faq__open-icon--active');
+        $thisToggleIcon.removeClass(activeToggleIcon);
         gsap.fromTo(
           $thisToggleIcon,
           { duration: 0.3, rotation: 180 },
           { duration: 0.3, rotation: 90, ease: 'basicEase' }
         );
       } else {
-        $thisToggleIcon.addClass('faq__open-icon--active');
+        $thisToggleIcon.addClass(activeToggleIcon);
         gsap.fromTo(
           $thisToggleIcon,
           { duration: 0.3, rotation: 90 },
