@@ -11,14 +11,18 @@ const showPopover = () => {
 
 const hidePopover = () => {
   document.body.style.overflow = '';
-  gsap.to(popover, { opacity: 0, duration: 0.25 }).then(() => {
-    popover.style.display = 'none';
+  gsap.to(popover, {
+    opacity: 0,
+    duration: 0.25,
+    onComplete: () => {
+      popover.style.display = 'none';
+    },
   });
 };
 
 export const openDrawer = (drawer, position = '0%', axis = 'x') => {
   showPopover();
-  gsap.to(drawer, { [axis]: position, duration: 0.25 });
+  gsap.to(drawer, { [axis]: position, duration: 0.4, ease: 'power2.inOut' });
 
   drawer.classList.add(activeDrawer);
 };
@@ -32,8 +36,13 @@ export const closeDrawer = (
   if (includePopover) {
     hidePopover();
   }
-  gsap.to(drawer, { [axis]: position, duration: 0.25 }).then(() => {
-    drawer.scrollTop = 0;
+  gsap.to(drawer, {
+    [axis]: position,
+    duration: 0.4,
+    ease: 'power2.inOut',
+    onComplete: () => {
+      drawer.scrollTop = 0;
+    },
   });
   drawer.classList.remove(activeDrawer);
 };
