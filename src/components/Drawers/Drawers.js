@@ -7,14 +7,17 @@ let windowWidth = window.innerWidth;
 // Triggers
 const legacyAction = document.getElementById('legacy-action');
 const coreAction = document.getElementById('core-action');
+const teamActions = document.querySelectorAll('.team-action');
 
 // Drawers
 const legacyDrawer = document.getElementById('drawer-legacy');
 const coreDrawer = document.getElementById('drawer-core');
+const teamDrawer = document.getElementById('drawer-team');
 
 // Close Buttons
 const legacyClose = document.getElementById('close-legacy');
 const coreClose = document.getElementById('close-core');
+const teamClose = document.getElementById('close-team');
 
 // Functions
 const debounce = (func, delay = 200) => {
@@ -101,6 +104,10 @@ const Drawers = () => {
   dismissDrawer(legacyDrawer, legacyClose);
   triggerDrawer(coreAction, coreDrawer);
   dismissDrawer(coreDrawer, coreClose);
+  teamActions.forEach((teamAction) => {
+    triggerDrawer(teamAction, teamDrawer);
+  });
+  dismissDrawer(teamDrawer, teamClose);
 
   resizeEvents();
 };
