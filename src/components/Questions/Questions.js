@@ -25,12 +25,19 @@ const Questions = () => {
   $toggleButton.on('click', function () {
     const $this = $(this);
     const $otherTabs = $this.parent().siblings().find($toggleButton);
+    const $otherToggleIcons = $otherTabs.find($toggleIcon);
     $otherTabs.removeClass(activeToggleButton).attr('aria-selected', 'false');
     $otherTabs
       .next()
       .removeClass(activeAnswer)
       .css('max-height', '0')
       .attr('aria-expanded', 'false');
+    $otherToggleIcons.removeClass(activeToggleIcon);
+    gsap.to($otherToggleIcons, {
+      duration: 0.3,
+      rotation: 0,
+      ease: 'basicEase',
+    });
     const $thisToggleIcon = $this.find($toggleIcon);
     if ($this.hasClass(activeToggleButton)) {
       $thisToggleIcon.removeClass(activeToggleIcon);
