@@ -5,8 +5,8 @@ import { openDrawer, closeDrawer } from './DrawerHandlers.js';
 let windowWidth = window.innerWidth;
 
 // Triggers
-const legacyAction = document.getElementById('treatments-action');
-const coreAction = document.getElementById('treatments-action');
+const legacyAction = document.getElementById('legacy-action');
+const coreAction = document.getElementById('core-action');
 
 // Drawers
 const legacyDrawer = document.getElementById('drawer-legacy');
