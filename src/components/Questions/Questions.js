@@ -24,7 +24,9 @@ const Questions = () => {
   // Click handling
   $toggleButton.on('click', function () {
     const $this = $(this);
+    console.log($this);
     const $otherTabs = $this.parent().siblings().find($toggleButton);
+    console.log($otherTabs);
     $otherTabs.removeClass(activeToggleButton).attr('aria-selected', 'false');
     $otherTabs
       .next()
@@ -32,6 +34,7 @@ const Questions = () => {
       .css('max-height', '0')
       .attr('aria-expanded', 'false');
     const $otherActiveToggleIcon = $otherTabs.find('.faq__open-icon');
+    console.log($otherActiveToggleIcon);
     $otherActiveToggleIcon.removeClass('faq__open-icon--active');
     gsap.fromTo($otherActiveToggleIcon, {
       duration: 0.3,
@@ -84,7 +87,9 @@ const Questions = () => {
     const enterKey = 13;
     if (e.keyCode === enterKey) {
       const $this = $(this);
+      console.log($this);
       const $otherTabs = $this.parent().siblings().find($toggleButton);
+      console.log($otherTabs);
       $otherTabs.removeClass(activeToggleButton).attr('aria-selected', 'false');
       $otherTabs
         .next()
@@ -92,6 +97,7 @@ const Questions = () => {
         .css('max-height', '0')
         .attr('aria-expanded', 'false');
       const $otherActiveToggleIcon = $otherTabs.find('.faq__open-icon');
+      console.log($otherActiveToggleIcon);
       $otherActiveToggleIcon.removeClass('faq__open-icon--active');
       gsap.fromTo($otherActiveToggleIcon, {
         duration: 0.3,
