@@ -87,9 +87,9 @@ const Questions = () => {
     const enterKey = 13;
     if (e.keyCode === enterKey) {
       const $this = $(this);
-      // console.log($this);
+      console.log($this);
       const $otherTabs = $this.parent().siblings().find($toggleButton);
-      // console.log($otherTabs);
+      console.log($otherTabs);
       $otherTabs.removeClass(activeToggleButton).attr('aria-selected', 'false');
       $otherTabs
         .next()
