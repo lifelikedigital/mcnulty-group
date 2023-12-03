@@ -31,7 +31,17 @@ const Questions = () => {
       .removeClass(activeAnswer)
       .css('max-height', '0')
       .attr('aria-expanded', 'false');
-    $otherTabs.find($toggleIcon).removeClass(activeToggleIcon);
+    $otherTabs.each(function () {
+      const $tab = $(this);
+      if ($tab.hasClass(activeToggleButton)) {
+        $tab.find($toggleIcon).removeClass(activeToggleIcon);
+        gsap.fromTo(
+          $tab.find($toggleIcon),
+          { duration: 0.3, rotation: 180 },
+          { duration: 0.3, rotation: 90, ease: 'basicEase' }
+        );
+      }
+    });
     gsap.fromTo(
       $otherTabs.find($toggleIcon),
       { duration: 0.3, rotation: 180 },
@@ -82,7 +92,17 @@ const Questions = () => {
         .removeClass(activeAnswer)
         .css('max-height', '0')
         .attr('aria-expanded', 'false');
-      $otherTabs.find($toggleIcon).removeClass(activeToggleIcon);
+      $otherTabs.each(function () {
+        const $tab = $(this);
+        if ($tab.hasClass(activeToggleButton)) {
+          $tab.find($toggleIcon).removeClass(activeToggleIcon);
+          gsap.fromTo(
+            $tab.find($toggleIcon),
+            { duration: 0.3, rotation: 180 },
+            { duration: 0.3, rotation: 90, ease: 'basicEase' }
+          );
+        }
+      });
       gsap.fromTo(
         $otherTabs.find($toggleIcon),
         { duration: 0.3, rotation: 180 },
