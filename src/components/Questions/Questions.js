@@ -36,7 +36,7 @@ const Questions = () => {
           .attr('aria-expanded', 'false');
         const $toggleIcon = $tab.find($toggleIcon);
         $toggleIcon.removeClass(activeToggleIcon);
-        ggsap.fromTo(
+        gsap.fromTo(
           $toggleIcon,
           { duration: 0.3, rotation: 180 },
           { duration: 0.3, rotation: 90, ease: 'basicEase' }
