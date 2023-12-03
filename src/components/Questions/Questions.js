@@ -32,7 +32,7 @@ const Questions = () => {
       .css('max-height', '0')
       .attr('aria-expanded', 'false');
     const $otherActiveToggleIcon = $otherTabs.find(
-      $toggleIcon + activeToggleIcon
+      '.faq__open-icon' + activeToggleIcon
     );
     $otherActiveToggleIcon.removeClass(activeToggleIcon);
     gsap.to($otherActiveToggleIcon, {
@@ -94,7 +94,7 @@ const Questions = () => {
         .css('max-height', '0')
         .attr('aria-expanded', 'false');
       const $otherActiveToggleIcon = $otherTabs.find(
-        $toggleIcon + activeToggleIcon
+        '.faq__open-icon' + activeToggleIcon
       );
       $otherActiveToggleIcon.removeClass(activeToggleIcon);
       gsap.to($otherActiveToggleIcon, {
