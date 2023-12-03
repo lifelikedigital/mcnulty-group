@@ -1004,6 +1004,13 @@ Usage: codyhouse.co/license
   transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Mobile Menu */
+.mobile-nav.visible-nav {
+  opacity: 1;
+  visibility: visible;
+  /* transition: opacity 0.5s ease; */
+}
+
 /* Other */
 .visually-hidden {
   position: absolute !important;
