@@ -32,6 +32,8 @@ export const closeDrawer = (
   if (includePopover) {
     hidePopover();
   }
-  gsap.to(drawer, { [axis]: position, duration: 0.25 });
+  gsap.to(drawer, { [axis]: position, duration: 0.25 }).then(() => {
+    drawer.scrollTop = 0;
+  });
   drawer.classList.remove(activeDrawer);
 };
