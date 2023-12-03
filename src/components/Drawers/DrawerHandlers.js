@@ -6,14 +6,14 @@ const activeDrawer = 'drawer--active';
 const showPopover = () => {
   document.body.style.overflow = 'hidden';
   popover.style.display = 'block';
-  gsap.to(popover, { opacity: 1, duration: 0.25 });
+  gsap.to(popover, { opacity: 1, duration: 0.4 });
 };
 
 const hidePopover = () => {
   document.body.style.overflow = '';
   gsap.to(popover, {
     opacity: 0,
-    duration: 0.25,
+    duration: 0.4,
     onComplete: () => {
       popover.style.display = 'none';
     },
