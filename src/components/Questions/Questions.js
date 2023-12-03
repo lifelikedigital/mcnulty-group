@@ -92,12 +92,26 @@ const Questions = () => {
     if (e.keyCode === enterKey) {
       const $this = $(this);
       const $otherTabs = $this.parent().siblings().find($toggleButton);
-      $otherTabs.removeClass(activeToggleButton).attr('aria-selected', 'false');
-      $otherTabs
-        .next()
-        .removeClass(activeAnswer)
-        .css('max-height', '0')
-        .attr('aria-expanded', 'false');
+      $otherTabs.each(function () {
+        const $tab = $(this);
+        if ($tab.hasClass(activeToggleButton)) {
+          console.log($tab);
+          $tab.removeClass(activeToggleButton).attr('aria-selected', 'false');
+          $tab
+            .next()
+            .removeClass(activeAnswer)
+            .css('max-height', '0')
+            .attr('aria-expanded', 'false');
+          const $currentToggleIcon = $tab.find($toggleIcon);
+          console.log($currentToggleIcon);
+          $currentToggleIcon.removeClass(activeToggleIcon);
+          gsap.fromTo(
+            $currentToggleIcon,
+            { duration: 0.3, rotation: 180 },
+            { duration: 0.3, rotation: 90, ease: 'basicEase' }
+          );
+        }
+      });
       const $thisToggleIcon = $this.find($toggleIcon);
       if ($this.hasClass(activeToggleButton)) {
         $thisToggleIcon.removeClass(activeToggleIcon);
