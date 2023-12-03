@@ -31,25 +31,23 @@ const Questions = () => {
       .removeClass(activeAnswer)
       .css('max-height', '0')
       .attr('aria-expanded', 'false');
-    const $otherActiveToggleIcon = $otherTabs.find(
-      '.faq__open-icon' + activeToggleIcon
-    );
-    $otherActiveToggleIcon.removeClass(activeToggleIcon);
-    gsap.fromTo(
-      $otherActiveToggleIcon,
-      { duration: 0.3, rotation: 180 },
-      { duration: 0.3, rotation: 90, ease: 'basicEase' }
-    );
+    const $otherActiveToggleIcon = $otherTabs.find('.faq__open-icon');
+    $otherActiveToggleIcon.removeClass('faq__open-icon--active');
+    gsap.fromTo($otherActiveToggleIcon, {
+      duration: 0.3,
+      rotation: 180,
+      ease: 'basicEase',
+    });
     const $thisToggleIcon = $this.find($toggleIcon);
     if ($this.hasClass(activeToggleButton)) {
-      $thisToggleIcon.removeClass(activeToggleIcon);
+      $thisToggleIcon.removeClass('faq__open-icon--active');
       gsap.fromTo(
         $thisToggleIcon,
         { duration: 0.3, rotation: 180 },
         { duration: 0.3, rotation: 90, ease: 'basicEase' }
       );
     } else {
-      $thisToggleIcon.addClass(activeToggleIcon);
+      $thisToggleIcon.addClass('faq__open-icon--active');
       gsap.fromTo(
         $thisToggleIcon,
         { duration: 0.3, rotation: 90 },
@@ -93,25 +91,23 @@ const Questions = () => {
         .removeClass(activeAnswer)
         .css('max-height', '0')
         .attr('aria-expanded', 'false');
-      const $otherActiveToggleIcon = $otherTabs.find(
-        '.faq__open-icon' + activeToggleIcon
-      );
-      $otherActiveToggleIcon.removeClass(activeToggleIcon);
-      gsap.fromTo(
-        $otherActiveToggleIcon,
-        { duration: 0.3, rotation: 180 },
-        { duration: 0.3, rotation: 90, ease: 'basicEase' }
-      );
+      const $otherActiveToggleIcon = $otherTabs.find('.faq__open-icon');
+      $otherActiveToggleIcon.removeClass('faq__open-icon--active');
+      gsap.fromTo($otherActiveToggleIcon, {
+        duration: 0.3,
+        rotation: 180,
+        ease: 'basicEase',
+      });
       const $thisToggleIcon = $this.find($toggleIcon);
       if ($this.hasClass(activeToggleButton)) {
-        $thisToggleIcon.removeClass(activeToggleIcon);
+        $thisToggleIcon.removeClass('faq__open-icon--active');
         gsap.fromTo(
           $thisToggleIcon,
           { duration: 0.3, rotation: 180 },
           { duration: 0.3, rotation: 90, ease: 'basicEase' }
         );
       } else {
-        $thisToggleIcon.addClass(activeToggleIcon);
+        $thisToggleIcon.addClass('faq__open-icon--active');
         gsap.fromTo(
           $thisToggleIcon,
           { duration: 0.3, rotation: 90 },
