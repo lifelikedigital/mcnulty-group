@@ -35,11 +35,11 @@ const Questions = () => {
       '.faq__open-icon' + activeToggleIcon
     );
     $otherActiveToggleIcon.removeClass(activeToggleIcon);
-    gsap.to($otherActiveToggleIcon, {
-      duration: 0.3,
-      rotation: 180,
-      ease: 'basicEase',
-    });
+    gsap.fromTo(
+      $otherActiveToggleIcon,
+      { duration: 0.3, rotation: 180 },
+      { duration: 0.3, rotation: 90, ease: 'basicEase' }
+    );
     const $thisToggleIcon = $this.find($toggleIcon);
     if ($this.hasClass(activeToggleButton)) {
       $thisToggleIcon.removeClass(activeToggleIcon);
@@ -97,11 +97,11 @@ const Questions = () => {
         '.faq__open-icon' + activeToggleIcon
       );
       $otherActiveToggleIcon.removeClass(activeToggleIcon);
-      gsap.to($otherActiveToggleIcon, {
-        duration: 0.3,
-        rotation: 180,
-        ease: 'basicEase',
-      });
+      gsap.to(
+        $otherActiveToggleIcon,
+        { duration: 0.3, rotation: 180 },
+        { duration: 0.3, rotation: 90, ease: 'basicEase' }
+      );
       const $thisToggleIcon = $this.find($toggleIcon);
       if ($this.hasClass(activeToggleButton)) {
         $thisToggleIcon.removeClass(activeToggleIcon);
