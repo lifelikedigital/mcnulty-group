@@ -31,15 +31,6 @@ const Questions = () => {
       .removeClass(activeAnswer)
       .css('max-height', '0')
       .attr('aria-expanded', 'false');
-    const $otherActiveToggleIcon = $otherTabs.find(
-      $toggleIcon + activeToggleIcon
-    );
-    $otherActiveToggleIcon.removeClass(activeToggleIcon);
-    gsap.to($otherActiveToggleIcon, {
-      duration: 0.3,
-      rotation: 90,
-      ease: 'basicEase',
-    });
     const $thisToggleIcon = $this.find($toggleIcon);
     if ($this.hasClass(activeToggleButton)) {
       $thisToggleIcon.removeClass(activeToggleIcon);
@@ -93,15 +84,6 @@ const Questions = () => {
         .removeClass(activeAnswer)
         .css('max-height', '0')
         .attr('aria-expanded', 'false');
-      const $otherActiveToggleIcon = $otherTabs.find(
-        $toggleIcon + activeToggleIcon
-      );
-      $otherActiveToggleIcon.removeClass(activeToggleIcon);
-      gsap.to($otherActiveToggleIcon, {
-        duration: 0.3,
-        rotation: 90,
-        ease: 'basicEase',
-      });
       const $thisToggleIcon = $this.find($toggleIcon);
       if ($this.hasClass(activeToggleButton)) {
         $thisToggleIcon.removeClass(activeToggleIcon);
