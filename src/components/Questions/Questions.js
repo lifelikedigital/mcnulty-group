@@ -37,7 +37,7 @@ const Questions = () => {
     $otherActiveToggleIcon.removeClass(activeToggleIcon);
     gsap.to($otherActiveToggleIcon, {
       duration: 0.3,
-      rotation: 90,
+      rotation: 0,
       ease: 'basicEase',
     });
     const $thisToggleIcon = $this.find($toggleIcon);
@@ -99,7 +99,7 @@ const Questions = () => {
       $otherActiveToggleIcon.removeClass(activeToggleIcon);
       gsap.to($otherActiveToggleIcon, {
         duration: 0.3,
-        rotation: 90,
+        rotation: 0,
         ease: 'basicEase',
       });
       const $thisToggleIcon = $this.find($toggleIcon);
