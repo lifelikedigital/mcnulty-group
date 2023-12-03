@@ -28,7 +28,6 @@ const Questions = () => {
     $otherTabs.each(function () {
       const $tab = $(this);
       if ($tab.hasClass(activeToggleButton)) {
-        console.log($tab);
         $tab.removeClass(activeToggleButton).attr('aria-selected', 'false');
         $tab
           .next()
@@ -36,7 +35,6 @@ const Questions = () => {
           .css('max-height', '0')
           .attr('aria-expanded', 'false');
         const $currentToggleIcon = $tab.find($toggleIcon);
-        console.log($currentToggleIcon);
         $currentToggleIcon.removeClass(activeToggleIcon);
         gsap.fromTo(
           $currentToggleIcon,
@@ -95,7 +93,6 @@ const Questions = () => {
       $otherTabs.each(function () {
         const $tab = $(this);
         if ($tab.hasClass(activeToggleButton)) {
-          console.log($tab);
           $tab.removeClass(activeToggleButton).attr('aria-selected', 'false');
           $tab
             .next()
@@ -103,7 +100,6 @@ const Questions = () => {
             .css('max-height', '0')
             .attr('aria-expanded', 'false');
           const $currentToggleIcon = $tab.find($toggleIcon);
-          console.log($currentToggleIcon);
           $currentToggleIcon.removeClass(activeToggleIcon);
           gsap.fromTo(
             $currentToggleIcon,
