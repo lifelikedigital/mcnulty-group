@@ -27,17 +27,25 @@ const debounce = (func, delay = 200) => {
   };
 };
 
+let clickTrigger = null;
+
 const triggerDrawer = (trigger, drawer, position = '0%', axis = 'x') => {
   if (!trigger || !drawer) {
     return;
   }
 
-  const clickTrigger = debounce((e) => {
+  // Remove any previously attached event listeners
+  if (clickTrigger) {
+    trigger.removeEventListener('click', clickTrigger);
+  }
+
+  clickTrigger = debounce((e) => {
     openDrawer(drawer, position, axis);
     e.stopPropagation;
   });
 
-  trigger.removeEventListener('click', clickTrigger);
+  // Attach the new event listener
+  trigger.addEventListener('click', clickTrigger);
 };
 
 const dismissDrawer = (drawer, closeButton) => {
