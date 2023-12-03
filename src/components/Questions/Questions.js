@@ -13,7 +13,7 @@ const $questionAnswer = $('.faq__question-answer'); // question and answer paren
 // Classes
 const activeToggleButton = 'faq__question-container--active';
 const activeAnswer = 'faq__answer-container--active';
-const activeToggleIcon = '.faq__open-icon--active';
+const activeToggleIcon = 'faq__open-icon--active';
 
 // Other
 let tabFocus = 0;
