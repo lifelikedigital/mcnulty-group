@@ -9,16 +9,11 @@ const ClientExperienceCarousel = () => {
   const carousels = CreateCarousel(selector, options);
   const carousel = carousels[0];
 
-  // Assuming the carousel has an ID of 'service-highlights-carousel'
+  // Assuming the carousel has an ID of 'testimonials-highlights-carousel'
   const carouselId = 'testimonials-highlights-carousel';
 
-  // Select the buttons using the carousel ID
-  const prevButton = document.querySelector(
-    `#${carouselId} #testimonials-highlights-prev`
-  );
-  const nextButton = document.querySelector(
-    `#${carouselId} #testimonials-highlights-next`
-  );
+  let prevButton;
+  let nextButton;
 
   // Function to update button styles
   const updateButtonStyles = () => {
@@ -28,23 +23,40 @@ const ClientExperienceCarousel = () => {
     }
   };
 
-  // Add event listeners to the buttons
-  if (prevButton && nextButton) {
-    prevButton.addEventListener('click', () => {
-      carousel.scrollPrev();
-      updateButtonStyles();
-    });
-    nextButton.addEventListener('click', () => {
-      carousel.scrollNext();
-      updateButtonStyles();
-    });
-  }
+  // Function to setup buttons
+  const setupButtons = () => {
+    // Select the buttons using the carousel ID
+    prevButton = document.querySelector(
+      `#${carouselId} #testimonials-highlights-prev`
+    );
+    nextButton = document.querySelector(
+      `#${carouselId} #testimonials-highlights-next`
+    );
+
+    // Add event listeners to the buttons
+    if (prevButton && nextButton) {
+      prevButton.addEventListener('click', () => {
+        carousel.scrollPrev();
+        updateButtonStyles();
+      });
+      nextButton.addEventListener('click', () => {
+        carousel.scrollNext();
+        updateButtonStyles();
+      });
+    }
+
+    // Update button styles initially
+    updateButtonStyles();
+  };
+
+  // Setup buttons initially
+  setupButtons();
+
+  // Setup buttons again when the window is resized
+  window.addEventListener('resize', setupButtons);
 
   // Update button styles when the carousel's scroll position changes
   carousel.on('scroll', updateButtonStyles);
-
-  // Update button styles initially
-  updateButtonStyles();
 
   // Add any additional behavior here
 };
