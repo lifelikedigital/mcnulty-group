@@ -1040,7 +1040,9 @@ Usage: codyhouse.co/license
 #testimonials-highlights-prev.is-disabled,
 #testimonials-highlights-next.is-disabled,
 #insights-highlights-prev.is-disabled,
-#insights-highlights-next.is-disabled {
+#insights-highlights-next.is-disabled,
+#team-drawer-prev.is-disabled,
+#team-drawer-next.is-disabled {
   opacity: 0.35;
   transition: opacity 0.2s linear;
 }
