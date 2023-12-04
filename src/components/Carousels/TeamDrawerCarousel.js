@@ -12,9 +12,9 @@ const TeamDrawerCarousel = () => {
           );
           // Team Member + Designation
           const teamMemberDesignation = document.createElement('h2');
-          newElement.className =
+          teamMemberDesignation.className =
             'body-text--secondary heading--team-member team-drawer__heading';
-          newElement.innerHTML =
+          teamMemberDesignation.innerHTML =
             'Mark McNulty<span class="small-regular small-regular--designations-drawer team-drawer__designation">BA, CIM, CFP®</span>';
           teamDrawerContainer.appendChild(teamMemberDesignation);
 
