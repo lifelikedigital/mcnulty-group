@@ -24,13 +24,22 @@ const TeamDrawerCarousel = () => {
     }
   };
 
-  // Function to update carousel height
-  const updateCarouselHeight = () => {
+  // Function to update carousel height and handle opacity transition
+  const updateCarouselHeightAndOpacity = () => {
     const activeSlideIndex = carousel.selectedScrollSnap();
     const slides = document.querySelectorAll(`${selector} .team-drawer__slide`);
     const activeSlideHeight = slides[activeSlideIndex].offsetHeight;
     const carouselContainer = document.querySelector(selector);
     carouselContainer.style.height = `${activeSlideHeight}px`;
+
+    // Handle opacity transition
+    slides.forEach((slide, index) => {
+      if (index === activeSlideIndex) {
+        slide.classList.add('is--active-slide');
+      } else {
+        slide.classList.remove('is--active-slide');
+      }
+    });
   };
 
   // Add event listeners to the buttons
@@ -38,24 +47,24 @@ const TeamDrawerCarousel = () => {
     prevButton.addEventListener('click', () => {
       carousel.scrollPrev();
       updateButtonStyles();
-      updateCarouselHeight();
+      updateCarouselHeightAndOpacity();
     });
     nextButton.addEventListener('click', () => {
       carousel.scrollNext();
       updateButtonStyles();
-      updateCarouselHeight();
+      updateCarouselHeightAndOpacity();
     });
   }
 
   // Update carousel height when the carousel's scroll position changes
   carousel.on('scroll', () => {
     updateButtonStyles();
-    updateCarouselHeight(); // update height on scroll
+    updateCarouselHeightAndOpacity(); // update height on scroll
   });
 
   // Update button styles and carousel height initially
   updateButtonStyles();
-  updateCarouselHeight();
+  updateCarouselHeightAndOpacity();
 
   // Add any additional behavior here
 };
