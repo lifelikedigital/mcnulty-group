@@ -1038,7 +1038,9 @@ Usage: codyhouse.co/license
 #service-highlights-prev.is-disabled,
 #service-highlights-next.is-disabled,
 #testimonials-highlights-prev.is-disabled,
-#testimonials-highlights-next.is-disabled {
+#testimonials-highlights-next.is-disabled,
+#insights-highlights-prev.is-disabled,
+#insights-highlights-next.is-disabled {
   opacity: 0.35;
   transition: opacity 0.2s linear;
 }

@@ -7,6 +7,7 @@ import Questions from './components/Questions/Questions';
 import SpendingProfile from './components/SpendingProfile/SpendingProfile';
 import YourTeamCarousel from './components/Carousels/YourTeamCarousel';
 import ClientExperienceCarousel from './components/Carousels/ClientExperienceCarousel';
+import InsightsCarousel from './components/Carousels/InsightsCarousel';
 
 const GlobalComponents = () => {
   // FadeIn();
@@ -16,6 +17,7 @@ const GlobalComponents = () => {
   SpendingProfile();
   YourTeamCarousel();
   ClientExperienceCarousel();
+  InsightsCarousel();
   // VideoModal();
   // Copyright();
 };
