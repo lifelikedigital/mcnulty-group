@@ -26,8 +26,9 @@ const TeamDrawerCarousel = () => {
 
   // Function to update carousel height
   const updateCarouselHeight = () => {
-    const activeSlide = carousel.selectedSlide();
-    const activeSlideHeight = activeSlide.offsetHeight;
+    const activeSlideIndex = carousel.selectedScrollSnap();
+    const slides = document.querySelectorAll(`${selector} .team-drawer__slide`);
+    const activeSlideHeight = slides[activeSlideIndex].offsetHeight;
     const carouselContainer = document.querySelector(selector);
     carouselContainer.style.height = `${activeSlideHeight}px`;
   };
