@@ -58,6 +58,10 @@ const TeamDrawerCarousel = () => {
 
   // Update carousel height when the carousel's scroll position changes
   carousel.on('scroll', () => {
+    const viewport = document.querySelector(
+      '#team-drawer-carousel .embla__viewport'
+    );
+    viewport.classList.add('embla--is-ready');
     updateButtonStyles();
     updateCarouselHeightAndOpacity(); // update height on scroll
   });
