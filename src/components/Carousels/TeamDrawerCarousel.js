@@ -26,6 +26,8 @@ const TeamDrawerCarousel = () => {
 
   // Function to update carousel height
   const updateCarouselHeight = () => {
+    console.log(carousel.slides); // Log the slides array
+    console.log(carousel.selectedScrollSnap()); // Log the selected scroll snap index
     const slide = carousel.slides[carousel.selectedScrollSnap()];
     carouselNode.style.height = `${slide.scrollHeight}px`;
   };
