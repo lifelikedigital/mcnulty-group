@@ -1020,13 +1020,11 @@ Usage: codyhouse.co/license
 #hide-core-spending-profile.show {
   opacity: 1;
   transition: opacity 0.2s linear;
-  transition-delay: 0.4s;
 }
 
 #see-core-spending-profile.hide {
   opacity: 0;
   transition: opacity 0.2s linear;
-  transition-delay: 0.4s;
 }
 
 /* Other */
