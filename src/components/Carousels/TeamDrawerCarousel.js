@@ -1,5 +1,4 @@
-import EmblaCarousel from 'embla-carousel';
-import AutoHeight from 'embla-carousel-auto-height';
+import CreateCarousel from './CreateCarousel';
 
 const TeamDrawerCarousel = () => {
   const selector = '#team-drawer-carousel .embla__viewport';
@@ -7,12 +6,8 @@ const TeamDrawerCarousel = () => {
     loop: false,
     align: 'start',
   };
-
-  const carouselNode = document.querySelector(selector);
-  const autoHeightOptions = { destroyHeight: 'auto' }; // Options for AutoHeight plugin
-  const carousel = EmblaCarousel(carouselNode, options, [
-    AutoHeight(autoHeightOptions), // Add AutoHeight plugin with options
-  ]);
+  const carousels = CreateCarousel(selector, options, true); // Pass true to use AutoHeight
+  const carousel = carousels[0];
 
   // Assuming the carousel has an ID of 'team-drawer-carousel'
   const carouselId = 'team-drawer-carousel';
