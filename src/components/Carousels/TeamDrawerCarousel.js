@@ -74,6 +74,11 @@ const TeamDrawerCarousel = () => {
 
   // Disable the default sliding transition
   carousel.internalEngine().translate.toggleActive(false);
+
+  // Add a resize event listener to the window
+  window.addEventListener('resize', () => {
+    carousel.resize();
+  });
 };
 
 export default TeamDrawerCarousel;
