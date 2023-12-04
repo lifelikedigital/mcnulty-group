@@ -1038,6 +1038,7 @@ Usage: codyhouse.co/license
 #service-highlights-prev.is-disabled,
 #service-highlights-next.is-disabled {
   opacity: 0.35;
+  transition: opacity 0.2s linear;
 }
 
 /* Other */
