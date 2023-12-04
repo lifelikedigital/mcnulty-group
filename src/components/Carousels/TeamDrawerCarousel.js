@@ -67,6 +67,9 @@ const TeamDrawerCarousel = () => {
   updateCarouselHeightAndOpacity();
 
   // Add any additional behavior here
+
+  // Disable the default sliding transition
+  carousel.internalEngine().translate.toggleActive(false);
 };
 
 export default TeamDrawerCarousel;
