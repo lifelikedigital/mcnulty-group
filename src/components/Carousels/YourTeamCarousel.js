@@ -7,6 +7,7 @@ const YourTeamCarousel = () => {
     align: 'start',
   };
   const carousels = CreateCarousel(selector, options);
+  const carousel = carousels[0];
 
   // Assuming the carousel has an ID of 'service-highlights-carousel'
   const carouselId = 'service-highlights-carousel';
@@ -19,9 +20,24 @@ const YourTeamCarousel = () => {
     `#${carouselId} #service-highlights-next`
   );
 
+  // Function to update button styles
+  const updateButtonStyles = () => {
+    prevButton.classList.toggle('is-disabled', !carousel.canScrollPrev());
+    nextButton.classList.toggle('is-disabled', !carousel.canScrollNext());
+  };
+
   // Add event listeners to the buttons
-  prevButton.addEventListener('click', () => carousels[0].scrollPrev());
-  nextButton.addEventListener('click', () => carousels[0].scrollNext());
+  prevButton.addEventListener('click', () => {
+    carousel.scrollPrev();
+    updateButtonStyles();
+  });
+  nextButton.addEventListener('click', () => {
+    carousel.scrollNext();
+    updateButtonStyles();
+  });
+
+  // Update button styles initially
+  updateButtonStyles();
 
   // Add any additional behavior here
 };

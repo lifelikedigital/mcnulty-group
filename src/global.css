@@ -1034,6 +1034,12 @@ Usage: codyhouse.co/license
   transition: opacity 0.2s linear;
 }
 
+/* Carousels */
+#service-highlights-prev.is-disabled,
+#service-highlights-next.is-disabled {
+  opacity: 0.35;
+}
+
 /* Other */
 .visually-hidden {
   position: absolute !important;
