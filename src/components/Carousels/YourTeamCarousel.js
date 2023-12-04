@@ -22,19 +22,23 @@ const YourTeamCarousel = () => {
 
   // Function to update button styles
   const updateButtonStyles = () => {
-    prevButton.classList.toggle('is-disabled', !carousel.canScrollPrev());
-    nextButton.classList.toggle('is-disabled', !carousel.canScrollNext());
+    if (prevButton && nextButton) {
+      prevButton.classList.toggle('is-disabled', !carousel.canScrollPrev());
+      nextButton.classList.toggle('is-disabled', !carousel.canScrollNext());
+    }
   };
 
   // Add event listeners to the buttons
-  prevButton.addEventListener('click', () => {
-    carousel.scrollPrev();
-    updateButtonStyles();
-  });
-  nextButton.addEventListener('click', () => {
-    carousel.scrollNext();
-    updateButtonStyles();
-  });
+  if (prevButton && nextButton) {
+    prevButton.addEventListener('click', () => {
+      carousel.scrollPrev();
+      updateButtonStyles();
+    });
+    nextButton.addEventListener('click', () => {
+      carousel.scrollNext();
+      updateButtonStyles();
+    });
+  }
 
   // Update button styles initially
   updateButtonStyles();
