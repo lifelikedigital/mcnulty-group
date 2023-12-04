@@ -8,7 +8,7 @@ import SpendingProfile from './components/SpendingProfile/SpendingProfile';
 import YourTeamCarousel from './components/Carousels/YourTeamCarousel';
 import ClientExperienceCarousel from './components/Carousels/ClientExperienceCarousel';
 import InsightsCarousel from './components/Carousels/InsightsCarousel';
-// import TeamDrawerCarousel from './components/Carousels/TeamDrawerCarousel';
+import TeamDrawerCarousel from './components/Carousels/TeamDrawerCarousel';
 
 const GlobalComponents = () => {
   // FadeIn();
@@ -19,7 +19,7 @@ const GlobalComponents = () => {
   YourTeamCarousel();
   ClientExperienceCarousel();
   InsightsCarousel();
-  // TeamDrawerCarousel();
+  TeamDrawerCarousel();
   // VideoModal();
   // Copyright();
 };
