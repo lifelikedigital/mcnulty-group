@@ -24,23 +24,37 @@ const TeamDrawerCarousel = () => {
     }
   };
 
+  // Function to update carousel height
+  const updateCarouselHeight = () => {
+    const activeSlide = carousel.selectedSlide();
+    const activeSlideHeight = activeSlide.offsetHeight;
+    const carouselContainer = document.querySelector(selector);
+    carouselContainer.style.height = `${activeSlideHeight}px`;
+  };
+
   // Add event listeners to the buttons
   if (prevButton && nextButton) {
     prevButton.addEventListener('click', () => {
       carousel.scrollPrev();
       updateButtonStyles();
+      updateCarouselHeight();
     });
     nextButton.addEventListener('click', () => {
       carousel.scrollNext();
       updateButtonStyles();
+      updateCarouselHeight();
     });
   }
 
-  // Update button styles when the carousel's scroll position changes
-  carousel.on('scroll', updateButtonStyles);
+  // Update carousel height when the carousel's scroll position changes
+  carousel.on('scroll', () => {
+    updateButtonStyles();
+    updateCarouselHeight(); // update height on scroll
+  });
 
-  // Update button styles initially
+  // Update button styles and carousel height initially
   updateButtonStyles();
+  updateCarouselHeight();
 
   // Add any additional behavior here
 };
