@@ -6,8 +6,8 @@ const TeamDrawerCarousel = () => {
     loop: false,
     align: 'start',
   };
-  const carousels = CreateCarousel(selector, options);
-  const carousel = carousels[0];
+  let carousels = CreateCarousel(selector, options);
+  let carousel = carousels[0];
 
   // Assuming the carousel has an ID of 'service-highlights-carousel'
   const carouselId = 'team-drawer-carousel';
@@ -89,7 +89,19 @@ const TeamDrawerCarousel = () => {
 
   // Add a resize event listener to the window
   window.addEventListener('resize', () => {
-    carousel.resize();
+    // Destroy the current carousel
+    carousel.destroy();
+
+    // Create a new carousel
+    const carousels = CreateCarousel(selector, options);
+    carousel = carousels[0];
+
+    // Reapply your customizations
+    carousel.internalEngine().translate.toggleActive(false);
+    const viewport = document.querySelector(
+      '#team-drawer-carousel .embla__viewport'
+    );
+    viewport.classList.add('embla--is-ready');
   });
 };
 
