@@ -2,7 +2,7 @@
 import Drawers from './components/Drawers/Drawers';
 import MobileMenu from './components/MobileMenu/MobileMenu';
 import Questions from './components/Questions/Questions';
-// import VideoModal from './components/VideoModal/VideoModal';
+import VideoModal from './components/VideoModal/VideoModal';
 // import Copyright from './components/Copyright/Copyright';
 import SpendingProfile from './components/SpendingProfile/SpendingProfile';
 import YourTeamCarousel from './components/Carousels/YourTeamCarousel';
@@ -20,7 +20,7 @@ const GlobalComponents = () => {
   ClientExperienceCarousel();
   InsightsCarousel();
   TeamDrawerCarousel();
-  // VideoModal();
+  VideoModal();
   // Copyright();
 };
 
