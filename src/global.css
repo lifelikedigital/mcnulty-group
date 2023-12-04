@@ -1036,7 +1036,9 @@ Usage: codyhouse.co/license
 
 /* Carousels */
 #service-highlights-prev.is-disabled,
-#service-highlights-next.is-disabled {
+#service-highlights-next.is-disabled,
+#testimonials-highlights-prev.is-disabled,
+#testimonials-highlights-next.is-disabled {
   opacity: 0.35;
   transition: opacity 0.2s linear;
 }
