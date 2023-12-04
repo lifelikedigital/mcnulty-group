@@ -5,7 +5,6 @@ const ClientExperienceCarousel = () => {
   const options = {
     loop: false,
     align: 'start',
-    dragFree: false,
   };
   const carousels = CreateCarousel(selector, options);
   const carousel = carousels[0];
