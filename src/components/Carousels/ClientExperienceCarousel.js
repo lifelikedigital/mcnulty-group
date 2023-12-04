@@ -5,14 +5,9 @@ const ClientExperienceCarousel = () => {
   const options = {
     loop: false,
     align: 'start',
-    active: false,
-    '(min-width: 991px)': { active: true },
   };
-  const carousels = CreateCarousel(selector, options);
-  const carousel = carousels[0];
-
-  // Assuming the carousel has an ID of 'testimonials-highlights-carousel'
-  const carouselId = 'testimonials-highlights-carousel';
+  let carousels;
+  let carousel;
 
   let prevButton;
   let nextButton;
@@ -39,6 +34,9 @@ const ClientExperienceCarousel = () => {
 
   // Function to setup buttons
   const setupButtons = () => {
+    // Assuming the carousel has an ID of 'testimonials-highlights-carousel'
+    const carouselId = 'testimonials-highlights-carousel';
+
     // Select the buttons using the carousel ID
     prevButton = document.querySelector(
       `#${carouselId} #testimonials-highlights-prev`
@@ -48,11 +46,11 @@ const ClientExperienceCarousel = () => {
     );
 
     // Remove existing event listeners
-    prevButton.removeEventListener('click', handlePrevClick);
-    nextButton.removeEventListener('click', handleNextClick);
-
-    // Add event listeners to the buttons
     if (prevButton && nextButton) {
+      prevButton.removeEventListener('click', handlePrevClick);
+      nextButton.removeEventListener('click', handleNextClick);
+
+      // Add event listeners to the buttons
       prevButton.addEventListener('click', handlePrevClick);
       nextButton.addEventListener('click', handleNextClick);
 
@@ -61,16 +59,31 @@ const ClientExperienceCarousel = () => {
     }
   };
 
-  // Setup buttons initially
-  setupButtons();
+  // Function to setup carousel
+  const setupCarousel = () => {
+    if (window.matchMedia('(max-width: 991px)').matches) {
+      options.active = true;
+      carousels = CreateCarousel(selector, options);
+      carousel = carousels[0];
 
-  // Setup buttons again when the window is resized
-  window.addEventListener('resize', setupButtons);
+      // Setup buttons
+      setupButtons();
 
-  // Update button styles when the carousel's scroll position changes
-  carousel.on('scroll', updateButtonStyles);
+      // Update button styles when the carousel's scroll position changes
+      carousel.on('scroll', updateButtonStyles);
+    } else {
+      options.active = false;
+      if (carousel) {
+        carousel.destroy();
+      }
+    }
+  };
 
-  // Add any additional behavior here
+  // Setup carousel initially
+  setupCarousel();
+
+  // Setup carousel and buttons again when the window is resized
+  window.addEventListener('resize', setupCarousel);
 };
 
 export default ClientExperienceCarousel;
