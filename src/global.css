@@ -1011,6 +1011,12 @@ Usage: codyhouse.co/license
   transition: opacity 0.35s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
+/* Spending Profile */
+.spending-profile--active {
+  transform: translateY(0);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 /* Other */
 .visually-hidden {
   position: absolute !important;
