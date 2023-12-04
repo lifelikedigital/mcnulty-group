@@ -75,6 +75,18 @@ const TeamDrawerCarousel = () => {
   // Disable the default sliding transition
   carousel.internalEngine().translate.toggleActive(false);
 
+  // Add an init event listener to the carousel
+  carousel.on('init', () => {
+    // Disable the default sliding transition
+    carousel.internalEngine().translate.toggleActive(false);
+
+    // Add the 'embla--is-ready' class to the viewport
+    const viewport = document.querySelector(
+      '#team-drawer-carousel .embla__viewport'
+    );
+    viewport.classList.add('embla--is-ready');
+  });
+
   // Add a resize event listener to the window
   window.addEventListener('resize', () => {
     carousel.resize();
