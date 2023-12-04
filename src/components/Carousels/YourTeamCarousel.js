@@ -4,7 +4,7 @@ const YourTeamCarousel = () => {
   const selector = '#service-highlights-carousel .embla__viewport';
   const options = {
     loop: false,
-    containScroll: 'trimSnaps', // Add this line
+    // containScroll: 'trimSnaps', // Add this line
   };
   const carousels = CreateCarousel(selector, options);
 
