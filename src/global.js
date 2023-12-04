@@ -5,6 +5,7 @@ import Questions from './components/Questions/Questions';
 // import VideoModal from './components/VideoModal/VideoModal';
 // import Copyright from './components/Copyright/Copyright';
 import SpendingProfile from './components/SpendingProfile/SpendingProfile';
+import YourTeamCarousel from './components/Carousels/YourTeamCarousel';
 
 const GlobalComponents = () => {
   // FadeIn();
@@ -12,6 +13,7 @@ const GlobalComponents = () => {
   MobileMenu();
   Questions();
   SpendingProfile();
+  YourTeamCarousel();
   // VideoModal();
   // Copyright();
 };
