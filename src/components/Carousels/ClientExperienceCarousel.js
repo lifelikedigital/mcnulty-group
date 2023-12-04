@@ -53,10 +53,10 @@ const ClientExperienceCarousel = () => {
     if (prevButton && nextButton) {
       prevButton.addEventListener('click', handlePrevClick);
       nextButton.addEventListener('click', handleNextClick);
-    }
 
-    // Update button styles initially
-    updateButtonStyles();
+      // Update button styles after adding new event listeners
+      updateButtonStyles();
+    }
   };
 
   // Setup buttons initially
