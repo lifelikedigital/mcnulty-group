@@ -1017,6 +1017,11 @@ Usage: codyhouse.co/license
   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.spending-profile.spending-profile--active .spending-profile__toggle {
+  transform: rotateZ(45deg);
+  transition: transform 0.2s linear;
+}
+
 #hide-core-spending-profile.show,
 #hide-legacy-spending-profile.show {
   opacity: 1;
