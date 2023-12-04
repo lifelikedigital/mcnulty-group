@@ -1,13 +1,33 @@
-const actionElement = document.getElementById('spending-profile-core-action');
-const cardElement = document.getElementById('spending-profile-core-card');
-const hideElement = document.getElementById('see-core-spending-profile');
-const showElement = document.getElementById('hide-core-spending-profile');
+const coreActionElement = document.getElementById(
+  'spending-profile-core-action'
+);
+const coreCardElement = document.getElementById('spending-profile-core-card');
+const coreHideElement = document.getElementById('see-core-spending-profile');
+const coreShowElement = document.getElementById('hide-core-spending-profile');
+
+const legacyActionElement = document.getElementById(
+  'spending-profile-core-action'
+);
+const legacyCardElement = document.getElementById(
+  'spending-profile-legacy-card'
+);
+const legacyHideElement = document.getElementById(
+  'see-legacy-spending-profile'
+);
+const legacyShowElement = document.getElementById(
+  'hide-legacy-spending-profile'
+);
 
 const SpendingProfile = () => {
-  actionElement.addEventListener('click', () => {
-    cardElement.classList.toggle('spending-profile--active');
-    hideElement.classList.toggle('hide');
-    showElement.classList.toggle('show');
+  coreActionElement.addEventListener('click', () => {
+    coreCardElement.classList.toggle('spending-profile--active');
+    coreHideElement.classList.toggle('hide');
+    coreShowElement.classList.toggle('show');
+  });
+  legacyActionElement.addEventListener('click', () => {
+    legacyCardElement.classList.toggle('spending-profile--active');
+    legacyHideElement.classList.toggle('hide');
+    legacyShowElement.classList.toggle('show');
   });
 };
 
