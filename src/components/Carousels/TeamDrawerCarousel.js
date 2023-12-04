@@ -6,10 +6,10 @@ const TeamDrawerCarousel = () => {
     loop: false,
     align: 'start',
   };
-  const carousels = CreateCarousel(selector, options, true); // Pass true to use AutoHeight
+  const carousels = CreateCarousel(selector, options);
   const carousel = carousels[0];
 
-  // Assuming the carousel has an ID of 'team-drawer-carousel'
+  // Assuming the carousel has an ID of 'service-highlights-carousel'
   const carouselId = 'team-drawer-carousel';
 
   // Select the buttons using the carousel ID
@@ -24,37 +24,23 @@ const TeamDrawerCarousel = () => {
     }
   };
 
-  // Function to update carousel height
-  const updateCarouselHeight = () => {
-    console.log(carousel.slides); // Log the slides array
-    console.log(carousel.selectedScrollSnap()); // Log the selected scroll snap index
-    const slide = carousel.slides[carousel.selectedScrollSnap()];
-    carouselNode.style.height = `${slide.scrollHeight}px`;
-  };
-
   // Add event listeners to the buttons
   if (prevButton && nextButton) {
     prevButton.addEventListener('click', () => {
       carousel.scrollPrev();
       updateButtonStyles();
-      updateCarouselHeight();
     });
     nextButton.addEventListener('click', () => {
       carousel.scrollNext();
       updateButtonStyles();
-      updateCarouselHeight();
     });
   }
 
-  // Update button styles and carousel height when the carousel's scroll position changes
-  carousel.on('scroll', () => {
-    updateButtonStyles();
-    updateCarouselHeight();
-  });
+  // Update button styles when the carousel's scroll position changes
+  carousel.on('scroll', updateButtonStyles);
 
-  // Update button styles and carousel height initially
+  // Update button styles initially
   updateButtonStyles();
-  updateCarouselHeight();
 
   // Add any additional behavior here
 };
