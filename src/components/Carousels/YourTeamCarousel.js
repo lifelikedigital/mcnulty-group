@@ -5,7 +5,6 @@ const YourTeamCarousel = () => {
   const options = {
     loop: false,
     align: 'start',
-    containScroll: false,
   };
   const carousels = CreateCarousel(selector, options);
   const carousel = carousels[0];

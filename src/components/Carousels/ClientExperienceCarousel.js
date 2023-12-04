@@ -5,6 +5,8 @@ const ClientExperienceCarousel = () => {
   const options = {
     loop: false,
     align: 'start',
+    active: false,
+    '(min-width: 991px)': { active: true },
   };
   const carousels = CreateCarousel(selector, options);
   const carousel = carousels[0];
