@@ -40,6 +40,9 @@ const YourTeamCarousel = () => {
     });
   }
 
+  // Update button styles when the carousel's scroll position changes
+  carousel.on('scroll', updateButtonStyles);
+
   // Update button styles initially
   updateButtonStyles();
 
