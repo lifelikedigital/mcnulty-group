@@ -43,17 +43,20 @@ const TeamDrawerCarousel = () => {
   };
 
   // Add event listeners to the buttons
+  let prevButtonListener, nextButtonListener;
   if (prevButton && nextButton) {
-    prevButton.addEventListener('click', () => {
+    prevButtonListener = () => {
       carousel.scrollPrev();
       updateButtonStyles();
       updateCarouselHeightAndOpacity();
-    });
-    nextButton.addEventListener('click', () => {
+    };
+    nextButtonListener = () => {
       carousel.scrollNext();
       updateButtonStyles();
       updateCarouselHeightAndOpacity();
-    });
+    };
+    prevButton.addEventListener('click', prevButtonListener);
+    nextButton.addEventListener('click', nextButtonListener);
   }
 
   // Update carousel height when the carousel's scroll position changes
@@ -89,11 +92,17 @@ const TeamDrawerCarousel = () => {
 
   // Add a resize event listener to the window
   window.addEventListener('resize', () => {
+    // Remove the old event listeners
+    if (prevButton && nextButton) {
+      prevButton.removeEventListener('click', prevButtonListener);
+      nextButton.removeEventListener('click', nextButtonListener);
+    }
+
     // Destroy the current carousel
     carousel.destroy();
 
     // Create a new carousel
-    const carousels = CreateCarousel(selector, options);
+    carousels = CreateCarousel(selector, options);
     carousel = carousels[0];
 
     // Reapply your customizations
@@ -102,6 +111,22 @@ const TeamDrawerCarousel = () => {
       '#team-drawer-carousel .embla__viewport'
     );
     viewport.classList.add('embla--is-ready');
+
+    // Add new event listeners to the buttons
+    if (prevButton && nextButton) {
+      prevButtonListener = () => {
+        carousel.scrollPrev();
+        updateButtonStyles();
+        updateCarouselHeightAndOpacity();
+      };
+      nextButtonListener = () => {
+        carousel.scrollNext();
+        updateButtonStyles();
+        updateCarouselHeightAndOpacity();
+      };
+      prevButton.addEventListener('click', prevButtonListener);
+      nextButton.addEventListener('click', nextButtonListener);
+    }
   });
 };
 
