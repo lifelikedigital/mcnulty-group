@@ -1,5 +1,5 @@
 import EmblaCarousel from 'embla-carousel';
-import { createEmblaCarouselAutoHeight } from 'embla-carousel-auto-height';
+import AutoHeight from 'embla-carousel-auto-height';
 
 const TeamDrawerCarousel = () => {
   const selector = '#team-drawer-carousel .embla__viewport';
@@ -9,10 +9,10 @@ const TeamDrawerCarousel = () => {
   };
 
   const carouselNode = document.querySelector(selector);
-  const carousel = EmblaCarousel(carouselNode, options);
-
-  // Initialize the Auto Height plugin
-  const autoHeight = createEmblaCarouselAutoHeight(carousel);
+  const autoHeightOptions = { destroyHeight: 'auto' }; // Options for AutoHeight plugin
+  const carousel = EmblaCarousel(carouselNode, options, [
+    AutoHeight(autoHeightOptions), // Add AutoHeight plugin with options
+  ]);
 
   // Assuming the carousel has an ID of 'team-drawer-carousel'
   const carouselId = 'team-drawer-carousel';
@@ -42,14 +42,10 @@ const TeamDrawerCarousel = () => {
   }
 
   // Update button styles when the carousel's scroll position changes
-  carousel.on('scroll', () => {
-    updateButtonStyles();
-    autoHeight.update(); // Update the auto height
-  });
+  carousel.on('scroll', updateButtonStyles);
 
   // Update button styles initially
   updateButtonStyles();
-  autoHeight.update(); // Update the auto height initially
 
   // Add any additional behavior here
 };
