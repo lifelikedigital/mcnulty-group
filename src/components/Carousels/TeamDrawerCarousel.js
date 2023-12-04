@@ -9,9 +9,11 @@ const TeamDrawerCarousel = () => {
   };
   const carousels = CreateCarousel(selector, options);
   const carousel = carousels[0];
+
+  // Initialize the Auto Height plugin
   const autoHeight = createEmblaCarouselAutoHeight(carousel);
 
-  // Assuming the carousel has an ID of 'team-drawer-carousel'
+  // Assuming the carousel has an ID of 'service-highlights-carousel'
   const carouselId = 'team-drawer-carousel';
 
   // Select the buttons using the carousel ID
@@ -38,14 +40,15 @@ const TeamDrawerCarousel = () => {
     });
   }
 
-  // Update button styles when the carousel's scroll position changes
-  carousel.on('scroll', updateButtonStyles);
+  // Update button styles and auto height when the carousel's scroll position changes
+  carousel.on('scroll', () => {
+    updateButtonStyles();
+    autoHeight.update(); // Update the auto height
+  });
 
-  // Update button styles initially
+  // Update button styles and auto height initially
   updateButtonStyles();
-
-  // Initialize the Auto Height plugin
-  autoHeight.update();
+  autoHeight.update(); // Update the auto height initially
 
   // Add any additional behavior here
 };
