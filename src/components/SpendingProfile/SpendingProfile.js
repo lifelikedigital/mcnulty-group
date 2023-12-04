@@ -6,7 +6,7 @@ const coreHideElement = document.getElementById('see-core-spending-profile');
 const coreShowElement = document.getElementById('hide-core-spending-profile');
 
 const legacyActionElement = document.getElementById(
-  'spending-profile-core-action'
+  'spending-profile-legacy-action'
 );
 const legacyCardElement = document.getElementById(
   'spending-profile-legacy-card'
