@@ -1012,7 +1012,7 @@ Usage: codyhouse.co/license
 }
 
 /* Spending Profile */
-.spending-profile--active {
+.spending-profile.spending-profile--active {
   transform: translateY(0);
   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
