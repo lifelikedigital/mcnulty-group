@@ -15,6 +15,18 @@ const ClientExperienceCarousel = () => {
   let prevButton;
   let nextButton;
 
+  // Function to handle prevButton click
+  const handlePrevClick = () => {
+    carousel.scrollPrev();
+    updateButtonStyles();
+  };
+
+  // Function to handle nextButton click
+  const handleNextClick = () => {
+    carousel.scrollNext();
+    updateButtonStyles();
+  };
+
   // Function to update button styles
   const updateButtonStyles = () => {
     if (prevButton && nextButton) {
@@ -33,16 +45,14 @@ const ClientExperienceCarousel = () => {
       `#${carouselId} #testimonials-highlights-next`
     );
 
+    // Remove existing event listeners
+    prevButton.removeEventListener('click', handlePrevClick);
+    nextButton.removeEventListener('click', handleNextClick);
+
     // Add event listeners to the buttons
     if (prevButton && nextButton) {
-      prevButton.addEventListener('click', () => {
-        carousel.scrollPrev();
-        updateButtonStyles();
-      });
-      nextButton.addEventListener('click', () => {
-        carousel.scrollNext();
-        updateButtonStyles();
-      });
+      prevButton.addEventListener('click', handlePrevClick);
+      nextButton.addEventListener('click', handleNextClick);
     }
 
     // Update button styles initially
