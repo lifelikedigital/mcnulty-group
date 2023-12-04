@@ -4,12 +4,13 @@ const TeamDrawerCarousel = () => {
   const teamActions = document.querySelectorAll('.team-action');
   teamActions.forEach((teamAction) => {
     teamAction.addEventListener('click', () => {
+      const teamDrawerContainer = document.querySelector(
+        '.team-drawer__container'
+      );
+      teamDrawerContainer.innerHTML = ''; // Clear all child elements
       const teamMember = teamAction.getAttribute('data-team-member');
       switch (teamMember) {
         case 'mark-mcnulty':
-          const teamDrawerContainer = document.querySelector(
-            '.team-drawer__container'
-          );
           // Team Member + Designation
           const teamMemberDesignation = document.createElement('h2');
           teamMemberDesignation.className =
