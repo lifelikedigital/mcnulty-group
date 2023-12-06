@@ -29,14 +29,14 @@ const TeamDrawerCarousel = () => {
           // Image
           const markMcNultyImage = document.createElement('img');
           markMcNultyImage.src =
-            'https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656aa914cb1171dcc0f7b5ca_team-members_drawer_mark-mcnulty_2x.png';
+            'https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce64ce08f2dc3bc31b46_team-members_drawer_mark-mcnulty_2x.png';
           markMcNultyImage.loading = 'lazy';
           markMcNultyImage.sizes =
             '(max-width: 479px) 88vw, (max-width: 767px) 91vw, (max-width: 1279px) 546px, 704.53125px';
           markMcNultyImage.alt = '';
           markMcNultyImage.width = '1410';
           markMcNultyImage.srcset =
-            'https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656aa914cb1171dcc0f7b5ca_team-members_drawer_mark-mcnulty_2x-p-500.png 500w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656aa914cb1171dcc0f7b5ca_team-members_drawer_mark-mcnulty_2x-p-800.png 800w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656aa914cb1171dcc0f7b5ca_team-members_drawer_mark-mcnulty_2x-p-1080.png 1080w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656aa914cb1171dcc0f7b5ca_team-members_drawer_mark-mcnulty_2x.png 1410w';
+            'https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce64ce08f2dc3bc31b46_team-members_drawer_mark-mcnulty_2x-p-500.png 500w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce64ce08f2dc3bc31b46_team-members_drawer_mark-mcnulty_2x-p-800.png 800w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce64ce08f2dc3bc31b46_team-members_drawer_mark-mcnulty_2x-p-1080.png 1080w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce64ce08f2dc3bc31b46_team-members_drawer_mark-mcnulty_2x.png 1410w';
           markMcNultyImage.className = 'team-drawer__img';
           teamDrawerContainer.appendChild(markMcNultyImage);
 
@@ -66,14 +66,14 @@ const TeamDrawerCarousel = () => {
           // Image
           const michaelWilsonImage = document.createElement('img');
           michaelWilsonImage.src =
-            'https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656aae88013607f0256a11dc_team-members_drawer_michael-wilson_2x.png';
+            'https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce64cb788152b191a88b_team-members_drawer_michael-wilson_2x.png';
           michaelWilsonImage.loading = 'lazy';
           michaelWilsonImage.sizes =
             '(max-width: 479px) 88vw, (max-width: 767px) 91vw, (max-width: 1279px) 546px, 704.53125px';
           michaelWilsonImage.alt = '';
           michaelWilsonImage.width = '1410';
           michaelWilsonImage.srcset =
-            'https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656aae88013607f0256a11dc_team-members_drawer_michael-wilson_2x-p-500.png 500w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656aae88013607f0256a11dc_team-members_drawer_michael-wilson_2x-p-800.png 800w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656aae88013607f0256a11dc_team-members_drawer_michael-wilson_2x-p-1080.png 1080w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656aae88013607f0256a11dc_team-members_drawer_michael-wilson_2x.png 1410w';
+            'https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce64cb788152b191a88b_team-members_drawer_michael-wilson_2x-p-500.png 500w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce64cb788152b191a88b_team-members_drawer_michael-wilson_2x-p-800.png 800w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce64cb788152b191a88b_team-members_drawer_michael-wilson_2x-p-1080.png 1080w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce64cb788152b191a88b_team-members_drawer_michael-wilson_2x.png 1410w';
           michaelWilsonImage.className = 'team-drawer__img';
           teamDrawerContainer.appendChild(michaelWilsonImage);
 
@@ -103,14 +103,14 @@ const TeamDrawerCarousel = () => {
           // Image
           const karenBarrowImage = document.createElement('img');
           karenBarrowImage.src =
-            'https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656aae8794bb4d7d862349f3_team-members_drawer_karen-barrow_2x.png';
+            'https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce66d51f80e5cc87cb75_team-members_drawer_karen-barrow_2x.png';
           karenBarrowImage.loading = 'lazy';
           karenBarrowImage.sizes =
             '(max-width: 479px) 88vw, (max-width: 767px) 91vw, (max-width: 1279px) 546px, 704.53125px';
           karenBarrowImage.alt = '';
           karenBarrowImage.width = '1410';
           karenBarrowImage.srcset =
-            'https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656aae8794bb4d7d862349f3_team-members_drawer_karen-barrow_2x-p-500.png 500w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656aae8794bb4d7d862349f3_team-members_drawer_karen-barrow_2x-p-800.png 800w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656aae8794bb4d7d862349f3_team-members_drawer_karen-barrow_2x-p-1080.png 1080w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656aae8794bb4d7d862349f3_team-members_drawer_karen-barrow_2x.png 1410w';
+            'https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce66d51f80e5cc87cb75_team-members_drawer_karen-barrow_2x-p-500.png 500w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce66d51f80e5cc87cb75_team-members_drawer_karen-barrow_2x-p-800.png 800w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce66d51f80e5cc87cb75_team-members_drawer_karen-barrow_2x-p-1080.png 1080w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce66d51f80e5cc87cb75_team-members_drawer_karen-barrow_2x.png 1410w';
           karenBarrowImage.className = 'team-drawer__img';
           teamDrawerContainer.appendChild(karenBarrowImage);
 
@@ -140,14 +140,14 @@ const TeamDrawerCarousel = () => {
           // Image
           const robertMarkImage = document.createElement('img');
           robertMarkImage.src =
-            'https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656aae89d4c7ff75a842987e_team-members_drawer_robert-mark_2x.png';
+            'https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce63cb788152b191a556_team-members_drawer_robert-mark_2x.png';
           robertMarkImage.loading = 'lazy';
           robertMarkImage.sizes =
             '(max-width: 479px) 88vw, (max-width: 767px) 91vw, (max-width: 1279px) 546px, 704.53125px';
           robertMarkImage.alt = '';
           robertMarkImage.width = '1410';
           robertMarkImage.srcset =
-            'https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656aae89d4c7ff75a842987e_team-members_drawer_robert-mark_2x-p-500.png 500w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656aae89d4c7ff75a842987e_team-members_drawer_robert-mark_2x-p-800.png 800w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656aae89d4c7ff75a842987e_team-members_drawer_robert-mark_2x-p-1080.png 1080w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656aae89d4c7ff75a842987e_team-members_drawer_robert-mark_2x.png 1410w';
+            'https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce63cb788152b191a556_team-members_drawer_robert-mark_2x-p-500.png 500w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce63cb788152b191a556_team-members_drawer_robert-mark_2x-p-800.png 800w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce63cb788152b191a556_team-members_drawer_robert-mark_2x-p-1080.png 1080w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce63cb788152b191a556_team-members_drawer_robert-mark_2x.png 1410w';
           robertMarkImage.className = 'team-drawer__img';
           teamDrawerContainer.appendChild(robertMarkImage);
 
@@ -178,14 +178,14 @@ const TeamDrawerCarousel = () => {
           // Image
           const graemeMoreauImage = document.createElement('img');
           graemeMoreauImage.src =
-            'https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656aae87111dd4df1e9b2fd4_team-members_drawer_graeme-moreau_2x.png';
+            'https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce668a358ad2b667f94a_team-members_drawer_graeme-moreau_2x.png';
           graemeMoreauImage.loading = 'lazy';
           graemeMoreauImage.sizes =
             '(max-width: 479px) 88vw, (max-width: 767px) 91vw, (max-width: 1279px) 546px, 704.53125px';
           graemeMoreauImage.alt = '';
           graemeMoreauImage.width = '1410';
           graemeMoreauImage.srcset =
-            'https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656aae87111dd4df1e9b2fd4_team-members_drawer_graeme-moreau_2x-p-500.png 500w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656aae87111dd4df1e9b2fd4_team-members_drawer_graeme-moreau_2x-p-800.png 800w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656aae87111dd4df1e9b2fd4_team-members_drawer_graeme-moreau_2x-p-1080.png 1080w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656aae87111dd4df1e9b2fd4_team-members_drawer_graeme-moreau_2x.png 1410w';
+            'https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce668a358ad2b667f94a_team-members_drawer_graeme-moreau_2x-p-500.png 500w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce668a358ad2b667f94a_team-members_drawer_graeme-moreau_2x-p-800.png 800w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce668a358ad2b667f94a_team-members_drawer_graeme-moreau_2x-p-1080.png 1080w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce668a358ad2b667f94a_team-members_drawer_graeme-moreau_2x.png 1410w';
           graemeMoreauImage.className = 'team-drawer__img';
           teamDrawerContainer.appendChild(graemeMoreauImage);
 
@@ -215,14 +215,14 @@ const TeamDrawerCarousel = () => {
           // Image
           const lisaClementiImage = document.createElement('img');
           lisaClementiImage.src =
-            'https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656aaeddcdc99441e5e88de5_team-members_drawer_lisa-clementi_2x.png';
+            'https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce651c98c505af65ae71_team-members_drawer_lisa-clementi_2x.png';
           lisaClementiImage.loading = 'lazy';
           lisaClementiImage.sizes =
             '(max-width: 479px) 88vw, (max-width: 767px) 91vw, (max-width: 1279px) 546px, 704.53125px';
           lisaClementiImage.alt = '';
           lisaClementiImage.width = '1410';
           lisaClementiImage.srcset =
-            'https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656aaeddcdc99441e5e88de5_team-members_drawer_lisa-clementi_2x-p-500.png 500w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656aaeddcdc99441e5e88de5_team-members_drawer_lisa-clementi_2x-p-800.png 800w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656aaeddcdc99441e5e88de5_team-members_drawer_lisa-clementi_2x-p-1080.png 1080w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656aaeddcdc99441e5e88de5_team-members_drawer_lisa-clementi_2x.png 1410w';
+            'https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce651c98c505af65ae71_team-members_drawer_lisa-clementi_2x-p-500.png 500w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce651c98c505af65ae71_team-members_drawer_lisa-clementi_2x-p-800.png 800w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce651c98c505af65ae71_team-members_drawer_lisa-clementi_2x-p-1080.png 1080w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce651c98c505af65ae71_team-members_drawer_lisa-clementi_2x.png 1410w';
           lisaClementiImage.className = 'team-drawer__img';
           teamDrawerContainer.appendChild(lisaClementiImage);
 
@@ -252,14 +252,14 @@ const TeamDrawerCarousel = () => {
           // Image
           const kimYatesImage = document.createElement('img');
           kimYatesImage.src =
-            'https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656aae87cb1171dcc0fbb4c1_team-members_drawer_kim-yates_2x.png';
+            'https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce675e215d8295adc846_team-members_drawer_kim-yates_2x.png';
           kimYatesImage.loading = 'lazy';
           kimYatesImage.sizes =
             '(max-width: 479px) 88vw, (max-width: 767px) 91vw, (max-width: 1279px) 546px, 704.53125px';
           kimYatesImage.alt = '';
           kimYatesImage.width = '1410';
           kimYatesImage.srcset =
-            'https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656aae87cb1171dcc0fbb4c1_team-members_drawer_kim-yates_2x-p-500.png 500w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656aae87cb1171dcc0fbb4c1_team-members_drawer_kim-yates_2x-p-800.png 800w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656aae87cb1171dcc0fbb4c1_team-members_drawer_kim-yates_2x-p-1080.png 1080w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656aae87cb1171dcc0fbb4c1_team-members_drawer_kim-yates_2x.png 1410w';
+            'https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce675e215d8295adc846_team-members_drawer_kim-yates_2x-p-500.png 500w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce675e215d8295adc846_team-members_drawer_kim-yates_2x-p-800.png 800w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce675e215d8295adc846_team-members_drawer_kim-yates_2x-p-1080.png 1080w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce675e215d8295adc846_team-members_drawer_kim-yates_2x.png 1410w';
           kimYatesImage.className = 'team-drawer__img';
           teamDrawerContainer.appendChild(kimYatesImage);
 
@@ -289,14 +289,14 @@ const TeamDrawerCarousel = () => {
           // Image
           const timVlahopoulosImage = document.createElement('img');
           timVlahopoulosImage.src =
-            'https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656aae85c10cd427a32abb3e_team-members_drawer_tim-vlahopoulos_2x.png';
+            'https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce66441c45e7ebebfc2b_team-members_drawer_tim-vlahopoulos_2x.png';
           timVlahopoulosImage.loading = 'lazy';
           timVlahopoulosImage.sizes =
             '(max-width: 479px) 88vw, (max-width: 767px) 91vw, (max-width: 1279px) 546px, 704.53125px';
           timVlahopoulosImage.alt = '';
           timVlahopoulosImage.width = '1410';
           timVlahopoulosImage.srcset =
-            'https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656aae85c10cd427a32abb3e_team-members_drawer_tim-vlahopoulos_2x-p-500.png 500w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656aae85c10cd427a32abb3e_team-members_drawer_tim-vlahopoulos_2x-p-800.png 800w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656aae85c10cd427a32abb3e_team-members_drawer_tim-vlahopoulos_2x-p-1080.png 1080w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656aae85c10cd427a32abb3e_team-members_drawer_tim-vlahopoulos_2x.png 1410w';
+            'https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce66441c45e7ebebfc2b_team-members_drawer_tim-vlahopoulos_2x-p-500.png 500w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce66441c45e7ebebfc2b_team-members_drawer_tim-vlahopoulos_2x-p-800.png 800w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce66441c45e7ebebfc2b_team-members_drawer_tim-vlahopoulos_2x-p-1080.png 1080w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce66441c45e7ebebfc2b_team-members_drawer_tim-vlahopoulos_2x.png 1410w';
           timVlahopoulosImage.className = 'team-drawer__img';
           teamDrawerContainer.appendChild(timVlahopoulosImage);
 
