@@ -3,6 +3,7 @@ import { KeenSlider } from 'keen-slider';
 
 const ClientExperienceCarousel = () => {
   const slider = new KeenSlider('#testimonials-highlights-carousel');
+  console.log(slider);
 };
 
 export default ClientExperienceCarousel;
