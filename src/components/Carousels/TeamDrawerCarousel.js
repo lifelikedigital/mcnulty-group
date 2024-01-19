@@ -22,7 +22,8 @@ const TeamDrawerCarousel = () => {
           // Team Member Role
           const markMcNultyRole = document.createElement('h3');
           markMcNultyRole.className =
-            'body-text--all-caps team-member-role--drawer team-drawer__role';
+            'all-caps team-member-role--drawer team-drawer__role';
+          // update body-text--all-caps to all-caps
           markMcNultyRole.innerHTML = 'Senior Wealth Manager';
           teamDrawerContainer.appendChild(markMcNultyRole);
 
