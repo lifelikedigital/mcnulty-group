@@ -1067,3 +1067,14 @@ Usage: codyhouse.co/license
   clip: rect(1px, 1px, 1px, 1px);
   white-space: nowrap; /* keep from collapsing onto itself */
 }
+
+/* Temp Full-Bleed Carousel */
+@media only screen and (max-width: 390px) {
+  #testimonials-highlights-carousel .embla__viewport {
+    margin: 0 -7vw;
+  }
+
+  .testimonials-highlights__container {
+    padding: 0 7vw;
+  }
+}
