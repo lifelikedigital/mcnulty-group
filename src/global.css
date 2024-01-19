@@ -1075,6 +1075,6 @@ Usage: codyhouse.co/license
   }
 
   .testimonials-highlights__container {
-    padding: 0 calc(7vw + 7.179%);
+    padding: 0 7vw;
   }
 }
