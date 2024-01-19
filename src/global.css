@@ -1078,3 +1078,21 @@ Usage: codyhouse.co/license
     padding: 0 7vw;
   }
 }
+
+@media only screen and (min-width: 480px) and (max-width: 991px) {
+  .carousel-spacer.is-testimonials {
+    width: calc(7vw - 25px);
+    height: 100%;
+    min-width: calc(7vw - 25px);
+    min-height: 100%;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .carousel-spacer.is-testimonials {
+    width: calc(7vw - 19px);
+    height: 100%;
+    min-width: calc(7vw - 19px);
+    min-height: 100%;
+  }
+}
