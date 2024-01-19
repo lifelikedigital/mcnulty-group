@@ -1069,7 +1069,7 @@ Usage: codyhouse.co/license
 }
 
 /* Temp Full-Bleed Carousel */
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 991px) {
   #testimonials-highlights-carousel .embla__viewport {
     margin: 0 -7vw;
   }
