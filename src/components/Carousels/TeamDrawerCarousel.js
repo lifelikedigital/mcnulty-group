@@ -60,7 +60,7 @@ const TeamDrawerCarousel = () => {
           // Team Member Role
           const michaelWilsonRole = document.createElement('h3');
           michaelWilsonRole.className =
-            'body-text--all-caps team-member-role--drawer team-drawer__role';
+            'all-caps team-member-role--drawer team-drawer__role';
           michaelWilsonRole.innerHTML = 'Senior Financial Planner';
           teamDrawerContainer.appendChild(michaelWilsonRole);
 
@@ -97,7 +97,7 @@ const TeamDrawerCarousel = () => {
           // Team Member Role
           const karenBarrowRole = document.createElement('h3');
           karenBarrowRole.className =
-            'body-text--all-caps team-member-role--drawer team-drawer__role';
+            'all-caps team-member-role--drawer team-drawer__role';
           karenBarrowRole.innerHTML = 'Senior Client Services Manager';
           teamDrawerContainer.appendChild(karenBarrowRole);
 
@@ -134,7 +134,7 @@ const TeamDrawerCarousel = () => {
           // Team Member Role
           const robertMarkRole = document.createElement('h3');
           robertMarkRole.className =
-            'body-text--all-caps team-member-role--drawer team-drawer__role';
+            'all-caps team-member-role--drawer team-drawer__role';
           robertMarkRole.innerHTML = 'Senior Portfolio Manager';
           teamDrawerContainer.appendChild(robertMarkRole);
 
@@ -172,7 +172,7 @@ const TeamDrawerCarousel = () => {
           // Team Member Role
           const graemeMoreauRole = document.createElement('h3');
           graemeMoreauRole.className =
-            'body-text--all-caps team-member-role--drawer team-drawer__role';
+            'all-caps team-member-role--drawer team-drawer__role';
           graemeMoreauRole.innerHTML = 'Associate Financial Planner';
           teamDrawerContainer.appendChild(graemeMoreauRole);
 
@@ -209,7 +209,7 @@ const TeamDrawerCarousel = () => {
           // Team Member Role
           const lisaClementiRole = document.createElement('h3');
           lisaClementiRole.className =
-            'body-text--all-caps team-member-role--drawer team-drawer__role';
+            'all-caps team-member-role--drawer team-drawer__role';
           lisaClementiRole.innerHTML = 'Associate Client Services';
           teamDrawerContainer.appendChild(lisaClementiRole);
 
@@ -246,7 +246,7 @@ const TeamDrawerCarousel = () => {
           // Team Member Role
           const kimYatesRole = document.createElement('h3');
           kimYatesRole.className =
-            'body-text--all-caps team-member-role--drawer team-drawer__role';
+            'all-caps team-member-role--drawer team-drawer__role';
           kimYatesRole.innerHTML = 'Associate Portfolio Administrator';
           teamDrawerContainer.appendChild(kimYatesRole);
 
@@ -283,7 +283,7 @@ const TeamDrawerCarousel = () => {
           // Team Member Role
           const timVlahopoulosRole = document.createElement('h3');
           timVlahopoulosRole.className =
-            'body-text--all-caps team-member-role--drawer team-drawer__role';
+            'all-caps team-member-role--drawer team-drawer__role';
           timVlahopoulosRole.innerHTML = 'Senior portfolio manager';
           teamDrawerContainer.appendChild(timVlahopoulosRole);
 
