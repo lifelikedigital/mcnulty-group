@@ -1,8 +1,8 @@
 import 'keen-slider/keen-slider.min.css';
-import KeenSlider from 'keen-slider';
+import { KeenSlider } from 'keen-slider';
 
 const ClientExperienceCarousel = () => {
-  new KeenSlider('#testimonials-highlights-carousel');
+  const slider = new KeenSlider('#testimonials-highlights-carousel');
 };
 
 export default ClientExperienceCarousel;
