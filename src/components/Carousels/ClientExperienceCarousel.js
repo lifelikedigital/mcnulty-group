@@ -4,8 +4,7 @@ const ClientExperienceCarousel = () => {
   const selector = '#testimonials-highlights-carousel .embla__viewport';
   const options = {
     loop: false,
-    align: 'start',
-    scrollSnapAlign: 'center',
+    align: 'center',
   };
   let carousels;
   let carousel;
