@@ -5,6 +5,7 @@ const ClientExperienceCarousel = () => {
   const options = {
     loop: false,
     align: 'start',
+    scrollSnapAlign: 'center',
   };
   let carousels;
   let carousel;
