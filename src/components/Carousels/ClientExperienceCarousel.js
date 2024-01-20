@@ -11,6 +11,7 @@ const ClientExperienceCarousel = () => {
 
   let prevButton;
   let nextButton;
+  let isCarouselActive = false;
 
   // Function to handle prevButton click
   const handlePrevClick = () => {
@@ -61,20 +62,26 @@ const ClientExperienceCarousel = () => {
 
   // Function to setup carousel
   const setupCarousel = () => {
-    if (window.matchMedia('(max-width: 991px)').matches) {
-      options.active = true;
-      carousels = CreateCarousel(selector, options);
-      carousel = carousels[0];
+    const isMobileView = window.matchMedia('(max-width: 991px)').matches;
 
-      // Setup buttons
-      setupButtons();
+    if (isMobileView !== isCarouselActive) {
+      isCarouselActive = isMobileView;
 
-      // Update button styles when the carousel's scroll position changes
-      carousel.on('scroll', updateButtonStyles);
-    } else {
-      options.active = false;
-      if (carousel) {
-        carousel.destroy();
+      if (isCarouselActive) {
+        options.active = true;
+        carousels = CreateCarousel(selector, options);
+        carousel = carousels[0];
+
+        // Setup buttons
+        setupButtons();
+
+        // Update button styles when the carousel's scroll position changes
+        carousel.on('scroll', updateButtonStyles);
+      } else {
+        options.active = false;
+        if (carousel) {
+          carousel.destroy();
+        }
       }
     }
   };
