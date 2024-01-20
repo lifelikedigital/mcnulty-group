@@ -4,7 +4,7 @@ const YourTeamCarousel = () => {
   const selector = '#service-highlights-carousel .embla__viewport';
   const options = {
     loop: false,
-    align: 'center',
+    align: 'start',
   };
   const carousels = CreateCarousel(selector, options);
   const carousel = carousels[0];
