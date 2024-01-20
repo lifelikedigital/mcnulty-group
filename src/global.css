@@ -1067,3 +1067,7 @@ Usage: codyhouse.co/license
   clip: rect(1px, 1px, 1px, 1px);
   white-space: nowrap; /* keep from collapsing onto itself */
 }
+
+.no-scroll {
+  overflow: hidden;
+}
