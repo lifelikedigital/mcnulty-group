@@ -27,7 +27,6 @@
     "css-loader": "^6.7.1",
     "css-minimizer-webpack-plugin": "^4.0.0",
     "gsap": "^3.11.0",
-    "keen-slider": "^6.8.6",
     "mini-css-extract-plugin": "^2.6.1",
     "postcss-loader": "^7.3.3",
     "sass": "^1.54.8",
