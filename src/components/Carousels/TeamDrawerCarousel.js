@@ -30,14 +30,14 @@ const TeamDrawerCarousel = () => {
           // Image
           const markMcNultyImage = document.createElement('img');
           markMcNultyImage.src =
-            'https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce64ce08f2dc3bc31b46_team-members_drawer_mark-mcnulty_2x.png';
+            'https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/65aebc569adb1ad6a6fbda9d_team-members_drawer_mark-mcnulty_1404w_v3_optimized.jpg';
           markMcNultyImage.loading = 'lazy';
           markMcNultyImage.sizes =
             '(max-width: 479px) 88vw, (max-width: 767px) 91vw, (max-width: 1279px) 546px, 704.53125px';
           markMcNultyImage.alt = '';
           markMcNultyImage.width = '1410';
           markMcNultyImage.srcset =
-            'https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce64ce08f2dc3bc31b46_team-members_drawer_mark-mcnulty_2x-p-500.png 500w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce64ce08f2dc3bc31b46_team-members_drawer_mark-mcnulty_2x-p-800.png 800w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce64ce08f2dc3bc31b46_team-members_drawer_mark-mcnulty_2x-p-1080.png 1080w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce64ce08f2dc3bc31b46_team-members_drawer_mark-mcnulty_2x.png 1410w';
+            'https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/65aebc569adb1ad6a6fbda9d_team-members_drawer_mark-mcnulty_1404w_v3_optimized-p-500.jpg 500w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/65aebc569adb1ad6a6fbda9d_team-members_drawer_mark-mcnulty_1404w_v3_optimized-p-800.jpg 800w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/65aebc569adb1ad6a6fbda9d_team-members_drawer_mark-mcnulty_1404w_v3_optimized-p-1080.jpg 1080w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/65aebc569adb1ad6a6fbda9d_team-members_drawer_mark-mcnulty_1404w_v3_optimized.jpg 1410w';
           markMcNultyImage.className = 'team-drawer__img';
           teamDrawerContainer.appendChild(markMcNultyImage);
 
