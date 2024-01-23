@@ -15,13 +15,10 @@ const FadeIn = () => {
   };
 
   const observer = new IntersectionObserver(observerCallback, observerOptions);
-  const introIllustrationObserver = new IntersectionObserver(observerCallback);
 
   fadeInSection.forEach((element) => {
     observer.observe(element); // Observe each element with the fade-in class
   });
-
-  introIllustrationObserver.observe(introIllustration); // Observe the specific element with the custom threshold
 };
 
 export default FadeIn;
