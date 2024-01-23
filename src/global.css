@@ -217,18 +217,6 @@ Usage: codyhouse.co/license
   }
 }
 
-@media screen and (max-width: 991px) {
-  .modal__close-btn--outer {
-    top: 15px;
-    right: 27px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .modal__close-btn--outer {
-    top: 11px;
-    right: 25px;
-  }
-}
 @media screen and (max-width: 479px) {
   .modal__close-btn--outer {
     top: 28px;
