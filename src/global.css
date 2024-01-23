@@ -978,7 +978,20 @@ Usage: codyhouse.co/license
 
 .md3-bg-black {
   --md3-bg-o: 1;
-  background-color: hsla(var(--md3-color-black-hsl), var(--md3-bg-o, 1));
+  /* background-color: hsla(var(--md3-color-black-hsl), var(--md3-bg-o, 1)); */
+  background-color: transparent;
+}
+
+.md3-bg-black::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #393d40; /* Background color you want to blend */
+  mix-blend-mode: multiply; /* Choose the blend mode that suits your design */
+  z-index: -1; /* Ensure the pseudo-element is rendered behind the content */
 }
 
 .md3-flex-center {
