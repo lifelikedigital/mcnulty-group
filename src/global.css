@@ -197,18 +197,23 @@ Usage: codyhouse.co/license
   position: fixed;
   /* top: var(--mc4-space-sm); */
   /* right: var(--mc4-space-sm); */
-  top: 27px;
-  right: 27px;
+  top: 47.74px;
+  right: 47.74px;
   z-index: 10;
   /* background-color: hsla(var(--mc4-color-black-hsl), 0.9); */ /* OG */
   background-color: #1f2123;
   /* transition: 0.25s; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 1279px) {
   .modal__close-btn--outer {
     width: 42px;
     height: 42px;
+    top: 37px;
+    right: 37px;
   }
 }
 
@@ -226,8 +231,8 @@ Usage: codyhouse.co/license
 }
 @media screen and (max-width: 479px) {
   .modal__close-btn--outer {
-    top: 1px;
-    right: 5px;
+    top: 28px;
+    right: 28px;
   }
 
   .modal__close-btn--outer {
