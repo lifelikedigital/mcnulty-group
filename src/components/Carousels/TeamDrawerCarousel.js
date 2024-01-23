@@ -67,14 +67,14 @@ const TeamDrawerCarousel = () => {
           // Image
           const michaelWilsonImage = document.createElement('img');
           michaelWilsonImage.src =
-            'https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce64cb788152b191a88b_team-members_drawer_michael-wilson_2x.png';
+            'https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/65aebc569d3c354626e83313_team-members_drawer_michael-wilson_1404w_v3_optimized.jpg';
           michaelWilsonImage.loading = 'lazy';
           michaelWilsonImage.sizes =
             '(max-width: 479px) 88vw, (max-width: 767px) 91vw, (max-width: 1279px) 546px, 704.53125px';
           michaelWilsonImage.alt = '';
           michaelWilsonImage.width = '1410';
           michaelWilsonImage.srcset =
-            'https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce64cb788152b191a88b_team-members_drawer_michael-wilson_2x-p-500.png 500w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce64cb788152b191a88b_team-members_drawer_michael-wilson_2x-p-800.png 800w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce64cb788152b191a88b_team-members_drawer_michael-wilson_2x-p-1080.png 1080w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce64cb788152b191a88b_team-members_drawer_michael-wilson_2x.png 1410w';
+            'https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/65aebc569d3c354626e83313_team-members_drawer_michael-wilson_1404w_v3_optimized-p-500.jpg 500w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/65aebc569d3c354626e83313_team-members_drawer_michael-wilson_1404w_v3_optimized-p-800.jpg 800w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/65aebc569d3c354626e83313_team-members_drawer_michael-wilson_1404w_v3_optimized-p-1080.jpg 1080w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/65aebc569d3c354626e83313_team-members_drawer_michael-wilson_1404w_v3_optimized.jpg 1410w';
           michaelWilsonImage.className = 'team-drawer__img';
           teamDrawerContainer.appendChild(michaelWilsonImage);
 
@@ -104,14 +104,14 @@ const TeamDrawerCarousel = () => {
           // Image
           const karenBarrowImage = document.createElement('img');
           karenBarrowImage.src =
-            'https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce66d51f80e5cc87cb75_team-members_drawer_karen-barrow_2x.png';
+            'https://uploads-ssl.webflow.com/6552714dc2b17e1f98aa393d/65aebc540f87898bea381495_team-members_drawer_karen-barrow_1404w_v3_optimized.jpg';
           karenBarrowImage.loading = 'lazy';
           karenBarrowImage.sizes =
             '(max-width: 479px) 88vw, (max-width: 767px) 91vw, (max-width: 1279px) 546px, 704.53125px';
           karenBarrowImage.alt = '';
           karenBarrowImage.width = '1410';
           karenBarrowImage.srcset =
-            'https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce66d51f80e5cc87cb75_team-members_drawer_karen-barrow_2x-p-500.png 500w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce66d51f80e5cc87cb75_team-members_drawer_karen-barrow_2x-p-800.png 800w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce66d51f80e5cc87cb75_team-members_drawer_karen-barrow_2x-p-1080.png 1080w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce66d51f80e5cc87cb75_team-members_drawer_karen-barrow_2x.png 1410w';
+            'https://uploads-ssl.webflow.com/6552714dc2b17e1f98aa393d/65aebc540f87898bea381495_team-members_drawer_karen-barrow_1404w_v3_optimized-p-500.jpg 500w, https://uploads-ssl.webflow.com/6552714dc2b17e1f98aa393d/65aebc540f87898bea381495_team-members_drawer_karen-barrow_1404w_v3_optimized-p-800.jpg 800w, https://uploads-ssl.webflow.com/6552714dc2b17e1f98aa393d/65aebc540f87898bea381495_team-members_drawer_karen-barrow_1404w_v3_optimized-p-1080.jpg 1080w, https://uploads-ssl.webflow.com/6552714dc2b17e1f98aa393d/65aebc540f87898bea381495_team-members_drawer_karen-barrow_1404w_v3_optimized.jpg 1410w';
           karenBarrowImage.className = 'team-drawer__img';
           teamDrawerContainer.appendChild(karenBarrowImage);
 
@@ -141,14 +141,14 @@ const TeamDrawerCarousel = () => {
           // Image
           const robertMarkImage = document.createElement('img');
           robertMarkImage.src =
-            'https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce63cb788152b191a556_team-members_drawer_robert-mark_2x.png';
+            'https://uploads-ssl.webflow.com/6552714dc2b17e1f98aa393d/65aebc56d2f91a30381a6832_team-members_drawer_robert-mark_1404w_v3_optimized.jpg';
           robertMarkImage.loading = 'lazy';
           robertMarkImage.sizes =
             '(max-width: 479px) 88vw, (max-width: 767px) 91vw, (max-width: 1279px) 546px, 704.53125px';
           robertMarkImage.alt = '';
           robertMarkImage.width = '1410';
           robertMarkImage.srcset =
-            'https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce63cb788152b191a556_team-members_drawer_robert-mark_2x-p-500.png 500w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce63cb788152b191a556_team-members_drawer_robert-mark_2x-p-800.png 800w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce63cb788152b191a556_team-members_drawer_robert-mark_2x-p-1080.png 1080w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce63cb788152b191a556_team-members_drawer_robert-mark_2x.png 1410w';
+            'https://uploads-ssl.webflow.com/6552714dc2b17e1f98aa393d/65aebc56d2f91a30381a6832_team-members_drawer_robert-mark_1404w_v3_optimized-p-500.jpg 500w, https://uploads-ssl.webflow.com/6552714dc2b17e1f98aa393d/65aebc56d2f91a30381a6832_team-members_drawer_robert-mark_1404w_v3_optimized-p-800.jpg 800w, https://uploads-ssl.webflow.com/6552714dc2b17e1f98aa393d/65aebc56d2f91a30381a6832_team-members_drawer_robert-mark_1404w_v3_optimized-p-1080.jpg 1080w, https://uploads-ssl.webflow.com/6552714dc2b17e1f98aa393d/65aebc56d2f91a30381a6832_team-members_drawer_robert-mark_1404w_v3_optimized.jpg 1410w';
           robertMarkImage.className = 'team-drawer__img';
           teamDrawerContainer.appendChild(robertMarkImage);
 
@@ -179,14 +179,14 @@ const TeamDrawerCarousel = () => {
           // Image
           const graemeMoreauImage = document.createElement('img');
           graemeMoreauImage.src =
-            'https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce668a358ad2b667f94a_team-members_drawer_graeme-moreau_2x.png';
+            'https://uploads-ssl.webflow.com/6552714dc2b17e1f98aa393d/65aebc5402f1cec94a95c2c8_team-members_drawer_graeme-moreau_1404w_v3_optimized.jpg';
           graemeMoreauImage.loading = 'lazy';
           graemeMoreauImage.sizes =
             '(max-width: 479px) 88vw, (max-width: 767px) 91vw, (max-width: 1279px) 546px, 704.53125px';
           graemeMoreauImage.alt = '';
           graemeMoreauImage.width = '1410';
           graemeMoreauImage.srcset =
-            'https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce668a358ad2b667f94a_team-members_drawer_graeme-moreau_2x-p-500.png 500w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce668a358ad2b667f94a_team-members_drawer_graeme-moreau_2x-p-800.png 800w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce668a358ad2b667f94a_team-members_drawer_graeme-moreau_2x-p-1080.png 1080w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce668a358ad2b667f94a_team-members_drawer_graeme-moreau_2x.png 1410w';
+            'https://uploads-ssl.webflow.com/6552714dc2b17e1f98aa393d/65aebc5402f1cec94a95c2c8_team-members_drawer_graeme-moreau_1404w_v3_optimized-p-500.jpg 500w, https://uploads-ssl.webflow.com/6552714dc2b17e1f98aa393d/65aebc5402f1cec94a95c2c8_team-members_drawer_graeme-moreau_1404w_v3_optimized-p-800.jpg 800w, https://uploads-ssl.webflow.com/6552714dc2b17e1f98aa393d/65aebc5402f1cec94a95c2c8_team-members_drawer_graeme-moreau_1404w_v3_optimized-p-1080.jpg 1080w, https://uploads-ssl.webflow.com/6552714dc2b17e1f98aa393d/65aebc5402f1cec94a95c2c8_team-members_drawer_graeme-moreau_1404w_v3_optimized.jpg 1410w';
           graemeMoreauImage.className = 'team-drawer__img';
           teamDrawerContainer.appendChild(graemeMoreauImage);
 
@@ -216,14 +216,14 @@ const TeamDrawerCarousel = () => {
           // Image
           const lisaClementiImage = document.createElement('img');
           lisaClementiImage.src =
-            'https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce651c98c505af65ae71_team-members_drawer_lisa-clementi_2x.png';
+            'https://uploads-ssl.webflow.com/6552714dc2b17e1f98aa393d/65aebc54abb095632cc4285f_team-members_drawer_lisa-clementi_1404w_v3_optimized.jpg';
           lisaClementiImage.loading = 'lazy';
           lisaClementiImage.sizes =
             '(max-width: 479px) 88vw, (max-width: 767px) 91vw, (max-width: 1279px) 546px, 704.53125px';
           lisaClementiImage.alt = '';
           lisaClementiImage.width = '1410';
           lisaClementiImage.srcset =
-            'https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce651c98c505af65ae71_team-members_drawer_lisa-clementi_2x-p-500.png 500w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce651c98c505af65ae71_team-members_drawer_lisa-clementi_2x-p-800.png 800w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce651c98c505af65ae71_team-members_drawer_lisa-clementi_2x-p-1080.png 1080w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce651c98c505af65ae71_team-members_drawer_lisa-clementi_2x.png 1410w';
+            'https://uploads-ssl.webflow.com/6552714dc2b17e1f98aa393d/65aebc54abb095632cc4285f_team-members_drawer_lisa-clementi_1404w_v3_optimized-p-500.jpg 500w, https://uploads-ssl.webflow.com/6552714dc2b17e1f98aa393d/65aebc54abb095632cc4285f_team-members_drawer_lisa-clementi_1404w_v3_optimized-p-800.jpg 800w, https://uploads-ssl.webflow.com/6552714dc2b17e1f98aa393d/65aebc54abb095632cc4285f_team-members_drawer_lisa-clementi_1404w_v3_optimized-p-1080.jpg 1080w, https://uploads-ssl.webflow.com/6552714dc2b17e1f98aa393d/65aebc54abb095632cc4285f_team-members_drawer_lisa-clementi_1404w_v3_optimized.jpg 1410w';
           lisaClementiImage.className = 'team-drawer__img';
           teamDrawerContainer.appendChild(lisaClementiImage);
 
@@ -253,14 +253,14 @@ const TeamDrawerCarousel = () => {
           // Image
           const kimYatesImage = document.createElement('img');
           kimYatesImage.src =
-            'https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce675e215d8295adc846_team-members_drawer_kim-yates_2x.png';
+            'https://uploads-ssl.webflow.com/6552714dc2b17e1f98aa393d/65aebc54f4019420d5321230_team-members_drawer_kim-yates_1404w_v3_optimized.jpg';
           kimYatesImage.loading = 'lazy';
           kimYatesImage.sizes =
             '(max-width: 479px) 88vw, (max-width: 767px) 91vw, (max-width: 1279px) 546px, 704.53125px';
           kimYatesImage.alt = '';
           kimYatesImage.width = '1410';
           kimYatesImage.srcset =
-            'https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce675e215d8295adc846_team-members_drawer_kim-yates_2x-p-500.png 500w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce675e215d8295adc846_team-members_drawer_kim-yates_2x-p-800.png 800w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce675e215d8295adc846_team-members_drawer_kim-yates_2x-p-1080.png 1080w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce675e215d8295adc846_team-members_drawer_kim-yates_2x.png 1410w';
+            'https://uploads-ssl.webflow.com/6552714dc2b17e1f98aa393d/65aebc54f4019420d5321230_team-members_drawer_kim-yates_1404w_v3_optimized-p-500.jpg 500w, https://uploads-ssl.webflow.com/6552714dc2b17e1f98aa393d/65aebc54f4019420d5321230_team-members_drawer_kim-yates_1404w_v3_optimized-p-800.jpg 800w, https://uploads-ssl.webflow.com/6552714dc2b17e1f98aa393d/65aebc54f4019420d5321230_team-members_drawer_kim-yates_1404w_v3_optimized-p-1080.jpg 1080w, https://uploads-ssl.webflow.com/6552714dc2b17e1f98aa393d/65aebc54f4019420d5321230_team-members_drawer_kim-yates_1404w_v3_optimized.jpg 1410w';
           kimYatesImage.className = 'team-drawer__img';
           teamDrawerContainer.appendChild(kimYatesImage);
 
@@ -290,14 +290,14 @@ const TeamDrawerCarousel = () => {
           // Image
           const timVlahopoulosImage = document.createElement('img');
           timVlahopoulosImage.src =
-            'https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce66441c45e7ebebfc2b_team-members_drawer_tim-vlahopoulos_2x.png';
+            'https://uploads-ssl.webflow.com/6552714dc2b17e1f98aa393d/65aebc56f0bbe08336a683ed_team-members_drawer_tim-vlahopoulos_1404w_v3_optimized.jpg';
           timVlahopoulosImage.loading = 'lazy';
           timVlahopoulosImage.sizes =
             '(max-width: 479px) 88vw, (max-width: 767px) 91vw, (max-width: 1279px) 546px, 704.53125px';
           timVlahopoulosImage.alt = '';
           timVlahopoulosImage.width = '1410';
           timVlahopoulosImage.srcset =
-            'https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce66441c45e7ebebfc2b_team-members_drawer_tim-vlahopoulos_2x-p-500.png 500w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce66441c45e7ebebfc2b_team-members_drawer_tim-vlahopoulos_2x-p-800.png 800w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce66441c45e7ebebfc2b_team-members_drawer_tim-vlahopoulos_2x-p-1080.png 1080w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/656fce66441c45e7ebebfc2b_team-members_drawer_tim-vlahopoulos_2x.png 1410w';
+            'https://uploads-ssl.webflow.com/6552714dc2b17e1f98aa393d/65aebc56f0bbe08336a683ed_team-members_drawer_tim-vlahopoulos_1404w_v3_optimized-p-500.jpg 500w, https://uploads-ssl.webflow.com/6552714dc2b17e1f98aa393d/65aebc56f0bbe08336a683ed_team-members_drawer_tim-vlahopoulos_1404w_v3_optimized-p-800.jpg 800w, https://uploads-ssl.webflow.com/6552714dc2b17e1f98aa393d/65aebc56f0bbe08336a683ed_team-members_drawer_tim-vlahopoulos_1404w_v3_optimized-p-1080.jpg 1080w, https://uploads-ssl.webflow.com/6552714dc2b17e1f98aa393d/65aebc56f0bbe08336a683ed_team-members_drawer_tim-vlahopoulos_1404w_v3_optimized.jpg 1410w';
           timVlahopoulosImage.className = 'team-drawer__img';
           teamDrawerContainer.appendChild(timVlahopoulosImage);
 
