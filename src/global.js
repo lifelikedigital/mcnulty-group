@@ -9,9 +9,10 @@ import YourTeamCarousel from './components/Carousels/YourTeamCarousel';
 import ClientExperienceCarousel from './components/Carousels/ClientExperienceCarousel';
 import InsightsCarousel from './components/Carousels/InsightsCarousel';
 import TeamDrawerCarousel from './components/Carousels/TeamDrawerCarousel';
+import FadeIn from './components/FadeIn/FadeIn';
 
 const GlobalComponents = () => {
-  // FadeIn();
+  FadeIn();
   Drawers();
   MobileMenu();
   Questions();
