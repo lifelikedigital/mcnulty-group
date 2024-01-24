@@ -2,7 +2,7 @@ const FadeIn = () => {
   const observerCallback = (entries, observer) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible'); // Add the is-visible class to the element
+        entry.target.classList.add('is--visible'); // Add the is-visible class to the element
         observer.unobserve(entry.target); // Stop observing the element once it's in the viewport
       }
     });
