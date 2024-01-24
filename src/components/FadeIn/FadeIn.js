@@ -2,36 +2,23 @@ const FadeIn = () => {
   const observerCallback = (entries, observer) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
-        observer.unobserve(entry.target);
+        entry.target.classList.add('is--visible'); // Add the is-visible class to the element
+        observer.unobserve(entry.target); // Stop observing the element once it's in the viewport
       }
     });
   };
 
+  const fadeInSection = document.querySelectorAll('.fade-in'); // Select elements with the fade-in class
+
   const observerOptions = {
-    threshold: 0.5,
+    threshold: 0.5, // Trigger the callback when 50% of the element is in the viewport
   };
 
   const observer = new IntersectionObserver(observerCallback, observerOptions);
 
-  const observeFadeInElements = () => {
-    const fadeInSection = document.querySelectorAll('.fade-in');
-    fadeInSection.forEach((element) => {
-      observer.observe(element);
-    });
-  };
-
-  // Observe initial elements
-  observeFadeInElements();
-
-  // Set up a MutationObserver to watch for changes in the DOM
-  const mutationObserver = new MutationObserver(() => {
-    // When a change is detected, observe new elements
-    observeFadeInElements();
+  fadeInSection.forEach((element) => {
+    observer.observe(element); // Observe each element with the fade-in class
   });
-
-  // Start observing the document with the configured parameters
-  mutationObserver.observe(document, { childList: true, subtree: true });
 };
 
 export default FadeIn;

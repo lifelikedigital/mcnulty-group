@@ -14,7 +14,7 @@ const TeamDrawerCarousel = () => {
           // Team Member + Designation
           const markMcNultyDesignation = document.createElement('h2');
           markMcNultyDesignation.className =
-            'body-text--secondary heading--team-member team-drawer__heading fade-in';
+            'body-text--secondary heading--team-member team-drawer__heading ';
           markMcNultyDesignation.innerHTML =
             'Mark McNulty<span class="small-regular small-regular--designations-drawer team-drawer__designation">BA, CIM, CFP®</span>';
           teamDrawerContainer.appendChild(markMcNultyDesignation);
@@ -22,7 +22,7 @@ const TeamDrawerCarousel = () => {
           // Team Member Role
           const markMcNultyRole = document.createElement('h3');
           markMcNultyRole.className =
-            'all-caps team-member-role--drawer team-drawer__role fade-in';
+            'all-caps team-member-role--drawer team-drawer__role';
           // update body-text--all-caps to all-caps
           markMcNultyRole.innerHTML = 'Senior Wealth Manager';
           teamDrawerContainer.appendChild(markMcNultyRole);
@@ -38,21 +38,21 @@ const TeamDrawerCarousel = () => {
           markMcNultyImage.width = '1410';
           markMcNultyImage.srcset =
             'https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/65aebc569adb1ad6a6fbda9d_team-members_drawer_mark-mcnulty_1404w_v3_optimized-p-500.jpg 500w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/65aebc569adb1ad6a6fbda9d_team-members_drawer_mark-mcnulty_1404w_v3_optimized-p-800.jpg 800w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/65aebc569adb1ad6a6fbda9d_team-members_drawer_mark-mcnulty_1404w_v3_optimized-p-1080.jpg 1080w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/65aebc569adb1ad6a6fbda9d_team-members_drawer_mark-mcnulty_1404w_v3_optimized.jpg 1410w';
-          markMcNultyImage.className = 'team-drawer__img fade-in';
+          markMcNultyImage.className = 'team-drawer__img';
           teamDrawerContainer.appendChild(markMcNultyImage);
 
           // Bio
           const markMcNultyBio = document.createElement('div');
           markMcNultyBio.className = 'team-drawer__bio';
           markMcNultyBio.innerHTML =
-            '<p class="body-text--primary team-drawer__bio-paragraph fade-in">Mark is a widely recognized expert in Canada on financial and retirement planning for dentists. For over twenty years Mark has been a speaker for the Ontario Dental Association and a regular contributor to Ontario Dentist, the journal of the Ontario Dental Association.</p><p class="body-text--primary team-drawer__bio-paragraph fade-in">Mark is also the co-founder of The Professional Advisory, a publication designed to provide non-clinical information to dentists, with close to 100 issues to date. In addition to multiple television and radio appearances, Mark has authored three books, the most recent is The $6 Million Dentist.</p><p class="body-text--primary team-drawer__bio-paragraph fade-in">Mark has been with his wife, Krystyna for 24 years. They have three daughters ages 13, 11 and 9 and live in Unionville, Ontario. In his free time, Mark plays tennis, volleyball and touch football, which is why he is often injured</p>';
+            '<p class="body-text--primary team-drawer__bio-paragraph">Mark is a widely recognized expert in Canada on financial and retirement planning for dentists. For over twenty years Mark has been a speaker for the Ontario Dental Association and a regular contributor to Ontario Dentist, the journal of the Ontario Dental Association.</p><p class="body-text--primary team-drawer__bio-paragraph">Mark is also the co-founder of The Professional Advisory, a publication designed to provide non-clinical information to dentists, with close to 100 issues to date. In addition to multiple television and radio appearances, Mark has authored three books, the most recent is The $6 Million Dentist.</p><p class="body-text--primary team-drawer__bio-paragraph">Mark has been with his wife, Krystyna for 24 years. They have three daughters ages 13, 11 and 9 and live in Unionville, Ontario. In his free time, Mark plays tennis, volleyball and touch football, which is why he is often injured</p>';
           teamDrawerContainer.appendChild(markMcNultyBio);
           break;
         case 'michael-wilson':
           // Team Member + Designation
           const michaelWilsonDesignation = document.createElement('h2');
           michaelWilsonDesignation.className =
-            'body-text--secondary heading--team-member team-drawer__heading fade-in';
+            'body-text--secondary heading--team-member team-drawer__heading';
           michaelWilsonDesignation.innerHTML =
             'Michael Wilson<span class="small-regular small-regular--designations-drawer team-drawer__designation">CPA, CA, CIM, CFP®</span>';
           teamDrawerContainer.appendChild(michaelWilsonDesignation);
@@ -60,7 +60,7 @@ const TeamDrawerCarousel = () => {
           // Team Member Role
           const michaelWilsonRole = document.createElement('h3');
           michaelWilsonRole.className =
-            'all-caps team-member-role--drawer team-drawer__role fade-in';
+            'all-caps team-member-role--drawer team-drawer__role';
           michaelWilsonRole.innerHTML = 'Senior Financial Planner';
           teamDrawerContainer.appendChild(michaelWilsonRole);
 
@@ -75,21 +75,21 @@ const TeamDrawerCarousel = () => {
           michaelWilsonImage.width = '1410';
           michaelWilsonImage.srcset =
             'https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/65aebc569d3c354626e83313_team-members_drawer_michael-wilson_1404w_v3_optimized-p-500.jpg 500w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/65aebc569d3c354626e83313_team-members_drawer_michael-wilson_1404w_v3_optimized-p-800.jpg 800w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/65aebc569d3c354626e83313_team-members_drawer_michael-wilson_1404w_v3_optimized-p-1080.jpg 1080w, https://assets-global.website-files.com/6552714dc2b17e1f98aa393d/65aebc569d3c354626e83313_team-members_drawer_michael-wilson_1404w_v3_optimized.jpg 1410w';
-          michaelWilsonImage.className = 'team-drawer__img fade-in';
+          michaelWilsonImage.className = 'team-drawer__img';
           teamDrawerContainer.appendChild(michaelWilsonImage);
 
           // Bio
           const michaelWilsonBio = document.createElement('div');
           michaelWilsonBio.className = 'team-drawer__bio';
           michaelWilsonBio.innerHTML =
-            "<p class='body-text--primary team-drawer__bio-paragraph fade-in'>Michael's approach to financial advice is rooted in a deep understanding that it's about more than just having a plan—it's about having the right plan tailored to your entire life, not just your finances. This philosophy is built on a foundation of trusted relationships and a true grasp of each client's unique life situation.</p><p class='body-text--primary team-drawer__bio-paragraph fade-in'>A proud alumnus of the Queen’s School of Business, Michael’s academic journey led him to acquire a diverse array of professional designations including Chartered Accountant (CPA, CA), Chartered Investment Management (CIM®), and Certified Financial Planner® (CFP®).</p><p class='body-text--primary team-drawer__bio-paragraph fade-in'>Since 2012, Michael has dedicated himself to working closely with Mark and serving the specific needs of Dentists. His commitment and expertise have earned him the position of equity partner at McNulty Group.</p><p class='body-text--primary team-drawer__bio-paragraph fade-in'>Outside of his professional realm, Michael's life is deeply rooted in Vancouver, where he resides with his wife Meagan and their daughter Elsie. A man of varied interests, he is an avid cook and cyclist, with a passion for the great outdoors. His love for skiing is a lifelong affair, having grown up as a member of the Devils Glen Country Club.</p><p class='body-text--primary team-drawer__bio-paragraph fade-in'>Michael has worked very closely with Mark and Dentists since 2012. Today he is an equity partner at McNulty Group.</p><p class='body-text--primary team-drawer__bio-paragraph fade-in'>Michael lives in Vancouver with his wife Meagan and their daughter Elsie. He enjoys cooking, and cycling and is passionate about the outdoors. He also loves to ski, having grown up as a member of the Devils Glen Country Club.</p>";
+            "<p class='body-text--primary team-drawer__bio-paragraph'>Michael's approach to financial advice is rooted in a deep understanding that it's about more than just having a plan—it's about having the right plan tailored to your entire life, not just your finances. This philosophy is built on a foundation of trusted relationships and a true grasp of each client's unique life situation.</p><p class='body-text--primary team-drawer__bio-paragraph'>A proud alumnus of the Queen’s School of Business, Michael’s academic journey led him to acquire a diverse array of professional designations including Chartered Accountant (CPA, CA), Chartered Investment Management (CIM®), and Certified Financial Planner® (CFP®).</p><p class='body-text--primary team-drawer__bio-paragraph'>Since 2012, Michael has dedicated himself to working closely with Mark and serving the specific needs of Dentists. His commitment and expertise have earned him the position of equity partner at McNulty Group.</p><p class='body-text--primary team-drawer__bio-paragraph'>Outside of his professional realm, Michael's life is deeply rooted in Vancouver, where he resides with his wife Meagan and their daughter Elsie. A man of varied interests, he is an avid cook and cyclist, with a passion for the great outdoors. His love for skiing is a lifelong affair, having grown up as a member of the Devils Glen Country Club.</p><p class='body-text--primary team-drawer__bio-paragraph'>Michael has worked very closely with Mark and Dentists since 2012. Today he is an equity partner at McNulty Group.</p><p class='body-text--primary team-drawer__bio-paragraph'>Michael lives in Vancouver with his wife Meagan and their daughter Elsie. He enjoys cooking, and cycling and is passionate about the outdoors. He also loves to ski, having grown up as a member of the Devils Glen Country Club.</p>";
           teamDrawerContainer.appendChild(michaelWilsonBio);
           break;
         case 'karen-barrow':
           // Team Member + Designation
           const karenBarrowDesignation = document.createElement('h2');
           karenBarrowDesignation.className =
-            'body-text--secondary heading--team-member team-drawer__heading fade-in';
+            'body-text--secondary heading--team-member team-drawer__heading';
           karenBarrowDesignation.innerHTML =
             'Karen Barrow<span class="small-regular small-regular--designations-drawer team-drawer__designation">BSc</span>';
           teamDrawerContainer.appendChild(karenBarrowDesignation);
@@ -97,7 +97,7 @@ const TeamDrawerCarousel = () => {
           // Team Member Role
           const karenBarrowRole = document.createElement('h3');
           karenBarrowRole.className =
-            'all-caps team-member-role--drawer team-drawer__role fade-in';
+            'all-caps team-member-role--drawer team-drawer__role';
           karenBarrowRole.innerHTML = 'Senior Client Services Manager';
           teamDrawerContainer.appendChild(karenBarrowRole);
 
@@ -112,21 +112,21 @@ const TeamDrawerCarousel = () => {
           karenBarrowImage.width = '1410';
           karenBarrowImage.srcset =
             'https://uploads-ssl.webflow.com/6552714dc2b17e1f98aa393d/65aebc540f87898bea381495_team-members_drawer_karen-barrow_1404w_v3_optimized-p-500.jpg 500w, https://uploads-ssl.webflow.com/6552714dc2b17e1f98aa393d/65aebc540f87898bea381495_team-members_drawer_karen-barrow_1404w_v3_optimized-p-800.jpg 800w, https://uploads-ssl.webflow.com/6552714dc2b17e1f98aa393d/65aebc540f87898bea381495_team-members_drawer_karen-barrow_1404w_v3_optimized-p-1080.jpg 1080w, https://uploads-ssl.webflow.com/6552714dc2b17e1f98aa393d/65aebc540f87898bea381495_team-members_drawer_karen-barrow_1404w_v3_optimized.jpg 1410w';
-          karenBarrowImage.className = 'team-drawer__img fade-in';
+          karenBarrowImage.className = 'team-drawer__img';
           teamDrawerContainer.appendChild(karenBarrowImage);
 
           // Bio
           const karenBarrowBio = document.createElement('div');
           karenBarrowBio.className = 'team-drawer__bio';
           karenBarrowBio.innerHTML =
-            '<p class="body-text--primary team-drawer__bio-paragraph fade-in">Karen has been a member of the McNulty Group for over fifteen years. She brought with her national and international financial industry experience, having worked in Toronto for a fund company and in London, England for J.P. Morgan. Since she arrived at McNulty Group, she has worked in all areas of the business as an assistant financial planner, portfolio administrator, branch administrator, account executive, and most recently as Manager of Client Services.</p><p class="body-text--primary team-drawer__bio-paragraph fade-in">She strives to provide a high level of client service through her day-to-day operations and communication with McNulty Group families and offers a personal, friendly touch with her easygoing and energetic nature.</p><p class="body-text--primary team-drawer__bio-paragraph fade-in">In her free time, Karen enjoys running, skiing, spin class, music, and spending time with her son Jack and daughter Lauren.</p>';
+            '<p class="body-text--primary team-drawer__bio-paragraph">Karen has been a member of the McNulty Group for over fifteen years. She brought with her national and international financial industry experience, having worked in Toronto for a fund company and in London, England for J.P. Morgan. Since she arrived at McNulty Group, she has worked in all areas of the business as an assistant financial planner, portfolio administrator, branch administrator, account executive, and most recently as Manager of Client Services.</p><p class="body-text--primary team-drawer__bio-paragraph">She strives to provide a high level of client service through her day-to-day operations and communication with McNulty Group families and offers a personal, friendly touch with her easygoing and energetic nature.</p><p class="body-text--primary team-drawer__bio-paragraph">In her free time, Karen enjoys running, skiing, spin class, music, and spending time with her son Jack and daughter Lauren.</p>';
           teamDrawerContainer.appendChild(karenBarrowBio);
           break;
         case 'robert-mark':
           // Team Member + Designation
           const robertMarkDesignation = document.createElement('h2');
           robertMarkDesignation.className =
-            'body-text--secondary heading--team-member team-drawer__heading fade-in';
+            'body-text--secondary heading--team-member team-drawer__heading';
           robertMarkDesignation.innerHTML =
             'Robert Mark<span class="small-regular small-regular--designations-drawer team-drawer__designation">CFA</span>';
           teamDrawerContainer.appendChild(robertMarkDesignation);
@@ -134,7 +134,7 @@ const TeamDrawerCarousel = () => {
           // Team Member Role
           const robertMarkRole = document.createElement('h3');
           robertMarkRole.className =
-            'all-caps team-member-role--drawer team-drawer__role fade-in';
+            'all-caps team-member-role--drawer team-drawer__role';
           robertMarkRole.innerHTML = 'Senior Portfolio Manager';
           teamDrawerContainer.appendChild(robertMarkRole);
 
@@ -149,14 +149,14 @@ const TeamDrawerCarousel = () => {
           robertMarkImage.width = '1410';
           robertMarkImage.srcset =
             'https://uploads-ssl.webflow.com/6552714dc2b17e1f98aa393d/65aebc56d2f91a30381a6832_team-members_drawer_robert-mark_1404w_v3_optimized-p-500.jpg 500w, https://uploads-ssl.webflow.com/6552714dc2b17e1f98aa393d/65aebc56d2f91a30381a6832_team-members_drawer_robert-mark_1404w_v3_optimized-p-800.jpg 800w, https://uploads-ssl.webflow.com/6552714dc2b17e1f98aa393d/65aebc56d2f91a30381a6832_team-members_drawer_robert-mark_1404w_v3_optimized-p-1080.jpg 1080w, https://uploads-ssl.webflow.com/6552714dc2b17e1f98aa393d/65aebc56d2f91a30381a6832_team-members_drawer_robert-mark_1404w_v3_optimized.jpg 1410w';
-          robertMarkImage.className = 'team-drawer__img fade-in';
+          robertMarkImage.className = 'team-drawer__img';
           teamDrawerContainer.appendChild(robertMarkImage);
 
           // Bio
           const robertMarkBio = document.createElement('div');
           robertMarkBio.className = 'team-drawer__bio';
           robertMarkBio.innerHTML =
-            "<p class='body-text--primary team-drawer__bio-paragraph fade-in'>Rob joined the McNulty Group after a twenty-plus-year career on Bay Street. Prior to joining the firm, Rob was a portfolio manager and investment strategist at two of Canada’s most respected investment firms, MacDougall, MacDougall &amp; MacTier (3Macs) and Raymond James Canada.</p><p class='body-text--primary team-drawer__bio-paragraph fade-in'>Rob graduated from Queen’s University in 1996 and was awarded his CFA Charter (Chartered Financial Analyst) in 2003.</p><p class='body-text--primary team-drawer__bio-paragraph fade-in'>Rob lives in Toronto with his wife Jane and their two boys, James and Graham. In his free time, Rob is a passionate guitarist, avid skier, terrible golfer and aspiring mechanic/carpenter/arborist at the family cottage in Muskoka.</p>";
+            "<p class='body-text--primary team-drawer__bio-paragraph'>Rob joined the McNulty Group after a twenty-plus-year career on Bay Street. Prior to joining the firm, Rob was a portfolio manager and investment strategist at two of Canada’s most respected investment firms, MacDougall, MacDougall &amp; MacTier (3Macs) and Raymond James Canada.</p><p class='body-text--primary team-drawer__bio-paragraph'>Rob graduated from Queen’s University in 1996 and was awarded his CFA Charter (Chartered Financial Analyst) in 2003.</p><p class='body-text--primary team-drawer__bio-paragraph'>Rob lives in Toronto with his wife Jane and their two boys, James and Graham. In his free time, Rob is a passionate guitarist, avid skier, terrible golfer and aspiring mechanic/carpenter/arborist at the family cottage in Muskoka.</p>";
           teamDrawerContainer.appendChild(robertMarkBio);
 
           break;
@@ -164,7 +164,7 @@ const TeamDrawerCarousel = () => {
           // Team Member + Designation
           const graemeMoreauDesignation = document.createElement('h2');
           graemeMoreauDesignation.className =
-            'body-text--secondary heading--team-member team-drawer__heading fade-in';
+            'body-text--secondary heading--team-member team-drawer__heading';
           graemeMoreauDesignation.innerHTML =
             'Graeme Moreau<span class="small-regular small-regular--designations-drawer team-drawer__designation">CPA</span>';
           teamDrawerContainer.appendChild(graemeMoreauDesignation);
@@ -172,7 +172,7 @@ const TeamDrawerCarousel = () => {
           // Team Member Role
           const graemeMoreauRole = document.createElement('h3');
           graemeMoreauRole.className =
-            'all-caps team-member-role--drawer team-drawer__role fade-in';
+            'all-caps team-member-role--drawer team-drawer__role';
           graemeMoreauRole.innerHTML = 'Associate Financial Planner';
           teamDrawerContainer.appendChild(graemeMoreauRole);
 
@@ -187,14 +187,14 @@ const TeamDrawerCarousel = () => {
           graemeMoreauImage.width = '1410';
           graemeMoreauImage.srcset =
             'https://uploads-ssl.webflow.com/6552714dc2b17e1f98aa393d/65aebc5402f1cec94a95c2c8_team-members_drawer_graeme-moreau_1404w_v3_optimized-p-500.jpg 500w, https://uploads-ssl.webflow.com/6552714dc2b17e1f98aa393d/65aebc5402f1cec94a95c2c8_team-members_drawer_graeme-moreau_1404w_v3_optimized-p-800.jpg 800w, https://uploads-ssl.webflow.com/6552714dc2b17e1f98aa393d/65aebc5402f1cec94a95c2c8_team-members_drawer_graeme-moreau_1404w_v3_optimized-p-1080.jpg 1080w, https://uploads-ssl.webflow.com/6552714dc2b17e1f98aa393d/65aebc5402f1cec94a95c2c8_team-members_drawer_graeme-moreau_1404w_v3_optimized.jpg 1410w';
-          graemeMoreauImage.className = 'team-drawer__img fade-in';
+          graemeMoreauImage.className = 'team-drawer__img';
           teamDrawerContainer.appendChild(graemeMoreauImage);
 
           // Bio
           const graemeMoreauBio = document.createElement('div');
           graemeMoreauBio.className = 'team-drawer__bio';
           graemeMoreauBio.innerHTML =
-            "<p class='body-text--primary team-drawer__bio-paragraph fade-in'>Graeme is a Chartered Professional Accountant (CPA) and has held various corporate reporting and financial analyst positions in the Railroad, Oil &amp; Gas, and Radio Broadcasting industries.</p><p class='body-text--primary team-drawer__bio-paragraph fade-in'>Graeme has extensive experience in financial reporting, analysis, and budgeting for publicly traded companies.</p>";
+            "<p class='body-text--primary team-drawer__bio-paragraph'>Graeme is a Chartered Professional Accountant (CPA) and has held various corporate reporting and financial analyst positions in the Railroad, Oil &amp; Gas, and Radio Broadcasting industries.</p><p class='body-text--primary team-drawer__bio-paragraph'>Graeme has extensive experience in financial reporting, analysis, and budgeting for publicly traded companies.</p>";
           teamDrawerContainer.appendChild(graemeMoreauBio);
 
           break;
@@ -202,14 +202,14 @@ const TeamDrawerCarousel = () => {
           // Team Member + Designation
           const lisaClementiDesignation = document.createElement('h2');
           lisaClementiDesignation.className =
-            'body-text--secondary heading--team-member team-drawer__heading fade-in';
+            'body-text--secondary heading--team-member team-drawer__heading';
           lisaClementiDesignation.innerHTML = 'Lisa Clementi';
           teamDrawerContainer.appendChild(lisaClementiDesignation);
 
           // Team Member Role
           const lisaClementiRole = document.createElement('h3');
           lisaClementiRole.className =
-            'all-caps team-member-role--drawer team-drawer__role fade-in';
+            'all-caps team-member-role--drawer team-drawer__role';
           lisaClementiRole.innerHTML = 'Associate Client Services';
           teamDrawerContainer.appendChild(lisaClementiRole);
 
@@ -224,14 +224,14 @@ const TeamDrawerCarousel = () => {
           lisaClementiImage.width = '1410';
           lisaClementiImage.srcset =
             'https://uploads-ssl.webflow.com/6552714dc2b17e1f98aa393d/65aebc54abb095632cc4285f_team-members_drawer_lisa-clementi_1404w_v3_optimized-p-500.jpg 500w, https://uploads-ssl.webflow.com/6552714dc2b17e1f98aa393d/65aebc54abb095632cc4285f_team-members_drawer_lisa-clementi_1404w_v3_optimized-p-800.jpg 800w, https://uploads-ssl.webflow.com/6552714dc2b17e1f98aa393d/65aebc54abb095632cc4285f_team-members_drawer_lisa-clementi_1404w_v3_optimized-p-1080.jpg 1080w, https://uploads-ssl.webflow.com/6552714dc2b17e1f98aa393d/65aebc54abb095632cc4285f_team-members_drawer_lisa-clementi_1404w_v3_optimized.jpg 1410w';
-          lisaClementiImage.className = 'team-drawer__img fade-in';
+          lisaClementiImage.className = 'team-drawer__img';
           teamDrawerContainer.appendChild(lisaClementiImage);
 
           // Bio
           const lisaClementiBio = document.createElement('div');
           lisaClementiBio.className = 'team-drawer__bio';
           lisaClementiBio.innerHTML =
-            "<p class='body-text--primary team-drawer__bio-paragraph fade-in'>Lisa brings with her over 20 years of experience in the banking industry. She is highly organized with a dedicated work ethic. Lisa has a strong track record in building trusting, supportive partnerships all the while connecting in a friendly professional manner. She strives to provide a high level of client service through her daily operations and communications with everyone she comes in contact with.</p><p class='body-text--primary team-drawer__bio-paragraph fade-in'>In her spare time, she enjoys spending time cooking with her husband Walter and her adult children Eric and Claudia, and travelling.</p>";
+            "<p class='body-text--primary team-drawer__bio-paragraph'>Lisa brings with her over 20 years of experience in the banking industry. She is highly organized with a dedicated work ethic. Lisa has a strong track record in building trusting, supportive partnerships all the while connecting in a friendly professional manner. She strives to provide a high level of client service through her daily operations and communications with everyone she comes in contact with.</p><p class='body-text--primary team-drawer__bio-paragraph'>In her spare time, she enjoys spending time cooking with her husband Walter and her adult children Eric and Claudia, and travelling.</p>";
           teamDrawerContainer.appendChild(lisaClementiBio);
 
           break;
@@ -239,14 +239,14 @@ const TeamDrawerCarousel = () => {
           // Team Member + Designation
           const kimYatesDesignation = document.createElement('h2');
           kimYatesDesignation.className =
-            'body-text--secondary heading--team-member team-drawer__heading fade-in';
+            'body-text--secondary heading--team-member team-drawer__heading';
           kimYatesDesignation.innerHTML = 'Kim Yates';
           teamDrawerContainer.appendChild(kimYatesDesignation);
 
           // Team Member Role
           const kimYatesRole = document.createElement('h3');
           kimYatesRole.className =
-            'all-caps team-member-role--drawer team-drawer__role fade-in';
+            'all-caps team-member-role--drawer team-drawer__role';
           kimYatesRole.innerHTML = 'Associate Portfolio Administrator';
           teamDrawerContainer.appendChild(kimYatesRole);
 
@@ -261,21 +261,21 @@ const TeamDrawerCarousel = () => {
           kimYatesImage.width = '1410';
           kimYatesImage.srcset =
             'https://uploads-ssl.webflow.com/6552714dc2b17e1f98aa393d/65aebc54f4019420d5321230_team-members_drawer_kim-yates_1404w_v3_optimized-p-500.jpg 500w, https://uploads-ssl.webflow.com/6552714dc2b17e1f98aa393d/65aebc54f4019420d5321230_team-members_drawer_kim-yates_1404w_v3_optimized-p-800.jpg 800w, https://uploads-ssl.webflow.com/6552714dc2b17e1f98aa393d/65aebc54f4019420d5321230_team-members_drawer_kim-yates_1404w_v3_optimized-p-1080.jpg 1080w, https://uploads-ssl.webflow.com/6552714dc2b17e1f98aa393d/65aebc54f4019420d5321230_team-members_drawer_kim-yates_1404w_v3_optimized.jpg 1410w';
-          kimYatesImage.className = 'team-drawer__img fade-in';
+          kimYatesImage.className = 'team-drawer__img';
           teamDrawerContainer.appendChild(kimYatesImage);
 
           // Bio
           const kimYatesBio = document.createElement('div');
           kimYatesBio.className = 'team-drawer__bio';
           kimYatesBio.innerHTML =
-            "<p class='body-text--primary team-drawer__bio-paragraph fade-in'>Kim brings along a combination of skills and competencies that span across various industries, including consumer goods, not-for-profit, and financial sectors. With a strong emphasis on enhancing processes and generating efficiencies, Kim focuses on providing excellent service and support within her work environment.</p><p class='body-text--primary team-drawer__bio-paragraph fade-in'>Beyond the office, Kim enjoys outdoor activities, music, and hanging out with her husband Brian and their three children, Alex, Andrew, and Kaitlyn.</p>";
+            "<p class='body-text--primary team-drawer__bio-paragraph'>Kim brings along a combination of skills and competencies that span across various industries, including consumer goods, not-for-profit, and financial sectors. With a strong emphasis on enhancing processes and generating efficiencies, Kim focuses on providing excellent service and support within her work environment.</p><p class='body-text--primary team-drawer__bio-paragraph'>Beyond the office, Kim enjoys outdoor activities, music, and hanging out with her husband Brian and their three children, Alex, Andrew, and Kaitlyn.</p>";
           teamDrawerContainer.appendChild(kimYatesBio);
           break;
         case 'tim-vlahopoulos':
           // Team Member + Designation
           const timVlahopoulosDesignation = document.createElement('h2');
           timVlahopoulosDesignation.className =
-            'body-text--secondary heading--team-member team-drawer__heading fade-in';
+            'body-text--secondary heading--team-member team-drawer__heading';
           timVlahopoulosDesignation.innerHTML =
             'Tim Vlahopoulos<span class="small-regular small-regular--designations-drawer team-drawer__designation">BCom (Hons), CIM</span>';
           teamDrawerContainer.appendChild(timVlahopoulosDesignation);
@@ -283,7 +283,7 @@ const TeamDrawerCarousel = () => {
           // Team Member Role
           const timVlahopoulosRole = document.createElement('h3');
           timVlahopoulosRole.className =
-            'all-caps team-member-role--drawer team-drawer__role fade-in';
+            'all-caps team-member-role--drawer team-drawer__role';
           timVlahopoulosRole.innerHTML = 'Senior portfolio manager';
           teamDrawerContainer.appendChild(timVlahopoulosRole);
 
@@ -298,14 +298,14 @@ const TeamDrawerCarousel = () => {
           timVlahopoulosImage.width = '1410';
           timVlahopoulosImage.srcset =
             'https://uploads-ssl.webflow.com/6552714dc2b17e1f98aa393d/65aebc56f0bbe08336a683ed_team-members_drawer_tim-vlahopoulos_1404w_v3_optimized-p-500.jpg 500w, https://uploads-ssl.webflow.com/6552714dc2b17e1f98aa393d/65aebc56f0bbe08336a683ed_team-members_drawer_tim-vlahopoulos_1404w_v3_optimized-p-800.jpg 800w, https://uploads-ssl.webflow.com/6552714dc2b17e1f98aa393d/65aebc56f0bbe08336a683ed_team-members_drawer_tim-vlahopoulos_1404w_v3_optimized-p-1080.jpg 1080w, https://uploads-ssl.webflow.com/6552714dc2b17e1f98aa393d/65aebc56f0bbe08336a683ed_team-members_drawer_tim-vlahopoulos_1404w_v3_optimized.jpg 1410w';
-          timVlahopoulosImage.className = 'team-drawer__img fade-in';
+          timVlahopoulosImage.className = 'team-drawer__img';
           teamDrawerContainer.appendChild(timVlahopoulosImage);
 
           // Bio
           const timVlahopoulosBio = document.createElement('div');
           timVlahopoulosBio.className = 'team-drawer__bio';
           timVlahopoulosBio.innerHTML =
-            "<p class='body-text--primary team-drawer__bio-paragraph fade-in'>With over 25 years of experience in the Financial Services industry, Tim has honed his expertise through notable tenures at TD Bank Finance Group and Scotiawealth. At Scotiawealth, he most recently spearheaded the Fixed Income and Foreign Exchange Trading desk, showcasing his robust analytical abilities and adeptness in trade execution.</p><p class='body-text--primary team-drawer__bio-paragraph fade-in'>Outside of his professional life, Tim is an avid hockey fan and cherishes moments spent with his family and their dog.</p>";
+            "<p class='body-text--primary team-drawer__bio-paragraph'>With over 25 years of experience in the Financial Services industry, Tim has honed his expertise through notable tenures at TD Bank Finance Group and Scotiawealth. At Scotiawealth, he most recently spearheaded the Fixed Income and Foreign Exchange Trading desk, showcasing his robust analytical abilities and adeptness in trade execution.</p><p class='body-text--primary team-drawer__bio-paragraph'>Outside of his professional life, Tim is an avid hockey fan and cherishes moments spent with his family and their dog.</p>";
           teamDrawerContainer.appendChild(timVlahopoulosBio);
 
           break;
